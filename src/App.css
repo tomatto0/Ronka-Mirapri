@@ -1,0 +1,13 @@
+div.user-image-container {
+    width: 512px;
+    height: 512px;
+    overflow: hidden;
+}
+
+img.user-image {
+    min-height: 512px;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}

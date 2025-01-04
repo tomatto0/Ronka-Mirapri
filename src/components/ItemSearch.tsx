@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import filtered_item_list from '../json/filtered_item.json';
-import html2canvas from 'html2canvas';
 import { Item } from '../type/Item.ts';
 
 export default function ItemSearch({setter}: {setter: (items: Item[]) => void}) {
@@ -17,18 +16,6 @@ export default function ItemSearch({setter}: {setter: (items: Item[]) => void}) 
         const result = item_list.filter(item => item.Name.includes(keyword));
         setter(result);
     }
-    const capture = async () => {
-        const canvElement = document.querySelector('.search-result-container');
-        if (canvElement instanceof HTMLElement) {
-            const canv = await html2canvas(canvElement);
-            let link = document.createElement('a');
-            link.href = canv.toDataURL('image/png', true);
-            link.download = 'capture.png';
-            link.click();
-        } else {
-            console.error('Element not found!');
-        }
-    }
     return (
         <div className="item-search-container">
             <input
@@ -42,11 +29,6 @@ export default function ItemSearch({setter}: {setter: (items: Item[]) => void}) 
                 onClick={item_search}
             >
                 Search
-            </button>
-            <button
-                onClick={capture}
-            >
-                capture
             </button>
         </div>
     );

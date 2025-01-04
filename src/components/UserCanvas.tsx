@@ -1,6 +1,11 @@
 import { useRef, useEffect, useState } from "react";
 import { Item } from "../type/Item";
 
+type ItemImage = {
+    Id: number;
+    Image: HTMLImageElement;
+}
+
 function clamp(min: number, val: number, max: number) {
     min = min > max ? max : min;
     return val < min ? min : val > max ? max : val;
@@ -18,24 +23,43 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
     const image_height = useRef<number>(0);
     const box_width = 608;
     const box_height = 1080;
-    const [reload, set_reload] =  useState<number>(0);
+    const item_images = useRef<ItemImage[]>([]);
+    const equiped_item_ref = useRef<Item[]>(equiped_item);
 
     function user_image_draw(x: number, y: number) {
         const user_canvas = imageRef.current;
         const image = user_image.current;
         if (user_canvas) {
             const ctx = user_canvas.getContext('2d');
-            image_width.current = image.width *(box_height/image.height);
+            image_width.current = image.width *(box_height /image.height);
             image_height.current = box_height;
             if (ctx) {
-                ctx.clearRect(0, 0, user_canvas.width, user_canvas.height);
-                ctx.drawImage(image, x, y, image.width *(box_height/image.height), box_height);
+                ctx.fillStyle = '#FFFFFF';
+                ctx.fillRect(0, 0, user_canvas.width, user_canvas.height);
+                ctx.drawImage(image, x, y, image_width.current, image_height.current);
                 ctx.fillStyle = '#F0F0F0';
                 ctx.fillRect(box_width, 0, 1920 -box_width, box_height);
             }
-            set_reload(reload +1);
         }
+        user_item_draw(equiped_item_ref.current);
     }
+
+    function user_item_draw(item_list: Item[]) {
+        const user_canvas = imageRef.current;
+        if (user_canvas) {
+            const ctx = user_canvas.getContext('2d');
+            if (ctx) {
+                ctx.textAlign = 'start';
+                ctx.textBaseline = 'middle';
+                ctx.fillStyle = '#000000';
+                for (let [i, item] of item_list.entries()) {
+                    const image = item_images.current.find(i => i.Id === item.Id);
+                    if (image) ctx.drawImage(image.Image, box_width +20, i*100 +20, 80, 80);
+                    ctx.fillText(item.Name, box_width +110, i*100 +60);
+                }
+            }
+        }
+    };
 
     useEffect(() => {
         const user_canvas = imageRef.current;
@@ -60,13 +84,13 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
                 return;
             }
             e.preventDefault();
+
             x.current += e.pageX -user_canvas.offsetLeft -startX.current;
             x.current = clamp(box_width -image_width.current, x.current, 0);
             startX.current = e.pageX -user_canvas.offsetLeft;
             // y.current += e.pageY -user_canvas.offsetTop -startY.current;
             // y.current = clamp(box_height -image_height.current, y.current, 0);
             // startY.current = e.pageY -user_canvas.offsetTop;
-
             user_image_draw(x.current, 0);
         }
 
@@ -87,8 +111,32 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
         // y.current = 0;
         user_image.current.src = image_src;
         user_image.current.onload = () => {user_image_draw(0, 0);};
-
     }, [image_src]);
+
+    const image_load_check = async () => {
+        equiped_item_ref.current = equiped_item;
+        const image_load = (id: number, src: string): Promise<ItemImage> => {
+            return new Promise((resolve, reject) => {
+                const item_image = new Image();
+                item_image.src = src;
+
+                item_image.onload = () => resolve({Id: id, Image: item_image});
+                item_image.onerror = (error) => reject(error);
+            });
+        };
+
+        try {
+            const promises = equiped_item_ref.current.map(item => image_load(item.Id, './' +item.Icon));
+            item_images.current =  await Promise.all(promises);
+        } catch(error) {
+            console.error(error);
+        }
+        user_item_draw(equiped_item_ref.current);
+    }
+
+    useEffect(() => {
+        image_load_check();
+    }, [equiped_item]);
 
     return (
         <canvas 

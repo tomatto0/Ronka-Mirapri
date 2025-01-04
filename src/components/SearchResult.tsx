@@ -1,8 +1,8 @@
 import { useRef, useEffect } from 'react';
 import { Item } from '../type/Item.ts';
 
-const SearchedItem = ({item, set_equiped_item}:
-     {item: Item, set_equiped_item: (item: Item[]) => void}) => {
+const SearchedItem = ({item, add_equiped_item}:
+     {item: Item, add_equiped_item: (item: Item) => void}) => {
     const component = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -13,13 +13,15 @@ const SearchedItem = ({item, set_equiped_item}:
         }
         
         const click_handler = () => {
-            console.log(item);
+            add_equiped_item(item);
         };
+
         div.addEventListener('click', click_handler);
         return () => {
             div.removeEventListener('click', click_handler);
         }
     }, []);
+
     return (
         <div className="search-result" ref={component}>
             <img src={'./' +item.Icon} alt={item.Name}/>
@@ -28,13 +30,13 @@ const SearchedItem = ({item, set_equiped_item}:
     )
 };
 
-export default function SearchResult({search_result, set_equiped_item}:
-     {search_result: Item[], set_equiped_item: (item: Item[]) => void}) {
+export default function SearchResult({search_result, add_equiped_item}:
+     {search_result: Item[], add_equiped_item: (item: Item) => void}) {
 
     return (
         <div className='search-result-container'>
             {search_result.map(item => (
-                <SearchedItem key={item.Id} item={item} set_equiped_item={set_equiped_item}/>
+                <SearchedItem key={item.Id} item={item} add_equiped_item={add_equiped_item}/>
             ))}
         </div>
     )

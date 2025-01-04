@@ -1,14 +1,15 @@
-export default function ItemUploader(props) {
-    const image_validate = (e) => {
+export default function ItemUploader({ set_image_src }: 
+    {set_image_src: (src: string) => void}) {
+    const image_validate = (e: React.ChangeEvent<HTMLInputElement>) => {
         const ext = e.target.value.substring(
             e.target.value.lastIndexOf('.')+1,
             e.target.value.length
         ).toLowerCase();
-        if (['bmp', 'png', 'jpeg', 'jpg'].includes(ext)) {
+        if (['bmp', 'png', 'jpeg', 'jpg'].includes(ext) && e.target.files !== null) {
             const reader = new FileReader();
             reader.readAsDataURL(e.target.files[0]);
             reader.onloadend = () => {
-                props.setter(reader.result);
+                set_image_src(reader.result as string);
             }
         } else {
             console.log('유효하지 않은 이미지');

@@ -1,39 +1,43 @@
 import { useRef, useEffect, useState } from "react";
 
-function clamp(min, val, max) {
+function clamp(min: number, val: number, max: number) {
     min = min > max ? max : min;
     return val < min ? min : val > max ? max : val;
 }
 
-export default function UserImage({upload_image}) {
-    const imageRef = useRef(null);
-    const isDown = useRef(false);
-    const startX = useRef(0);
-    const startY = useRef(0);
-    const x = useRef(0);
-    const y = useRef(0);
+export default function UserImage({image_src}: {image_src: string}) {
+    const imageRef = useRef<HTMLImageElement | null>(null);
+    const isDown = useRef<boolean>(false);
+    const startX = useRef<number>(0);
+    const startY = useRef<number>(0);
+    const x = useRef<number>(0);
+    const y = useRef<number>(0);
     const [style, set_style] = useState({transform: 'translate(0px, 0px)'});
-    const image_width = useRef(0);
-    const image_height = useRef(0);
+    const image_width = useRef<number>(0);
+    const image_height = useRef<number>(0);
     const box_width = 512;
     const box_height = 512;
 
     useEffect(() => {
         const user_image = imageRef.current;
         
-        const mousedown_handler = (e) => {
+        if (user_image == null) {
+            return;
+        }
+
+        const mousedown_handler = (e: MouseEvent) => {
             isDown.current = true;
             startX.current = e.pageX -user_image.offsetLeft;
             startY.current = e.pageY -user_image.offsetTop;
         };
-        const mouseup_handler = (e) => {
+        const mouseup_handler = (e: MouseEvent) => {
             isDown.current = false;
             e.preventDefault();
         }
         const mouseleave_handler = () => {
             isDown.current = false;
         }
-        const mousemove_handler = (e) => {
+        const mousemove_handler = (e: MouseEvent) => {
             if (!isDown.current) {
                 return;
             }
@@ -61,21 +65,34 @@ export default function UserImage({upload_image}) {
 
     useEffect(() => {
         const user_image = imageRef.current;
-        image_width.current = user_image.width;
-        image_height.current = user_image.height;
+        
+        if (user_image == null) {
+            return;
+        }
+
         x.current = 0;
         y.current = 0;
         set_style({transform: `translate(0px, 0px)`});
-    }, [upload_image]);
+    }, [image_src]);
+    
+    const image_size_update = () => {
+        const user_image = imageRef.current;
+        if (user_image == null) {
+            return;
+        }
+        image_width.current = user_image.width;
+        image_height.current = user_image.height;
+    }
     
     return (
         <div className="user-image-container">
             <img 
                 className="user-image"
-                src={upload_image}
+                src={image_src}
                 alt=""
                 ref={imageRef}
                 style={style}
+                onLoad={image_size_update}
             />
         </div>
     )

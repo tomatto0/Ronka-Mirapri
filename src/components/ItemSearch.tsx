@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import item_list from '../json/filtered_item.json';
+import filtered_item_list from '../json/filtered_item.json';
 import html2canvas from 'html2canvas';
+import { Item } from '../type/Item.ts';
 
-export default function ItemSearch(props) {
-    const [keyword, set_keyword] = useState('');
+export default function ItemSearch({setter}: {setter: (items: Item[]) => void}) {
+    const [keyword, set_keyword] = useState<string>('');
+    const item_list: Item[] = filtered_item_list as Item[];
 
-    const keyword_update = e => {
+    const keyword_update = (e: React.ChangeEvent<HTMLInputElement>) => {
         set_keyword(e.target.value);
     }
     const item_search = () => {
@@ -13,14 +15,19 @@ export default function ItemSearch(props) {
             return false;
         }
         const result = item_list.filter(item => item.Name.includes(keyword));
-        props.setter(result);
+        setter(result);
     }
     const capture = async () => {
-        const canv = await html2canvas(document.querySelector('.search-result-container'));
-        let link = document.createElement('a');
-        link.href = canv.toDataURL('image/png', true);
-        link.download = 'capture.png';
-        link.click();
+        const canvElement = document.querySelector('.search-result-container');
+        if (canvElement instanceof HTMLElement) {
+            const canv = await html2canvas(canvElement);
+            let link = document.createElement('a');
+            link.href = canv.toDataURL('image/png', true);
+            link.download = 'capture.png';
+            link.click();
+        } else {
+            console.error('Element not found!');
+        }
     }
     return (
         <div className="item-search-container">

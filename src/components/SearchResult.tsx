@@ -20,7 +20,7 @@ const SearchedItem = ({item, add_equiped_item}:
         return () => {
             div.removeEventListener('click', click_handler);
         }
-    }, []);
+    }, [add_equiped_item, item]);
 
     return (
         <div className="search-result" ref={component}>

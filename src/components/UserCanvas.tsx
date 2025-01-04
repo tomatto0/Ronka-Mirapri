@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useCallback } from "react";
 import { Item } from "../type/Item";
 
 type ItemImage = {
@@ -26,7 +26,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
     const item_images = useRef<ItemImage[]>([]);
     const equiped_item_ref = useRef<Item[]>(equiped_item);
 
-    function user_image_draw(x: number, y: number) {
+    const user_image_draw = useCallback((x: number, y: number) => {
         const user_canvas = imageRef.current;
         const image = user_image.current;
         if (user_canvas) {
@@ -42,7 +42,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             }
         }
         user_item_draw(equiped_item_ref.current);
-    }
+    }, []);
 
     function user_item_draw(item_list: Item[]) {
         const user_canvas = imageRef.current;
@@ -104,17 +104,16 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             user_canvas.removeEventListener('mouseleave', mouseleave_handler);
             user_canvas.removeEventListener('mousemove', mousemove_handler);
         }
-    }, []);
+    }, [user_image_draw]);
     
     useEffect(() => {
         x.current = 0;
         // y.current = 0;
         user_image.current.src = image_src;
         user_image.current.onload = () => {user_image_draw(0, 0);};
-    }, [image_src]);
+    }, [image_src, user_image_draw]);
 
-    const image_load_check = async () => {
-        equiped_item_ref.current = equiped_item;
+    const image_load_check = useCallback(async () => {
         const image_load = (id: number, src: string): Promise<ItemImage> => {
             return new Promise((resolve, reject) => {
                 const item_image = new Image();
@@ -132,11 +131,12 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             console.error(error);
         }
         user_item_draw(equiped_item_ref.current);
-    }
+    }, []);
 
     useEffect(() => {
+        equiped_item_ref.current = equiped_item;
         image_load_check();
-    }, [equiped_item]);
+    }, [equiped_item, image_load_check]);
 
     return (
         <canvas 

@@ -24,7 +24,7 @@ const SearchedItem = ({item, add_equiped_item}:
 
     return (
         <div className="search-result" ref={component}>
-            <img src={'./' +item.Icon} alt={item.Name}/>
+            <img className="item-icon" src={'./' +item.Icon} alt={item.Name}/>
             <span>{item.Name}</span>
         </div>
     )

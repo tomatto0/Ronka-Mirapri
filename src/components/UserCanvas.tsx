@@ -31,17 +31,16 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
         const image = user_image.current;
         if (user_canvas) {
             const ctx = user_canvas.getContext('2d');
-            image_width.current = image.width *(box_height /image.height);
-            image_height.current = box_height;
             if (ctx) {
                 ctx.fillStyle = '#FFFFFF';
-                ctx.fillRect(0, 0, user_canvas.width, user_canvas.height);
-                ctx.drawImage(image, x, y, image_width.current, image_height.current);
-                ctx.fillStyle = '#F0F0F0';
-                ctx.fillRect(box_width, 0, 1920 -box_width, box_height);
+                ctx.fillRect(0, 0, box_width, box_height);
+                ctx.drawImage(
+                    image,
+                    -x, -y, image.height *9/16, image.height,
+                    0, 0, box_width, box_height
+                );
             }
         }
-        user_item_draw(equiped_item_ref.current);
     }, []);
 
     function user_item_draw(item_list: Item[]) {
@@ -51,6 +50,8 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             if (ctx) {
                 ctx.textAlign = 'start';
                 ctx.textBaseline = 'middle';
+                ctx.fillStyle = '#FFFFFF';
+                ctx.fillRect(box_width, 0, user_canvas.width, user_canvas.height);
                 ctx.fillStyle = '#000000';
                 for (let [i, item] of item_list.entries()) {
                     const image = item_images.current.find(i => i.Id === item.Id);
@@ -86,7 +87,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             e.preventDefault();
 
             x.current += e.pageX -user_canvas.offsetLeft -startX.current;
-            x.current = clamp(box_width -image_width.current, x.current, 0);
+            x.current = clamp(box_width *(image_height.current /box_height) -image_width.current, x.current, 0);
             startX.current = e.pageX -user_canvas.offsetLeft;
             // y.current += e.pageY -user_canvas.offsetTop -startY.current;
             // y.current = clamp(box_height -image_height.current, y.current, 0);
@@ -110,7 +111,11 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
         x.current = 0;
         // y.current = 0;
         user_image.current.src = image_src;
-        user_image.current.onload = () => {user_image_draw(0, 0);};
+        user_image.current.onload = () => {
+            image_width.current = user_image.current.width;
+            image_height.current = user_image.current.height;
+            user_image_draw(0, 0);
+        };
     }, [image_src, user_image_draw]);
 
     const image_load_check = useCallback(async () => {

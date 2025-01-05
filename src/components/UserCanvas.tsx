@@ -33,7 +33,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
         if (user_canvas) {
             const ctx = user_canvas.getContext('2d');
             if (ctx) {
-                ctx.fillStyle = '#FFFFFF';
+                ctx.fillStyle = '#EFF1F5';
                 ctx.fillRect(0, 0, box_width, box_height);
                 ctx.drawImage(
                     image,
@@ -51,9 +51,9 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             if (ctx) {
                 ctx.textAlign = 'start';
                 ctx.textBaseline = 'middle';
-                ctx.fillStyle = '#FFFFFF';
+                ctx.fillStyle = '#26272B';
                 ctx.fillRect(box_width, 0, user_canvas.width, user_canvas.height);
-                ctx.fillStyle = '#000000';
+                ctx.fillStyle = '#FFFFFF';
                 for (let [i, item] of item_list.entries()) {
                     const image = item_images.current.find(i => i.Id === item.Id);
                     if (image) ctx.drawImage(image.Image, box_width +20, i*100 +20, 80, 80);
@@ -188,7 +188,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
     return (
         <canvas 
             className="user-canvas" 
-            width="1920" 
+            width="1080" 
             height="1080"
             ref={imageRef}
         />

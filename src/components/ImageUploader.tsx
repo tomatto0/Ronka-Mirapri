@@ -2,7 +2,7 @@ export default function ItemUploader({ set_image_src }:
     {set_image_src: (src: string) => void}) {
     const image_validate = (e: React.ChangeEvent<HTMLInputElement>) => {
         const ext = e.target.value.substring(
-            e.target.value.lastIndexOf('.')+1,
+            e.target.value.lastIndexOf('.') +1,
             e.target.value.length
         ).toLowerCase();
         if (['bmp', 'png', 'jpeg', 'jpg'].includes(ext) && e.target.files !== null) {

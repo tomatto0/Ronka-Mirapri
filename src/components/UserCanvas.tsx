@@ -86,7 +86,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             }
             e.preventDefault();
 
-            x.current += e.pageX -user_canvas.offsetLeft -startX.current;
+            x.current += (e.pageX -user_canvas.offsetLeft -startX.current) *(image_height.current /box_height);
             x.current = clamp(box_width *(image_height.current /box_height) -image_width.current, x.current, 0);
             startX.current = e.pageX -user_canvas.offsetLeft;
             // y.current += e.pageY -user_canvas.offsetTop -startY.current;

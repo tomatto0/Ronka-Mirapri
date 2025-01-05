@@ -21,7 +21,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
     // const y = useRef<number>(0);
     const image_width = useRef<number>(0);
     const image_height = useRef<number>(0);
-    const ratio = 6/16;
+    const ratio = 9/16;
     const box_height = 1080;
     const box_width = box_height *ratio;
     const item_images = useRef<ItemImage[]>([]);

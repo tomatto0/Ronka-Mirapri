@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import filtered_item_list from '../json/filtered_item.json';
+import filtered_item_list from '../json/filtered_items.json';
 import { Item } from '../type/Item.ts';
 
 export default function ItemSearch({setter}: {setter: (items: Item[]) => void}) {

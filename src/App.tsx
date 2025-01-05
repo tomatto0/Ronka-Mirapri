@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import ImageUploder from './components/ImageUploader.tsx';
 import ItemSearch from './components/ItemSearch.tsx';
 import SearchResult from './components/SearchResult.tsx';
@@ -14,10 +14,6 @@ function App() {
     const add_equiped_item = useCallback((item: Item) => {
         set_equiped_item(items => [...items, item]);
     }, []);
-
-    useEffect(() => {
-        console.log('App:', equiped_item);
-    }, [equiped_item]);
 
     return (
         <div className="App">

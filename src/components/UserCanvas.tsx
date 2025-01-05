@@ -21,8 +21,9 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
     // const y = useRef<number>(0);
     const image_width = useRef<number>(0);
     const image_height = useRef<number>(0);
-    const box_width = 608;
+    const ratio = 6/16;
     const box_height = 1080;
+    const box_width = box_height *ratio;
     const item_images = useRef<ItemImage[]>([]);
     const equiped_item_ref = useRef<Item[]>(equiped_item);
 
@@ -36,7 +37,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
                 ctx.fillRect(0, 0, box_width, box_height);
                 ctx.drawImage(
                     image,
-                    -x, -y, image.height *9/16, image.height,
+                    -x, -y, image.height *ratio, image.height,
                     0, 0, box_width, box_height
                 );
             }
@@ -95,15 +96,56 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             user_image_draw(x.current, 0);
         }
 
+        const touchstart_handler = (e: TouchEvent) => {
+            if (e.touches.length > 0) {
+                const touch = e.touches[0];
+                isDown.current = true;
+                startX.current = touch.pageX - user_canvas.offsetLeft;
+            }
+        };
+        
+        const touchend_handler = (e: TouchEvent) => {
+            isDown.current = false;
+            e.preventDefault();
+        };
+        
+        const touchcancel_handler = () => {
+            isDown.current = false;
+        };
+        
+        const touchmove_handler = (e: TouchEvent) => {
+            if (!isDown.current || e.touches.length === 0) {
+                return;
+            }
+        
+            e.preventDefault();
+            const touch = e.touches[0];
+        
+            x.current += (touch.pageX - user_canvas.offsetLeft - startX.current) *(image_height.current / box_height);
+            x.current = clamp(box_width * (image_height.current / box_height) - image_width.current, x.current, 0);
+            startX.current = touch.pageX - user_canvas.offsetLeft;
+            user_image_draw(x.current, 0);
+        };
+
         user_canvas.addEventListener('mousedown', mousedown_handler);
         user_canvas.addEventListener('mouseup', mouseup_handler);
         user_canvas.addEventListener('mouseleave', mouseleave_handler);
         user_canvas.addEventListener('mousemove', mousemove_handler);
+
+        user_canvas.addEventListener("touchstart", touchstart_handler);
+        user_canvas.addEventListener("touchend", touchend_handler);
+        user_canvas.addEventListener("touchcancel", touchcancel_handler);
+        user_canvas.addEventListener("touchmove", touchmove_handler);
         return () => {
             user_canvas.removeEventListener('mousedown', mousedown_handler);
             user_canvas.removeEventListener('mouseup', mouseup_handler);
             user_canvas.removeEventListener('mouseleave', mouseleave_handler);
             user_canvas.removeEventListener('mousemove', mousemove_handler);
+
+            user_canvas.removeEventListener('touchstart', touchstart_handler);
+            user_canvas.removeEventListener("touchend", touchend_handler);
+            user_canvas.removeEventListener("touchcancel", touchcancel_handler);
+            user_canvas.removeEventListener("touchmove", touchmove_handler);
         }
     }, [user_image_draw]);
     

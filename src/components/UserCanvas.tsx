@@ -1,5 +1,6 @@
 import { useRef, useEffect, useCallback } from "react";
 import { Item } from "../type/Item";
+import '../css/UserCanvas.css';
 
 type ItemImage = {
     Id: number;

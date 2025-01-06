@@ -1,15 +1,28 @@
 import '../css/ItemInformation.css';
 
-function ItemSlot({slot_name}: {slot_name: string}) {
+function ItemSlot({slot_name, open_modal, slot}: {
+        slot_name: string, 
+        open_modal: (slot: number) => void,
+        slot: number}
+    ) {
+
+    const item_search_modal_open = () => {
+        open_modal(slot);
+    }
+
     return (
         <div className="item-slot">
             <span>{slot_name}</span>
-            <img src="./img/item_slot.svg" alt={slot_name +"아이콘"}/>
+            <img src="./img/item_slot.svg" alt={slot_name +"아이콘"} onClick={item_search_modal_open}/>
         </div>
     )
 }
 
-export default function ItemInformation() {
+export default function ItemInformation({open_modal}: {open_modal: (slot: number) => void}) {
+    const slots = [
+        "머리 방어구", "몸통 방어구", "손 방어구", "다리 방어구", "발 방어구", "추가 옵션", "추가 옵션", "추가 옵션"
+    ]
+
     const image_download = () =>{
     };
 
@@ -22,16 +35,14 @@ export default function ItemInformation() {
             <hr/>
             <div className="item-slot-container">
                 <div className="item-slot-row">
-                    <ItemSlot slot_name="머리 방어구" key='1'/>
-                    <ItemSlot slot_name="몸통 방어구" key='2'/>
-                    <ItemSlot slot_name="손 방어구" key='3'/>
-                    <ItemSlot slot_name="다리 방어구" key='4'/>
+                    {slots.slice(0, 4).map((slot, i) => (
+                        <ItemSlot slot_name={slot} open_modal={open_modal} slot={i} key={i}/>
+                    ))}
                 </div>
                 <div className="item-slot-row">
-                    <ItemSlot slot_name="발 방어구" key='5'/>
-                    <ItemSlot slot_name="추가 옵션" key='6'/>
-                    <ItemSlot slot_name="추가 옵션" key='7'/>
-                    <ItemSlot slot_name="추가 옵션" key='8'/>
+                    {slots.slice(4, 8).map((slot, i) => (
+                        <ItemSlot slot_name={slot} open_modal={open_modal} slot={i+4} key={i}/>
+                    ))}
                 </div>
             </div>
             <button className="image-download" onClick={image_download}>이미지 다운로드</button>

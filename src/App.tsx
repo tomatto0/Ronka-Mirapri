@@ -18,18 +18,17 @@ function App() {
 
     return (
         <div className="App">
-            <img src="./img/title.svg" alt="FFXIV-KOR MIRAPRI GENERATOR" id="title"/>
+            <div className="header">
+                <img src="./img/title.svg" alt="FFXIV-KOR MIRAPRI GENERATOR" id="title"/>
+            </div>
             <div className="main-container">
                 <UserCanvas image_src={image_src} equiped_item={equiped_item}/>
                 <ItemInformation/>
             </div>
-            {/* <ImageUploder set_image_src={set_image_src}/>
-            <ItemSearch setter={set_search_result}/>
-            <SearchResult search_result={search_result} add_equiped_item={add_equiped_item}/> */}
-            <p className="footer">
+            <div className="footer">
                 <a href="https://ronkacloset.com">https://ronkacloset.com</a><br/>
-                © SQUARE ENIX Published in Korea by Actoz Soft CO., LTD.
-            </p>
+                <p>© SQUARE ENIX Published in Korea by Actoz Soft CO., LTD.</p>
+            </div>
         </div>
     );
 }

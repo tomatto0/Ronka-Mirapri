@@ -11,15 +11,15 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 body {
   background: linear-gradient(to bottom left, #F6EBFF, #DEF8FA);
-  width: 100vw;
+  background-attachment: fixed;
   height: 100vh;
-
-  display: flex;
-  align-items: center;
 }
 #root {
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

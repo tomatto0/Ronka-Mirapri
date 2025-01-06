@@ -1,3 +1,5 @@
+import '../css/ItemInformation.css';
+
 function ItemSlot({slot_name}: {slot_name: string}) {
     return (
         <div className="item-slot">

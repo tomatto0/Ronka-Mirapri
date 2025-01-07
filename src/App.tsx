@@ -16,7 +16,9 @@ function App() {
         Icon: './img/item_slot.svg',
         EquipSlotCategory: 0,
         ClassJobCategory: 0,
-        DyeCount: 0
+        DyeCount: 0,
+        DyeFirst: 0,
+        DyeSecond: 0
     }
 
     const [equiped_item, set_equiped_item] = useState<Item[]>(new Array(8).fill(item_null));

@@ -18,7 +18,13 @@ export default function SearchResult({slot, search_result, edit_equiped_item}: {
                 if (div == null) { return; }
                 
                 const click_handler = () => {
-                    edit_equiped_item(slot, item);
+                    const dye_item = {
+                        ...item,
+                        DyeFirst: 1,
+                        DyeSecond: 114
+                    }
+                    console.log(item, dye_item);
+                    edit_equiped_item(slot, dye_item);
                 };
         
                 div.addEventListener('click', click_handler);

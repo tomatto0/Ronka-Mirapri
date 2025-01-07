@@ -83,49 +83,57 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
                     ctx.fillText(item.Name, box_width +120, i*100 +45);
 
                     // 1염색 컬러 표시
-                    if (item.DyeFirst !== 0) {
                     // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
-                    const colorInfo = Color_background_list.find(color => color.color_id === item.DyeFirst);
+                    const colorInfo1 = Color_background_list.find(color => color.color_id === item.DyeFirst);
 
-                        if(colorInfo){
+                        if(colorInfo1){
                         // 배경색과 텍스트 색상 설정
-                            const backgroundColor = colorInfo?.background_color || '#FFFFFF'; // 기본값 설정
-                            const textColor = colorInfo?.text_color || 'black';
+                            const backgroundColor = colorInfo1.background_color || '#FFFFFF'; // 기본값 설정
+                            const textColor = colorInfo1.text_color || 'black';
 
                             // 텍스트 배경 그리기
                             ctx.font = "21px Pretendard-Regular"
-                            const textWidth = ctx.measureText(colorInfo?.name).width;
+                            const textWidth = ctx.measureText(colorInfo1.name).width;
                             dyeFirstWidthRef.current = textWidth;
                             ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
                             ctx.fillRect(box_width + 120, i * 100 + 70, textWidth + 44, 26); // 배경 사각형 (텍스트 크기 기반)
 
                             // 텍스트 그리기
                             ctx.fillStyle = textColor; // 텍스트 색상
-                            ctx.fillText(("1 - " + colorInfo.name), box_width + 127, i * 100 + 84);
+                            ctx.fillText(("1 - " + colorInfo1.name), box_width + 127, i * 100 + 84);
                         }
-                    }
+                    
 
                 
-                    // 2염색 컬러 표시
-                    if (item.DyeSecond !== 0) {
+                        // 2염색 컬러 표시
                         // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
-                        const colorInfo = Color_background_list.find(color => color.color_id === item.DyeSecond);
+                        const colorInfo2 = Color_background_list.find(color => color.color_id === item.DyeSecond);
     
-                        if(colorInfo){
+                        if(colorInfo2){
                             // 배경색과 텍스트 색상 설정
-                            const backgroundColor = colorInfo?.background_color || '#FFFFFF'; // 기본값 설정
-                            const textColor = colorInfo?.text_color || 'black';
+                            const backgroundColor = colorInfo2.background_color || '#FFFFFF'; // 기본값 설정
+                            const textColor = colorInfo2.text_color || 'black';
                             
                             // 텍스트 배경 그리기
-                            const textWidth = ctx.measureText(colorInfo?.name).width;
+                            ctx.font = "21px Pretendard-Regular"
+                            const textWidth = ctx.measureText(colorInfo2.name).width;
                             ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
+
+                            if(colorInfo1){
                             ctx.fillRect(box_width + dyeFirstWidthRef.current + 174, i * 100 + 70, textWidth + 44, 26); // 배경 사각형 (텍스트 크기 기반)
         
                             // 텍스트 그리기
                             ctx.fillStyle = textColor; // 텍스트 색상
-                            ctx.fillText(("2 - " + colorInfo.name), box_width + dyeFirstWidthRef.current + 180, i * 100 + 84);
+                            ctx.fillText(("2 - " + colorInfo2.name), box_width + dyeFirstWidthRef.current + 180, i * 100 + 84);
+                        } else{
+                            ctx.fillRect(box_width + 120, i * 100 + 70, textWidth + 44, 26);// 배경 사각형 (텍스트 크기 기반)
+        
+                            // 텍스트 그리기
+                            ctx.fillStyle = textColor; // 텍스트 색상
+                            ctx.fillText(("2 - " + colorInfo2.name), box_width + 127, i * 100 + 84);
                         }
-                    }
+                        }
+                    
                 }
             }
         }

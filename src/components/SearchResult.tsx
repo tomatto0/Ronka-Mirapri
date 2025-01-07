@@ -21,7 +21,7 @@ export default function SearchResult({slot, search_result, edit_equiped_item}: {
                     const dye_item = {
                         ...item,
                         DyeFirst: 0,
-                        DyeSecond: 0
+                        DyeSecond: 1
                     }
                     edit_equiped_item(slot, dye_item);
                 };

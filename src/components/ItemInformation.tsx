@@ -1,15 +1,22 @@
 import '../css/ItemInformation.css';
 import { Item } from '../type/Item.ts';
 
-function ItemSlot({slot_name, open_modal, slot, src}: {
+function ItemSlot({slot_name, open_modal, slot, src, is_active}: {
         slot_name: string, 
         open_modal: (slot: number) => void,
         slot: number,
-        src: string
+        src: string,
+        is_active: boolean
     }) {
 
+    
     const item_search_modal_open = () => {
-        open_modal(slot);
+        if (is_active) {
+            open_modal(slot);
+        }
+    }
+    if (!is_active) {
+        src = './img/item_slot_inactive.svg';
     }
 
     return (
@@ -20,13 +27,13 @@ function ItemSlot({slot_name, open_modal, slot, src}: {
     )
 }
 
-export default function ItemInformation({open_modal, equiped_item}: {
+export default function ItemInformation({open_modal, equiped_item, slot_active}: {
     open_modal: (slot: number) => void,
-    equiped_item: Item[]}) {
-    const slots = [
-        "머리 방어구", "몸통 방어구", "손 방어구", "다리 방어구", "발 방어구", "추가 옵션", "추가 옵션", "추가 옵션"
-    ];
-    const image_download = () =>{
+    equiped_item: Item[],
+    slot_active: boolean[]}) {
+
+    const slots = ["머리 방어구", "몸통 방어구", "손 방어구", "다리 방어구", "발 방어구", "추가 옵션", "추가 옵션", "추가 옵션"];
+    const image_download = () => {
     };
 
     return (
@@ -38,23 +45,25 @@ export default function ItemInformation({open_modal, equiped_item}: {
             <hr/>
             <div className="item-slot-container">
                 <div className="item-slot-row">
-                    {slots.slice(0, 4).map((slot, i) => (
+                    {[0, 1, 2, 3].map(i => (
                         <ItemSlot 
-                            slot_name={slot} 
+                            slot_name={slots[i]} 
                             open_modal={open_modal} 
                             slot={i} 
-                            src={equiped_item[i].Icon} 
+                            src={equiped_item[i].Icon}
+                            is_active={slot_active[i]}
                             key={i}
                         />
                     ))}
                 </div>
                 <div className="item-slot-row">
-                    {slots.slice(4, 8).map((slot, i) => (
+                    {[4, 5, 6, 7].map(i => (
                         <ItemSlot 
-                            slot_name={slot} 
+                            slot_name={slots[i]} 
                             open_modal={open_modal} 
-                            slot={i +4} 
-                            src={equiped_item[i +4].Icon}
+                            slot={i} 
+                            src={equiped_item[i].Icon}
+                            is_active={slot_active[i]}
                             key={i}
                         />
                     ))}

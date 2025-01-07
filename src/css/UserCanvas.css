@@ -1,4 +1,10 @@
 canvas.user-canvas {
-    height: 70vh;
-    min-height: 608px;
+    width: 100%;
+}
+
+@media (min-width: 1216px) {
+    canvas.user-canvas {
+        height: 70vh;
+        min-height: 608px;
+    }
 }

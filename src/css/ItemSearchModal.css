@@ -1,5 +1,5 @@
 div.item-search-modal-back {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #424a602b;

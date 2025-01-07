@@ -1,8 +1,8 @@
 div.item-information {
     position: relative;
-    width: 608px;
+    width: 100%;
     flex-shrink: 0;
-    padding: 0 100px;
+    padding: 10px 20px 3rem 20px;
 
     .item-information-header {
         display: flex;
@@ -54,7 +54,7 @@ div.item-information {
 
                 span {
                     text-align: left;
-                    font-size: 1rem;
+                    font-size: 0.95rem;
                     color: #5D6B98;
                     margin-bottom: 10px;
                 }
@@ -72,8 +72,8 @@ div.item-information {
     }
     .image-download {
         box-sizing: border-box;
-        width: 80%;
-        height: 2rem;
+        width: calc(100% - 40px);
+        height: 3rem;
         border: 2px #D0D5DD solid;
         border-radius: 8px;
         background-color: transparent;
@@ -84,9 +84,103 @@ div.item-information {
         font-family: inherit;
 
         position: absolute;
-        left: 10%;
-        bottom: 2%;
-
+        left: 20px;
+        bottom: 0;
         cursor: pointer;
+    }
+}
+
+@media (min-width: 1216px) {
+    div.item-information {
+        position: relative;
+        width: 608px;
+        flex-shrink: 0;
+        padding: 0 100px;
+
+        .item-information-header {
+            display: flex;
+            justify-content: space-between;
+            
+            span {
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: #4A5578;
+            }
+
+            button {
+                font-size: 1.2rem;
+                color: #7D89B0;
+                border: 0;
+                background-color: #E3E9FC;
+                cursor: pointer;
+            }
+            button::before {
+                content: "";
+                display: inline-block;
+                background-image: url('../../public/img/refresh.svg');
+                width: 1.2rem;
+                height: 1.1rem;
+                background-size: cover;
+                background-position: center;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+
+        hr {
+            margin: 2vh 0;
+            border: 1px #7D89B0 solid;
+        }
+
+        .item-slot-container {
+            .item-slot-row {
+                display: flex;
+                justify-content: space-between;
+
+                .item-slot {
+                    flex-grow: 0;
+                    display: inline-flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+
+                    cursor: pointer;
+
+                    span {
+                        text-align: left;
+                        font-size: 1rem;
+                        color: #5D6B98;
+                        margin-bottom: 10px;
+                    }
+                    img {
+                        width: 72px;
+                        cursor: pointer;
+                        -webkit-user-drag: none;
+                        -khtml-user-drag: none;
+                        -moz-user-drag: none;
+                        -o-user-drag: none;
+                        user-select: none;
+                    }
+                }
+            }
+        }
+        .image-download {
+            box-sizing: border-box;
+            width: 408px;
+            height: 2rem;
+            border: 2px #D0D5DD solid;
+            border-radius: 8px;
+            background-color: transparent;
+            
+            font-weight: bold;
+            color: #98A2B3;
+            font-size: 1rem;
+            font-family: inherit;
+
+            position: absolute;
+            left: 100px;
+            bottom: 0;
+
+            cursor: pointer;
+        }
     }
 }

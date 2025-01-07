@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import { ColorInfo } from "../type/color_info";
 import Color_background_list_raw from '../json/color_background.json';
 import { Item } from "../type/Item";
@@ -38,6 +38,7 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
     const equiped_item_ref = useRef<Item[]>(equiped_item); 
     const Color_background_list: ColorInfo[] = Color_background_list_raw as ColorInfo[];
     const dyeFirstWidthRef = useRef<number>(0); // Ref로 선언
+    const [is_selected, set_is_selected] = useState<boolean>(false);
 
     // 사용자의 이미지를 그리는 함수
     const user_image_draw = useCallback((x: number, y: number) => {
@@ -130,25 +131,6 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
         }
     };
 
-    const image_validate = (e: React.ChangeEvent<HTMLInputElement>) => {
-        // 입력된 파일의 확장자 추출
-        const ext = e.target.value.substring(
-            e.target.value.lastIndexOf('.') + 1,
-            e.target.value.length
-        ).toLowerCase();
-
-        if (['bmp', 'png', 'jpeg', 'jpg'].includes(ext) && e.target.files !== null) {
-            const reader = new FileReader();
-            reader.readAsDataURL(e.target.files[0]);
-            reader.onloadend = () => {
-                set_image_src(reader.result as string);
-            }
-        } else {
-            console.log('유효하지 않은 이미지');
-            e.target.value = '';
-        }
-    }
-
     // 캔버스 이벤트 등록
     useEffect(() => {
         const user_canvas = imageRef.current;
@@ -157,12 +139,10 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
         }
 
         const mousedown_handler = (e: MouseEvent) => {
-            isDown.current = true;
             startX.current = e.pageX -user_canvas.offsetLeft; // 클릭 시작 X좌표 저장
             // startY.current = e.pageY -user_canvas.offsetTop;
-
-            if (startX.current < box_width) {
-                console.log(user_image.current.src);
+            if (startX.current <= box_width) {
+                isDown.current = true;
             }
         };
         const mouseup_handler = (e: MouseEvent) => {
@@ -192,8 +172,11 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
         const touchstart_handler = (e: TouchEvent) => {
             if (e.touches.length > 0) {
                 const touch = e.touches[0];
-                isDown.current = true;
                 startX.current = touch.pageX - user_canvas.offsetLeft;
+                
+                if (startX.current <= box_width) {
+                    isDown.current = true;
+                }
             }
         };
         
@@ -223,9 +206,11 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
 
         // 마우스 및 터치 이벤트 등록
         user_canvas.addEventListener('mousedown', mousedown_handler);
-        user_canvas.addEventListener('mouseup', mouseup_handler);
-        user_canvas.addEventListener('mouseleave', mouseleave_handler);
-        user_canvas.addEventListener('mousemove', mousemove_handler);
+        window.addEventListener('mouseup', mouseup_handler);
+        window.addEventListener('mousemove', mousemove_handler);
+        // user_canvas.addEventListener('mouseup', mouseup_handler);
+        // user_canvas.addEventListener('mouseleave', mouseleave_handler);
+        // user_canvas.addEventListener('mousemove', mousemove_handler);
 
         user_canvas.addEventListener("touchstart", touchstart_handler);
         user_canvas.addEventListener("touchend", touchend_handler);
@@ -235,9 +220,11 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
         return () => {
             // 이벤트 해제
             user_canvas.removeEventListener('mousedown', mousedown_handler);
-            user_canvas.removeEventListener('mouseup', mouseup_handler);
-            user_canvas.removeEventListener('mouseleave', mouseleave_handler);
-            user_canvas.removeEventListener('mousemove', mousemove_handler);
+            window.removeEventListener('mouseup', mouseup_handler);
+            window.removeEventListener('mousemove', mousemove_handler);
+            // user_canvas.removeEventListener('mouseup', mouseup_handler);
+            // user_canvas.removeEventListener('mouseleave', mouseleave_handler);
+            // user_canvas.removeEventListener('mousemove', mousemove_handler);
 
             user_canvas.removeEventListener('touchstart', touchstart_handler);
             user_canvas.removeEventListener("touchend", touchend_handler);
@@ -246,7 +233,6 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
         }
     }, [user_image_draw]);
 
-    
     // 이미지 로드 및 초기화
     useEffect(() => {
         x.current = 0;
@@ -285,20 +271,68 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
         equiped_item_ref.current = equiped_item;
         image_load_check();
     }, [equiped_item, image_load_check]);
+    
+    const image_validate = (e: React.ChangeEvent<HTMLInputElement>) => {
+        // 입력된 파일의 확장자 추출
+        const ext = e.target.value.substring(
+            e.target.value.lastIndexOf('.') + 1,
+            e.target.value.length
+        ).toLowerCase();
+
+        if (['bmp', 'png', 'jpeg', 'jpg'].includes(ext) && e.target.files !== null) {
+            const reader = new FileReader();
+            reader.readAsDataURL(e.target.files[0]);
+            reader.onloadend = () => {
+                set_image_src(reader.result as string);
+                set_is_selected(true);
+            }
+        } else {
+            console.log('유효하지 않은 이미지');
+            e.target.value = '';
+        }
+    }
+    
+    const image_delete = () => {
+        set_image_src('../img/thumbnail.svg');
+        set_is_selected(false);
+    }
+
+    function CanvasClickLayer({is_selected}: {is_selected: boolean}) {
+        if (!is_selected) {
+            return (
+                <div className="input-container">
+                    <label 
+                        htmlFor="canvas-input"
+                        className="canvas-input-label"
+                    />
+                    <input
+                        className="user-canvas-input"
+                        type="file"
+                        accept="image/bmp, image/png, image/jpeg"
+                        id="canvas-input"
+                        onChange={image_validate}
+                    />
+                </div>
+            )
+        } else {
+            return (
+                <div className="input-container">
+                    <div className="image-delete" onClick={image_delete}>
+                        이미지 삭제
+                    </div>
+                </div>
+            )
+        }
+    }
 
     return (
         <div className="canvas-container">
+            <CanvasClickLayer is_selected={is_selected}/>
             <canvas 
                 className="user-canvas" 
                 width="1080" 
                 height="1080"
                 ref={imageRef}
-            />
-            <input
-                className="user-canvas-input"
-                type="file"
-                accept="image/bmp, image/png, image/jpeg"
-                // onChange={image_validate}
             />
         </div>
     )

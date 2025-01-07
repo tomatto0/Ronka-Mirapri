@@ -60,7 +60,7 @@ div.footer {
         top: calc(20% - 6px);
         left: -6px;
         width: calc(100% + 12px);
-        height: calc(100% + 12px);
+        height: calc(80% + 12px);
 
         background-image: 
         url('../../public/img/plus.svg'),

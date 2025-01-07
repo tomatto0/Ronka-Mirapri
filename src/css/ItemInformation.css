@@ -50,6 +50,7 @@ div.item-information {
                 flex-direction: column;
                 margin-bottom: 20px;
                 width: 20%;
+                min-width: 74px;
 
                 cursor: pointer;
 
@@ -97,6 +98,7 @@ div.item-information {
         width: 608px;
         flex-shrink: 0;
         padding: 0 100px;
+        padding-bottom: 2rem;
 
         .item-information-header {
             display: flex;

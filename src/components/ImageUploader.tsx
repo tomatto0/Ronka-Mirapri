@@ -24,7 +24,6 @@ export default function ItemUploader({ set_image_src }:
             type="file"
             accept="image/bmp, image/png, image/jpeg"
             onChange={image_validate}
-        >
-        </input>
+        />
     )
 }

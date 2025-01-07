@@ -49,17 +49,18 @@ div.item-information {
                 display: inline-flex;
                 flex-direction: column;
                 margin-bottom: 20px;
+                width: 20%;
 
                 cursor: pointer;
 
                 span {
                     text-align: left;
-                    font-size: 0.95rem;
+                    font-size: 1rem;
                     color: #5D6B98;
                     margin-bottom: 10px;
                 }
                 img {
-                    width: 72px;
+                    width: 100%;
                     cursor: pointer;
                     -webkit-user-drag: none;
                     -khtml-user-drag: none;

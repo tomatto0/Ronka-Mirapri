@@ -1,6 +1,9 @@
 canvas.user-canvas {
     width: 100%;
 }
+input.user-canvas-input {
+    display: none;
+}
 
 @media (min-width: 1216px) {
     canvas.user-canvas {

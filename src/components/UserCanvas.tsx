@@ -7,44 +7,48 @@ type ItemImage = {
     Image: HTMLImageElement;
 }
 
+// 마우스와 터치 범위 설정시 사용하는
+// 값을 최소와 최대 범위로 제한하는 함수
 function clamp(min: number, val: number, max: number) {
     min = min > max ? max : min;
     return val < min ? min : val > max ? max : val;
 }
 
 export default function UserCanvas({image_src, equiped_item}: {image_src: string, equiped_item: Item[]}) {
-    const imageRef = useRef<HTMLCanvasElement | null>(null);
+    const imageRef = useRef<HTMLCanvasElement | null>(null); // 캔버스 참조
     const user_image = useRef<HTMLImageElement>(new Image());
-    const isDown = useRef<boolean>(false);
-    const startX = useRef<number>(0);
+    const isDown = useRef<boolean>(false); // 마우스 클릭 여부 확인
+    const startX = useRef<number>(0); // 마우스 시작 X좌표
     // const startY = useRef<number>(0);
-    const x = useRef<number>(0);
+    const x = useRef<number>(0); // 이미지의 X좌표 위치
     // const y = useRef<number>(0);
-    const image_width = useRef<number>(0);
-    const image_height = useRef<number>(0);
+    const image_width = useRef<number>(0); // 이미지의 너비
+    const image_height = useRef<number>(0); // 이미지의 높이
     const ratio = 9/16;
-    const box_height = 1080;
-    const box_width = box_height *ratio;
-    const item_images = useRef<ItemImage[]>([]);
-    const equiped_item_ref = useRef<Item[]>(equiped_item);
+    const box_height = 1080; 
+    const box_width = box_height * ratio; 
+    const item_images = useRef<ItemImage[]>([]); // 장착 아이템 이미지 배열
+    const equiped_item_ref = useRef<Item[]>(equiped_item); 
 
+    // 사용자의 이미지를 그리는 함수
     const user_image_draw = useCallback((x: number, y: number) => {
         const user_canvas = imageRef.current;
         const image = user_image.current;
         if (user_canvas) {
             const ctx = user_canvas.getContext('2d');
             if (ctx) {
-                ctx.fillStyle = '#EFF1F5';
-                ctx.fillRect(0, 0, box_width, box_height);
+                ctx.fillStyle = '#EFF1F5'; 
+                ctx.fillRect(0, 0, box_width, box_height); // 캔버스 초기화
                 ctx.drawImage(
                     image,
-                    -x, -y, image.height *ratio, image.height,
-                    0, 0, box_width, box_height
+                    -x, -y, image.height *ratio, image.height, // 원본 이미지의 위치 및 크기
+                    0, 0, box_width, box_height // 캔버스에서의 위치 및 크기
                 );
             }
         }
     }, []);
 
+    // 장착된 아이템을 그리는 함수
     function user_item_draw(item_list: Item[]) {
         const user_canvas = imageRef.current;
         if (user_canvas) {
@@ -53,17 +57,18 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
                 ctx.textAlign = 'start';
                 ctx.textBaseline = 'middle';
                 ctx.fillStyle = '#26272B';
-                ctx.fillRect(box_width, 0, user_canvas.width, user_canvas.height);
+                ctx.fillRect(box_width, 0, user_canvas.width, user_canvas.height); // 아이템 표시 영역 초기화
                 ctx.fillStyle = '#FFFFFF';
                 for (let [i, item] of item_list.entries()) {
                     const image = item_images.current.find(i => i.Id === item.Id);
-                    if (image) ctx.drawImage(image.Image, box_width +20, i*100 +20, 80, 80);
+                    if (image) ctx.drawImage(image.Image, box_width +20, i*100 +20, 80, 80); 
                     ctx.fillText(item.Name, box_width +110, i*100 +60);
                 }
             }
         }
     };
 
+    // 캔버스 이벤트 등록
     useEffect(() => {
         const user_canvas = imageRef.current;
         if (user_canvas == null) {
@@ -72,7 +77,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
 
         const mousedown_handler = (e: MouseEvent) => {
             isDown.current = true;
-            startX.current = e.pageX -user_canvas.offsetLeft;
+            startX.current = e.pageX -user_canvas.offsetLeft; // 클릭 시작 X좌표 저장
             // startY.current = e.pageY -user_canvas.offsetTop;
         };
         const mouseup_handler = (e: MouseEvent) => {
@@ -88,15 +93,17 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             }
             e.preventDefault();
 
+            // 이미지 이동 계산
             x.current += (e.pageX -user_canvas.offsetLeft -startX.current) *(image_height.current /box_height);
             x.current = clamp(box_width *(image_height.current /box_height) -image_width.current, x.current, 0);
-            startX.current = e.pageX -user_canvas.offsetLeft;
+            startX.current = e.pageX -user_canvas.offsetLeft; // 현재 X좌표 갱신
             // y.current += e.pageY -user_canvas.offsetTop -startY.current;
             // y.current = clamp(box_height -image_height.current, y.current, 0);
             // startY.current = e.pageY -user_canvas.offsetTop;
             user_image_draw(x.current, 0);
         }
 
+        // 터치 이벤트 처리
         const touchstart_handler = (e: TouchEvent) => {
             if (e.touches.length > 0) {
                 const touch = e.touches[0];
@@ -122,12 +129,14 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             e.preventDefault();
             const touch = e.touches[0];
         
+            // 터치로 이미지 이동 계산
             x.current += (touch.pageX - user_canvas.offsetLeft - startX.current) *(image_height.current / box_height);
             x.current = clamp(box_width * (image_height.current / box_height) - image_width.current, x.current, 0);
             startX.current = touch.pageX - user_canvas.offsetLeft;
             user_image_draw(x.current, 0);
         };
 
+        // 마우스 및 터치 이벤트 등록
         user_canvas.addEventListener('mousedown', mousedown_handler);
         user_canvas.addEventListener('mouseup', mouseup_handler);
         user_canvas.addEventListener('mouseleave', mouseleave_handler);
@@ -137,7 +146,9 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
         user_canvas.addEventListener("touchend", touchend_handler);
         user_canvas.addEventListener("touchcancel", touchcancel_handler);
         user_canvas.addEventListener("touchmove", touchmove_handler);
+
         return () => {
+            // 이벤트 해제
             user_canvas.removeEventListener('mousedown', mousedown_handler);
             user_canvas.removeEventListener('mouseup', mouseup_handler);
             user_canvas.removeEventListener('mouseleave', mouseleave_handler);
@@ -149,7 +160,9 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             user_canvas.removeEventListener("touchmove", touchmove_handler);
         }
     }, [user_image_draw]);
+
     
+    // 이미지 로드 및 초기화
     useEffect(() => {
         x.current = 0;
         // y.current = 0;
@@ -157,10 +170,11 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
         user_image.current.onload = () => {
             image_width.current = user_image.current.width;
             image_height.current = user_image.current.height;
-            user_image_draw(0, 0);
+            user_image_draw(0, 0); // 초기 이미지 그리기
         };
     }, [image_src, user_image_draw]);
 
+    // 아이템 이미지 로드 확인
     const image_load_check = useCallback(async () => {
         const image_load = (id: number, src: string): Promise<ItemImage> => {
             return new Promise((resolve, reject) => {
@@ -181,6 +195,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
         user_item_draw(equiped_item_ref.current);
     }, []);
 
+    // 장착 아이템이 변경될 때 이미지 로드
     useEffect(() => {
         equiped_item_ref.current = equiped_item;
         image_load_check();

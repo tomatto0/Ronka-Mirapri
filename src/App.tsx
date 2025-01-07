@@ -42,7 +42,7 @@ function App() {
             </div>
             <div className="main-container">
                 <UserCanvas image_src={image_src} equiped_item={equiped_item}/>
-                <ItemInformation open_modal={open_modal}/>
+                <ItemInformation open_modal={open_modal} equiped_item={equiped_item}/>
             </div>
             <div className="footer">
                 <a href="https://ronkacloset.com">https://ronkacloset.com</a><br/>

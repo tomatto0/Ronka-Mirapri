@@ -40,8 +40,6 @@ export default function SearchResult({slot, search_result, edit_equiped_item}: {
         const [ page, set_page ] = useState<number>(1);
         const [ show_result, set_show_result ] = useState<Item[]>(search_result.slice(0, 10));
 
-        
-
         useEffect(() => {
             const load_more_result = () => {
                 set_is_loading(true);

@@ -44,16 +44,16 @@ function App() {
                 <UserCanvas image_src={image_src} equiped_item={equiped_item}/>
                 <ItemInformation open_modal={open_modal}/>
             </div>
+            <div className="footer">
+                <a href="https://ronkacloset.com">https://ronkacloset.com</a><br/>
+                <p>© SQUARE ENIX Published in Korea by Actoz Soft CO., LTD.</p>
+            </div>
             <ItemSearchModal
                 slot={modal_slot}
                 is_open={is_open}
                 set_is_open={set_is_open}
                 edit_equiped_item={edit_equiped_item}
             />
-            <div className="footer">
-                <a href="https://ronkacloset.com">https://ronkacloset.com</a><br/>
-                <p>© SQUARE ENIX Published in Korea by Actoz Soft CO., LTD.</p>
-            </div>
         </div>
     );
 }

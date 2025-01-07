@@ -21,7 +21,7 @@ function ItemSlot({slot_name, open_modal, slot}: {
 export default function ItemInformation({open_modal}: {open_modal: (slot: number) => void}) {
     const slots = [
         "머리 방어구", "몸통 방어구", "손 방어구", "다리 방어구", "발 방어구", "추가 옵션", "추가 옵션", "추가 옵션"
-    ]
+    ];
 
     const image_download = () =>{
     };

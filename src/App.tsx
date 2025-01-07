@@ -8,7 +8,7 @@ import ItemInformation from './components/ItemInformation.tsx';
 import ItemSearchModal from './components/ItemSearchModal.tsx';
 
 function App() {
-    const [image_src, set_image_src] = useState<string>('./logo512.png');
+    const [image_src, set_image_src] = useState<string>('./img/thumbnail.svg');
     const [is_open, set_is_open] = useState<boolean>(false);
     const [modal_slot, set_modal_slot] = useState<number>(1);
     const [slot_active, set_slot_active] = useState<boolean[]>(new Array(8).fill(true));
@@ -30,45 +30,39 @@ function App() {
     }, []);
     
     const edit_equiped_item = useCallback((slot: number, item: Item) => {
-        set_equiped_item(items => {
-            const updated_item = [...items];
-            updated_item[slot] = item;
-            return updated_item;
-        });
-        
-        const new_equiped_item = [...equiped_item];
-        new_equiped_item[slot] = item;
-        
-        const slot_category: {[key: number]: EquipSlot} = equip_slot_categories;
-        const new_slot_active = new Array(8).fill(true);
+        set_equiped_item((items) => {
+            const new_equiped_item = [...items];
+            new_equiped_item[slot] = item;
+            
+            const slot_category: {[key: number]: EquipSlot} = equip_slot_categories;
+            const new_slot_active = new Array(8).fill(true);
 
-        for (let item of new_equiped_item) {
-            const eslot = slot_category[item.EquipSlotCategory];
-            console.log(eslot);
-            if (eslot.Head === -1) {
-                new_equiped_item[0] = item_null;
-                new_slot_active[0] = false;
+            for (let item of new_equiped_item) {
+                const eslot = slot_category[item.EquipSlotCategory];
+                if (eslot.Head === -1) {
+                    new_equiped_item[0] = item_null;
+                    new_slot_active[0] = false;
+                }
+                if (eslot.Body === -1) {
+                    new_equiped_item[1] = item_null;
+                    new_slot_active[1] = false;
+                }
+                if (eslot.Gloves === -1) {
+                    new_equiped_item[2] = item_null;
+                    new_slot_active[2] = false;
+                }
+                if (eslot.Legs === -1) {
+                    new_equiped_item[3] = item_null;
+                    new_slot_active[3] = false;
+                }
+                if (eslot.Feet === -1) {
+                    new_equiped_item[4] = item_null;
+                    new_slot_active[4] = false;
+                }
             }
-            if (eslot.Body === -1) {
-                new_equiped_item[1] = item_null;
-                new_slot_active[1] = false;
-            }
-            if (eslot.Gloves === -1) {
-                new_equiped_item[2] = item_null;
-                new_slot_active[2] = false;
-            }
-            if (eslot.Legs === -1) {
-                new_equiped_item[3] = item_null;
-                new_slot_active[3] = false;
-            }
-            if (eslot.Feet === -1) {
-                new_equiped_item[4] = item_null;
-                new_slot_active[4] = false;
-            }
-        }
-        set_equiped_item(new_equiped_item);
-        console.log(new_slot_active);
-        set_slot_active(new_slot_active);
+            set_slot_active(new_slot_active);
+            return new_equiped_item;
+        });
     }, []);
 
     const open_modal = useCallback((slot: number) => {
@@ -82,7 +76,7 @@ function App() {
                 <img alt="FFXIV-KOR MIRAPRI GENERATOR" id="title"/>
             </div>
             <div className="main-container">
-                <UserCanvas image_src={image_src} equiped_item={equiped_item}/>
+                <UserCanvas image_src={image_src} equiped_item={equiped_item} set_image_src={set_image_src}/>
                 <ItemInformation open_modal={open_modal} equiped_item={equiped_item} slot_active={slot_active}/>
             </div>
             <div className="footer">

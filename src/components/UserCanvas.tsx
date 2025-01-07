@@ -17,7 +17,11 @@ function clamp(min: number, val: number, max: number) {
     return val < min ? min : val > max ? max : val;
 }
 
-export default function UserCanvas({image_src, equiped_item}: {image_src: string, equiped_item: Item[]}) {
+export default function UserCanvas({image_src, equiped_item, set_image_src}: {
+        image_src: string, 
+        equiped_item: Item[],
+        set_image_src: (image_src: string) => void
+    }) {
     const imageRef = useRef<HTMLCanvasElement | null>(null); // 캔버스 참조
     const user_image = useRef<HTMLImageElement>(new Image());
     const isDown = useRef<boolean>(false); // 마우스 클릭 여부 확인
@@ -27,7 +31,7 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
     // const y = useRef<number>(0);
     const image_width = useRef<number>(0); // 이미지의 너비
     const image_height = useRef<number>(0); // 이미지의 높이
-    const ratio = 9/16;
+    const ratio = 450/1080;
     const box_height = 1080; 
     const box_width = box_height * ratio; 
     const item_images = useRef<ItemImage[]>([]); // 장착 아이템 이미지 배열
@@ -134,6 +138,25 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
         }
     };
 
+    const image_validate = (e: React.ChangeEvent<HTMLInputElement>) => {
+        // 입력된 파일의 확장자 추출
+        const ext = e.target.value.substring(
+            e.target.value.lastIndexOf('.') + 1,
+            e.target.value.length
+        ).toLowerCase();
+
+        if (['bmp', 'png', 'jpeg', 'jpg'].includes(ext) && e.target.files !== null) {
+            const reader = new FileReader();
+            reader.readAsDataURL(e.target.files[0]);
+            reader.onloadend = () => {
+                set_image_src(reader.result as string);
+            }
+        } else {
+            console.log('유효하지 않은 이미지');
+            e.target.value = '';
+        }
+    }
+
     // 캔버스 이벤트 등록
     useEffect(() => {
         const user_canvas = imageRef.current;
@@ -145,6 +168,10 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
             isDown.current = true;
             startX.current = e.pageX -user_canvas.offsetLeft; // 클릭 시작 X좌표 저장
             // startY.current = e.pageY -user_canvas.offsetTop;
+
+            if (startX.current < box_width) {
+                console.log(user_image.current.src);
+            }
         };
         const mouseup_handler = (e: MouseEvent) => {
             isDown.current = false;
@@ -268,11 +295,19 @@ export default function UserCanvas({image_src, equiped_item}: {image_src: string
     }, [equiped_item, image_load_check]);
 
     return (
-        <canvas 
-            className="user-canvas" 
-            width="1080" 
-            height="1080"
-            ref={imageRef}
-        />
+        <div className="canvas-container">
+            <canvas 
+                className="user-canvas" 
+                width="1080" 
+                height="1080"
+                ref={imageRef}
+            />
+            <input
+                className="user-canvas-input"
+                type="file"
+                accept="image/bmp, image/png, image/jpeg"
+                // onChange={image_validate}
+            />
+        </div>
     )
 }

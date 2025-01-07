@@ -32,7 +32,7 @@ export default function ItemSearchModal({slot, is_open, set_is_open, edit_equipe
         <div className="item-search-modal-back" onClick={modal_close}>
             <div className="item-search-modal" onClick={(e: React.MouseEvent<HTMLDivElement>) => { e.stopPropagation(); }}>
                 <span>{slots[slot]}</span>
-                <ItemSearch setter={set_search_result}/>
+                <ItemSearch setter={set_search_result} slot={slot}/>
                 {
                     !is_item_select &&
                     <SearchResult 

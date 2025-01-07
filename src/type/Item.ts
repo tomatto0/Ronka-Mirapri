@@ -7,4 +7,4 @@ export type Item = {
     DyeCount: number;
     DyeFirst: number;
     DyeSecond: number;
-}
+};

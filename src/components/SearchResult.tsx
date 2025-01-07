@@ -20,10 +20,9 @@ export default function SearchResult({slot, search_result, edit_equiped_item}: {
                 const click_handler = () => {
                     const dye_item = {
                         ...item,
-                        DyeFirst: 1,
-                        DyeSecond: 114
+                        DyeFirst: 0,
+                        DyeSecond: 0
                     }
-                    console.log(item, dye_item);
                     edit_equiped_item(slot, dye_item);
                 };
         
@@ -50,7 +49,6 @@ export default function SearchResult({slot, search_result, edit_equiped_item}: {
             const load_more_result = () => {
                 set_is_loading(true);
                 setTimeout(() => {
-                    console.log(search_result);
                     set_show_result(search_result.slice(0, (page +1) *10));
                     set_page(page +1);
                     set_is_loading(false);

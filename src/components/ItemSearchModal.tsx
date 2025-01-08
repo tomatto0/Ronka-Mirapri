@@ -2,22 +2,25 @@ import "../css/ItemSearchModal.css";
 import ItemSearch from "./ItemSearch";
 import SearchResult from "./SearchResult";
 import { Item } from "../type/Item.ts";
-import { useState, useCallback } from "react";
-import ColorPalette from "./colorPalette.tsx";
+import { useState, useEffect, useCallback } from "react";
+import ColorPalette from "./ColorPalette.tsx";
+
 
 export default function ItemSearchModal({
   slot,
   is_open,
+  equiped_item,
   set_is_open,
   edit_equiped_item,
 }: {
   slot: number;
   is_open: boolean;
+  equiped_item: Item[];
   set_is_open: (is_open: boolean) => void;
   edit_equiped_item: (slot: number, item: Item) => void;
 }) {
   const [search_result, set_search_result] = useState<Item[]>([]);
-  const [is_item_select, set_is_item_select] = useState<boolean>(false);
+  const [keyword, set_keyword] = useState<string>("");
   const slots = [
     "머리 방어구",
     "몸통 방어구",
@@ -28,17 +31,19 @@ export default function ItemSearchModal({
     "추가 옵션",
     "추가 옵션",
   ];
-  const item_null = {
-    Id: 0,
-    Name: "",
-    Icon: "./img/item_slot.svg",
-    EquipSlotCategory: 6,
-    ClassJobCategory: 0,
-    DyeCount: 0,
-    DyeFirst: 0,
-    DyeSecond: 0,
-  };
-  const [selected_item, set_selected_item] = useState<Item>(item_null);
+
+  const [selected_item, set_selected_item] = useState<Item>(equiped_item[slot]);
+  const [is_item_select, set_is_item_select] = useState<boolean>(
+    selected_item.Id !== 0
+  );
+  useEffect(() => {
+    if (selected_item !== equiped_item[slot]) {
+      set_selected_item(equiped_item[slot]);
+    }
+    if ((equiped_item[slot].Id! == 0) === is_item_select) {
+      set_is_item_select(equiped_item[slot].Id !== 0);
+    }
+  }, [equiped_item, slot]);
 
   const select_item = useCallback((slot: number, item: Item) => {
     edit_equiped_item(slot, item);
@@ -46,13 +51,19 @@ export default function ItemSearchModal({
     set_is_item_select(true);
   }, []);
 
-  if (!is_open) return;
 
   const modal_close = () => {
     set_is_open(false);
     set_search_result([]);
-    set_is_item_select(false);
+    // set_is_item_select(false);
   };
+
+  const reset_keyword = () => {
+    set_keyword("");
+  };
+
+  if (!is_open) return;
+
 
   return (
     <div className="item-search-modal-back" onClick={modal_close}>
@@ -63,18 +74,30 @@ export default function ItemSearchModal({
         }}
       >
         <span>{slots[slot]}</span>
-        <ItemSearch setter={set_search_result} slot={slot} />
+
+        <ItemSearch
+          keyword={keyword}
+          set_keyword={set_keyword}
+          set_search_result={set_search_result}
+          set_is_item_select={set_is_item_select}
+          slot={slot}
+        />
+
         {!is_item_select && (
           <SearchResult
             slot={slot}
             search_result={search_result}
             edit_equiped_item={select_item}
+            reset_keyword={reset_keyword}
+
           />
         )}
         {is_item_select && (
           <ColorPalette
+            slot={slot}
             item={selected_item}
             edit_equiped_item={edit_equiped_item}
+            modal_close={modal_close}
           />
         )}
       </div>

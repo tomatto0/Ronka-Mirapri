@@ -5,8 +5,12 @@ import { Item } from '../type/Item.ts';
 import { EquipSlot } from '../type/EquipSlot.ts';
 import Hangul from 'hangul-js';
 
-export default function ItemSearch({slot, setter}: {slot: number, setter: (items: Item[]) => void}) {
-    const [keyword, set_keyword] = useState<string>('');
+export default function ItemSearch({keyword, set_keyword, slot, set_search_result, set_is_item_select}: {
+        keyword: string,
+        set_keyword: (keyword: string) => void,
+        slot: number, 
+        set_search_result: (items: Item[]) => void,
+        set_is_item_select: (is: boolean) => void}) {
     const item_list: Item[] = filtered_item_list as Item[];
     const slot_category: {[key: number]: EquipSlot} = equip_slot_categories;
 
@@ -17,16 +21,17 @@ export default function ItemSearch({slot, setter}: {slot: number, setter: (items
         const eslot = slot > 4 ? 5 : slot;
         
         if (input_keyword === '' || input_keyword === ' ') {
-            setter([]);
+            set_search_result([]);
             return false;
         }
+        set_is_item_select(false);
         const result = item_list.filter(
             item => (
                 searcher.search(item.Name) >= 0 &&
                 slot_category[item.EquipSlotCategory]['Slot'] == eslot
             )
         );
-        setter(result);
+        set_search_result(result);
     }
     return (
         <div className="item-search-container">

@@ -1,26 +1,57 @@
 import "../css/ColorPalette.css";
 import { ColorInfo } from "../type/color_info";
 import Color_background_list_raw from "../json/color_background.json";
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Item } from "../type/Item";
 
 export default function ColorPalette({
   item,
+  slot,
   edit_equiped_item,
+  modal_close,
 }: {
   item: Item;
+  slot: number;
   edit_equiped_item: (slot: number, item: Item) => void;
+  modal_close: () => void;
 }) {
   const Color_background_list: ColorInfo[] =
     Color_background_list_raw as ColorInfo[];
-  const ColorPaletteRow = () => {
-    const [is_open, set_is_open] = useState<boolean>(false);
+  const itemRef = useRef<Item>(item);
 
-    const palette_modal = () => {
-      set_is_open(!is_open);
-    };
+  const [is_f_open, set_is_f_open] = useState<boolean>(false);
+  const [is_s_open, set_is_s_open] = useState<boolean>(false);
 
-    const ColorPaletteModal = () => {
+  const palette_f_controll = () => {
+    set_is_f_open(!is_f_open);
+    set_is_s_open(false);
+  };
+
+  const palette_s_controll = () => {
+    set_is_s_open(!is_s_open);
+    set_is_f_open(false);
+  };
+
+  useEffect(() => {
+    itemRef.current = { ...item };
+  }, [item]);
+
+  const ColorPaletteRow = ({
+    is_open,
+    palette_controll,
+    dye_slot,
+  }: {
+    is_open: boolean;
+    palette_controll: () => void;
+    dye_slot: number;
+  }) => {
+    const ColorPaletteModal = ({
+      slot,
+      palette_controll,
+    }: {
+      slot: number;
+      palette_controll: () => void;
+    }) => {
       const color_categories = [
         "white",
         "red",
@@ -42,7 +73,22 @@ export default function ColorPalette({
         Color_background_list.slice(91, 114),
       ];
       const [color_category, set_color_category] = useState<number>(0);
-      const [color, set_color] = useState<number>(0);
+      const [color_id, set_color_id] = useState<number>(0);
+
+      const commit = () => {
+        if (dye_slot === 1) {
+          itemRef.current.DyeFirst = color_id;
+        } else {
+          itemRef.current.DyeSecond = color_id;
+        }
+        edit_equiped_item(slot, itemRef.current);
+
+        palette_controll();
+      };
+
+      const cancle = () => {
+        set_color_id(0);
+      };
 
       const ColorCategory = ({
         category,
@@ -57,6 +103,7 @@ export default function ColorPalette({
       }) => {
         const click_handler = () => {
           set_color_category(category);
+          set_color_id(colors[category][0].color_id);
         };
         return (
           <div
@@ -71,24 +118,24 @@ export default function ColorPalette({
       };
       const Color = ({
         colorInfo,
-        color,
-        set_color,
+        color_id,
+        set_color_id,
       }: {
         colorInfo: ColorInfo;
-        color: number;
-        set_color: (color: number) => void;
+        color_id: number;
+        set_color_id: (color: number) => void;
       }) => {
         const style = { backgroundColor: "#" + colorInfo.background_color };
 
         const click_handler = () => {
-          set_color(colorInfo.color_id);
+          set_color_id(colorInfo.color_id);
         };
 
         return (
           <div
             className={
               "color-category" +
-              (colorInfo.color_id === color ? " selected" : "")
+              (colorInfo.color_id === color_id ? " selected" : "")
             }
             style={style}
             onClick={click_handler}
@@ -99,7 +146,7 @@ export default function ColorPalette({
       return (
         <div className="color-palette-modal">
           <div className="color-category-container">
-            {[0, 1, 2, 3, 4, 5, 6, 7].map(i => (
+            {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
               <ColorCategory
                 category={i}
                 color={color_categories[i]}
@@ -111,27 +158,36 @@ export default function ColorPalette({
           </div>
           <hr />
           <div className="color-category-container">
-            <p>{color === 0 ? "_" : Color_background_list[color - 1].name}</p>
-            {colors[color_category].map(colorInfo => (
+            <p>
+              {color_id === 0
+                ? "테레빈유"
+                : Color_background_list[color_id - 1].name}
+            </p>
+            {colors[color_category].map((colorInfo) => (
               <Color
                 colorInfo={colorInfo}
-                color={color}
-                set_color={set_color}
+                color_id={color_id}
+                set_color_id={set_color_id}
                 key={colorInfo.color_id}
               />
             ))}
           </div>
+          <button onClick={cancle}>취소</button>
+          <button onClick={commit}>색상 선택</button>
         </div>
       );
     };
 
     return (
       <div className="palette-container">
-        <div className="palette-name" onClick={palette_modal}>
+        <div className="palette-name" onClick={palette_controll}>
           <img src="../../public/img/color_plus.svg" alt="add_color_icon" />
-          1염색 색상추가
+          {dye_slot}염색 색상추가
         </div>
-        {is_open && <ColorPaletteModal />}
+        {is_open && (
+          <ColorPaletteModal slot={slot} palette_controll={palette_controll} />
+        )}
+        <hr />
       </div>
     );
   };
@@ -141,7 +197,20 @@ export default function ColorPalette({
       <p className="selected-item-title">선택된 아이템</p>
       <p className="selected-item-name">{item.Name}</p>
 
-      {item.DyeCount >= 1 && <ColorPaletteRow />}
+      {item.DyeCount >= 1 && (
+        <ColorPaletteRow
+          is_open={is_f_open}
+          palette_controll={palette_f_controll}
+          dye_slot={1}
+        />
+      )}
+      {item.DyeCount >= 2 && (
+        <ColorPaletteRow
+          is_open={is_f_open}
+          palette_controll={palette_f_controll}
+          dye_slot={1}
+        />
+      )}
     </div>
   );
 }

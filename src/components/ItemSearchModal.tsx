@@ -5,7 +5,6 @@ import { Item } from "../type/Item.ts";
 import { useState, useEffect, useCallback } from "react";
 import ColorPalette from "./ColorPalette.tsx";
 
-
 export default function ItemSearchModal({
   slot,
   is_open,
@@ -51,7 +50,6 @@ export default function ItemSearchModal({
     set_is_item_select(true);
   }, []);
 
-
   const modal_close = () => {
     set_is_open(false);
     set_search_result([]);
@@ -63,7 +61,6 @@ export default function ItemSearchModal({
   };
 
   if (!is_open) return;
-
 
   return (
     <div className="item-search-modal-back" onClick={modal_close}>
@@ -89,7 +86,6 @@ export default function ItemSearchModal({
             search_result={search_result}
             edit_equiped_item={select_item}
             reset_keyword={reset_keyword}
-
           />
         )}
         {is_item_select && (

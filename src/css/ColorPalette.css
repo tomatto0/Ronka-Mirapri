@@ -6,6 +6,15 @@ div.palette-container {
     font-size: 1.5rem;
   }
 
+  div.color-category {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px #1018282e;
+    display: inline-block;
+    margin: 2px;
+  }
+
   div.color-palette-modal {
     background-color: #f2f4f7;
     padding: 20px 18px;
@@ -14,15 +23,6 @@ div.palette-container {
     z-index: 1;
 
     div.color-category-container {
-      div.color-category {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        box-shadow: inset 0px 0px 0px 1px #1018282e;
-        display: inline-block;
-        margin: 2px;
-      }
-
       .white {
         background-color: #ffffff;
       }

@@ -53,6 +53,7 @@ export default function ItemSearchModal({
   const modal_close = () => {
     set_is_open(false);
     set_search_result([]);
+    set_keyword("");
     // set_is_item_select(false);
   };
 
@@ -71,7 +72,9 @@ export default function ItemSearchModal({
         }}
       >
         <span>{slots[slot]}</span>
-
+        <button className="image" onClick={modal_close}>
+          <img src="./img/cancle.svg" alt="cancle button" />
+        </button>
         <ItemSearch
           keyword={keyword}
           set_keyword={set_keyword}

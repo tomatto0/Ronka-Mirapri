@@ -2,6 +2,12 @@
   width: fit-content;
 }
 
+button.image {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 img.item-icon {
   width: 80px;
   height: 80px;

@@ -4,8 +4,11 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* 모든 요소의 기본 스타일 초기화 */
 * {
   margin: 0;
+  padding: 0;
   font-family: 'Pretendard-Regular', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -13,13 +16,20 @@
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
 body {
   background: linear-gradient(to bottom left, #F6EBFF, #DEF8FA);
   background-attachment: fixed;
   height: 100vh;
+
 }
 #root {
   width: 100%;
   display: flex;
   justify-content: center;
+
 }

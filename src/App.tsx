@@ -8,7 +8,7 @@ import ItemInformation from './components/ItemInformation.tsx';
 import ItemSearchModal from './components/ItemSearchModal.tsx';
 
 function App() {
-    const [image_src, set_image_src] = useState<string>('./img/thumbnail.svg');
+    const [image_src, set_image_src] = useState<string>('./img/thumbnail_mobile.svg');
     const [is_open, set_is_open] = useState<boolean>(false);
     const [modal_slot, set_modal_slot] = useState<number>(1);
     const [slot_active, set_slot_active] = useState<boolean[]>(new Array(8).fill(true));

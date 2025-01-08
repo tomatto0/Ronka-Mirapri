@@ -60,7 +60,7 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
 
     // 장착된 아이템을 그리는 함수
     function user_item_draw(item_list: Item[]) {
-        console.log('item_list:', item_list);
+        // console.log('item_list:', item_list);
 
         const user_canvas = imageRef.current;
         if (user_canvas) {
@@ -147,9 +147,14 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
         }
 
         const mousedown_handler = (e: MouseEvent) => {
-            startX.current = e.pageX -user_canvas.offsetLeft; // 클릭 시작 X좌표 저장
+            if (!(user_canvas.offsetParent instanceof HTMLElement)) {
+                return;
+            }
+
+            startX.current = e.pageX -user_canvas.offsetParent.offsetLeft; // 클릭 시작 X좌표 저장
             // startY.current = e.pageY -user_canvas.offsetTop;
-            if (startX.current <= box_width) {
+
+            if (startX.current <= ratio *user_canvas.offsetHeight) {
                 isDown.current = true;
             }
         };
@@ -164,12 +169,16 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
             if (!isDown.current) {
                 return;
             }
+            if (!(user_canvas.offsetParent instanceof HTMLElement)) {
+                return;
+            }
             e.preventDefault();
 
             // 이미지 이동 계산
-            x.current += (e.pageX -user_canvas.offsetLeft -startX.current) *(image_height.current /box_height);
+            x.current += (e.pageX -user_canvas.offsetParent.offsetLeft -startX.current) *(image_height.current /box_height);
             x.current = clamp(box_width *(image_height.current /box_height) -image_width.current, x.current, 0);
-            startX.current = e.pageX -user_canvas.offsetLeft; // 현재 X좌표 갱신
+            
+            startX.current = e.pageX -user_canvas.offsetParent.offsetLeft; // 현재 X좌표 갱신
             // y.current += e.pageY -user_canvas.offsetTop -startY.current;
             // y.current = clamp(box_height -image_height.current, y.current, 0);
             // startY.current = e.pageY -user_canvas.offsetTop;
@@ -179,10 +188,14 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
         // 터치 이벤트 처리
         const touchstart_handler = (e: TouchEvent) => {
             if (e.touches.length > 0) {
+                if (!(user_canvas.offsetParent instanceof HTMLElement)) {
+                    return;
+                }
+
                 const touch = e.touches[0];
-                startX.current = touch.pageX - user_canvas.offsetLeft;
+                startX.current = touch.pageX - user_canvas.offsetParent.offsetLeft;
                 
-                if (startX.current <= box_width) {
+                if (startX.current <= ratio *user_canvas.offsetHeight) {
                     isDown.current = true;
                 }
             }
@@ -201,14 +214,16 @@ export default function UserCanvas({image_src, equiped_item, set_image_src}: {
             if (!isDown.current || e.touches.length === 0) {
                 return;
             }
-        
+            if (!(user_canvas.offsetParent instanceof HTMLElement)) {
+                return;
+            }
             e.preventDefault();
             const touch = e.touches[0];
         
             // 터치로 이미지 이동 계산
-            x.current += (touch.pageX - user_canvas.offsetLeft - startX.current) *(image_height.current / box_height);
+            x.current += (touch.pageX - user_canvas.offsetParent.offsetLeft - startX.current) *(image_height.current / box_height);
             x.current = clamp(box_width * (image_height.current / box_height) - image_width.current, x.current, 0);
-            startX.current = touch.pageX - user_canvas.offsetLeft;
+            startX.current = touch.pageX - user_canvas.offsetParent.offsetLeft;
             user_image_draw(x.current, 0);
         };
 

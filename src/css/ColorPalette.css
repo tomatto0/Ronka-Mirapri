@@ -1,6 +1,12 @@
-div.pallete-container {
+div.palette-container {
   position: relative;
-  div.color-pallete-modal {
+
+  .palette-name {
+    padding: 14.5px 10px;
+    font-size: 1.5rem;
+  }
+
+  div.color-palette-modal {
     background-color: #f2f4f7;
     padding: 20px 18px;
     width: 100%;
@@ -52,4 +58,21 @@ div.pallete-container {
       }
     }
   }
+}
+
+.selected-item-title {
+  margin-top: 16px;
+  display: flex;
+  font-size: 1.1rem;
+  letter-spacing: -0.33px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e4e7ec;
+}
+
+.selected-item-name {
+  font-size: 1.5rem;
+  letter-spacing: -0.45px;
+  padding: 20px 0;
+  border-bottom: 1px solid #98a2b3;
+  font-weight: 600;
 }

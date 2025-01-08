@@ -5,6 +5,7 @@ import { Item } from "../type/Item.ts";
 import { useState, useEffect, useCallback } from "react";
 import ColorPalette from "./ColorPalette.tsx";
 
+
 export default function ItemSearchModal({
   slot,
   is_open,
@@ -20,7 +21,6 @@ export default function ItemSearchModal({
 }) {
   const [search_result, set_search_result] = useState<Item[]>([]);
   const [keyword, set_keyword] = useState<string>("");
-
   const slots = [
     "머리 방어구",
     "몸통 방어구",
@@ -51,6 +51,7 @@ export default function ItemSearchModal({
     set_is_item_select(true);
   }, []);
 
+
   const modal_close = () => {
     set_is_open(false);
     set_search_result([]);
@@ -63,6 +64,7 @@ export default function ItemSearchModal({
 
   if (!is_open) return;
 
+
   return (
     <div className="item-search-modal-back" onClick={modal_close}>
       <div
@@ -72,6 +74,7 @@ export default function ItemSearchModal({
         }}
       >
         <span>{slots[slot]}</span>
+
         <ItemSearch
           keyword={keyword}
           set_keyword={set_keyword}
@@ -79,12 +82,14 @@ export default function ItemSearchModal({
           set_is_item_select={set_is_item_select}
           slot={slot}
         />
+
         {!is_item_select && (
           <SearchResult
             slot={slot}
             search_result={search_result}
             edit_equiped_item={select_item}
             reset_keyword={reset_keyword}
+
           />
         )}
         {is_item_select && (

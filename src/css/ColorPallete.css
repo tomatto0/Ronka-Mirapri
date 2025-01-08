@@ -1,8 +1,8 @@
 div.pallete-container {
     position: relative;
     div.color-pallete-modal {
-        background-color: white;
-
+        background-color: #F2F4F7;
+        padding: 20px 18px;
         width: 100%;
         position: absolute;
         z-index: 1;

@@ -1,0 +1,55 @@
+div.pallete-container {
+  position: relative;
+  div.color-pallete-modal {
+    background-color: #f2f4f7;
+    padding: 20px 18px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+
+    div.color-category-container {
+      div.color-category {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        box-shadow: inset 0px 0px 0px 1px #1018282e;
+        display: inline-block;
+        margin: 2px;
+      }
+
+      .white {
+        background-color: #ffffff;
+      }
+      .red {
+        background-color: #da2c2c;
+      }
+      .brown {
+        background-color: #b8864a;
+      }
+      .yellow {
+        background-color: #f3e33f;
+      }
+      .green {
+        background-color: #a7d550;
+      }
+      .blue {
+        background-color: #5f95f5;
+      }
+      .purple {
+        background-color: #b577e9;
+      }
+      .rare {
+        background: linear-gradient(
+          to top right,
+          #4cc9ff 9%,
+          #b1ff96 39%,
+          #f2faa7 52%,
+          #ffadf7 85%
+        );
+      }
+      .selected {
+        outline: 2px solid #0e9384;
+      }
+    }
+  }
+}

@@ -6,11 +6,12 @@ import equip_slot_categories from './json/equip_slot_categories.json';
 import UserCanvas from './components/UserCanvas.tsx';
 import ItemInformation from './components/ItemInformation.tsx';
 import ItemSearchModal from './components/ItemSearchModal.tsx';
+import { click } from '@testing-library/user-event/dist/click';
 
 function App() {
     const [image_src, set_image_src] = useState<string>('./img/thumbnail_mobile.svg');
     const [is_open, set_is_open] = useState<boolean>(false);
-    const [modal_slot, set_modal_slot] = useState<number>(1);
+    const [modal_slot, set_modal_slot] = useState<number>(0);
     const [slot_active, set_slot_active] = useState<boolean[]>(new Array(8).fill(true));
 
     const item_null = {
@@ -25,15 +26,12 @@ function App() {
     }
 
     const [equiped_item, set_equiped_item] = useState<Item[]>(new Array(8).fill(item_null));
-    const add_equiped_item = useCallback((item: Item) => {
-        set_equiped_item(items => [...items, item]);
-    }, []);
     
     const edit_equiped_item = useCallback((slot: number, item: Item) => {
         set_equiped_item((items) => {
             const new_equiped_item = [...items];
             new_equiped_item[slot] = item;
-            
+
             const slot_category: {[key: number]: EquipSlot} = equip_slot_categories;
             const new_slot_active = new Array(8).fill(true);
 
@@ -70,9 +68,13 @@ function App() {
         set_modal_slot(slot);
     }, []);
 
+    const click_handler = () => {
+        console.log(equiped_item);
+    }
+
     return (
         <div className="App">
-            <div className="header">
+            <div className="header" onClick={click_handler}>
                 <img alt="FFXIV-KOR MIRAPRI GENERATOR" id="title"/>
             </div>
             <div className="main-container">
@@ -86,6 +88,7 @@ function App() {
             <ItemSearchModal
                 slot={modal_slot}
                 is_open={is_open}
+                equiped_item={equiped_item}
                 set_is_open={set_is_open}
                 edit_equiped_item={edit_equiped_item}
             />

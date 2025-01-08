@@ -1,8 +1,10 @@
 div.item-information {
     position: relative;
-    width: 100%;
+    width: 400px;
     flex-shrink: 0;
-    padding: 10px 20px 3rem 20px;
+    padding: 2rem 26px 3rem 26px;
+    min-height: 388px;
+    margin: 0 auto;
 
     .item-information-header {
         display: flex;
@@ -11,11 +13,12 @@ div.item-information {
         span {
             font-weight: bold;
             font-size: 1.5rem;
+            letter-spacing: -0.42px;
             color: #4A5578;
         }
 
         button {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             color: #7D89B0;
             border: 0;
             background-color: #E3E9FC;
@@ -25,8 +28,8 @@ div.item-information {
             content: "";
             display: inline-block;
             background-image: url('../../public/img/refresh.svg');
-            width: 1.2rem;
-            height: 1.1rem;
+            width: 1.5rem;
+            height: 1.4rem;
             background-size: cover;
             background-position: center;
             vertical-align: middle;
@@ -35,7 +38,7 @@ div.item-information {
     }
 
     hr {
-        margin: 2vh 0;
+        margin: 2rem 0;
         border: 1px #7D89B0 solid;
     }
 
@@ -56,9 +59,10 @@ div.item-information {
 
                 span {
                     text-align: left;
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                     color: #5D6B98;
                     margin-bottom: 10px;
+                    letter-spacing: -0.39px;
                 }
                 img {
                     width: 100%;
@@ -73,31 +77,33 @@ div.item-information {
         }
     }
     .image-download {
-        box-sizing: border-box;
-        width: calc(100% - 40px);
-        height: 3rem;
-        border: 2px #D0D5DD solid;
+        width: calc(100% - 52px);
         border-radius: 8px;
         background-color: transparent;
         
-        font-weight: bold;
-        color: #98A2B3;
-        font-size: 1rem;
-        font-family: inherit;
-
         position: absolute;
-        left: 20px;
+        left: 26px;
         bottom: 0;
         cursor: pointer;
+
+        width: 348px;
+        height: 5rem;
+        border: 2px #D0D5DD solid;
+        padding: 11px 0;
+        
+        font-weight: 500;
+        color: #98A2B3;
+        font-size: 1.6rem;
+        font-family: inherit;
     }
 }
 
 @media (min-width: 1216px) {
     div.item-information {
         position: relative;
-        width: 608px;
+        width: 444px;
         flex-shrink: 0;
-        padding: 0 100px;
+        padding: 0 50px;
         padding-bottom: 2rem;
 
         .item-information-header {
@@ -105,18 +111,22 @@ div.item-information {
             justify-content: space-between;
             
             span {
-                font-weight: bold;
-                font-size: 1.5rem;
+                font-weight: 700;
+                font-size: 1.6rem;
+                letter-spacing: -0.48px;
                 color: #4A5578;
             }
 
             button {
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 color: #7D89B0;
                 border: 0;
                 background-color: #E3E9FC;
                 cursor: pointer;
+                letter-spacing: -0.42px;
+                font-weight: 500;
             }
+            
             button::before {
                 content: "";
                 display: inline-block;
@@ -131,7 +141,7 @@ div.item-information {
         }
 
         hr {
-            margin: 2vh 0;
+            margin: 2rem 0;
             border: 1px #7D89B0 solid;
         }
 
@@ -150,9 +160,9 @@ div.item-information {
 
                     span {
                         text-align: left;
-                        font-size: 1rem;
+                        font-size: 1.3rem;
                         color: #5D6B98;
-                        margin-bottom: 10px;
+                        margin-bottom: 5px;
                     }
                     img {
                         width: 72px;
@@ -168,19 +178,20 @@ div.item-information {
         }
         .image-download {
             box-sizing: border-box;
-            width: 408px;
-            height: 2rem;
+            width: 348px;
+            height: 5rem;
             border: 2px #D0D5DD solid;
             border-radius: 8px;
             background-color: transparent;
+            padding: 11px 0;
             
-            font-weight: bold;
+            font-weight: 500;
             color: #98A2B3;
-            font-size: 1rem;
+            font-size: 1.6rem;
             font-family: inherit;
 
             position: absolute;
-            left: 100px;
+            left: 50px;
             bottom: 0;
 
             cursor: pointer;

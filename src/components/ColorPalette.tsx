@@ -224,7 +224,7 @@ export default function ColorPalette({
         <div className="color-palette-modal">
           {!is_facewear && (
             <div className="color-category-container">
-              {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+              {[0, 1, 2, 3, 4, 5, 6, 7].map(i => (
                 <ColorCategory
                   category={i}
                   color={color_categories[i]}
@@ -233,10 +233,9 @@ export default function ColorPalette({
                   key={i}
                 />
               ))}
-              <hr className="color-palette-divider" />
             </div>
           )}
-   
+          <hr className="color-palette-divider" />
           <div className="color-category-detail">
             <p>{Color_background_list[color_id].name}</p>
             <div className="color-category-container">
@@ -251,7 +250,7 @@ export default function ColorPalette({
             </div>
           </div>
           <div className="color-select-button-wrap">
-            <button className="color-select-dismiss" onClick={cancle}>
+            <button className="color-select-submit dismiss" onClick={cancle}>
               취소
             </button>
             <button className="color-select-submit" onClick={commit}>
@@ -269,8 +268,14 @@ export default function ColorPalette({
             className="palette-name"
             onClick={() => palette_controll(undefined)}
           >
-            <img src="./img/color_plus.svg" alt="add_color_icon" />
-            {dye_slot}염색 색상추가
+            <div className="palette-name-info">
+              <img
+                className="svg-image"
+                src="./img/color_plus.svg"
+                alt="add_color_icon"
+              />
+              {dye_slot}염색 색상추가
+            </div>
           </div>
         )}
         {color_id !== 0 && (
@@ -278,14 +283,16 @@ export default function ColorPalette({
             className="palette-name"
             onClick={() => palette_controll(undefined)}
           >
-            <div
-              className="color-category"
-              style={{
-                backgroundColor:
-                  "#" + Color_background_list[color_id].background_color,
-              }}
-            ></div>
-            {dye_slot}염색 - {Color_background_list[color_id].name}
+            <div className="palette-name-info">
+              <div
+                className="palette-name-color"
+                style={{
+                  backgroundColor:
+                    "#" + Color_background_list[color_id].background_color,
+                }}
+              ></div>
+              {dye_slot}염색 - {Color_background_list[color_id].name}
+            </div>
             <button className="image" onClick={color_cancle}>
               <img src="./img/cancle_small.svg" alt="color cancle button" />
             </button>
@@ -310,12 +317,12 @@ export default function ColorPalette({
   return (
     <div>
       <p className="selected-item-title">선택된 아이템</p>
-      <p className="selected-item-name">
+      <div className="selected-item-name">
         {item.Name}
         <button className="image" onClick={item_cancle}>
           <img src="./img/cancle_small.svg" alt="item cancle button" />
         </button>
-      </p>
+      </div>
 
       {item.DyeCount >= 1 && (
         <ColorPaletteRow
@@ -328,17 +335,17 @@ export default function ColorPalette({
       )}
       {item.DyeCount >= 2 && (
         <ColorPaletteRow
- 
           color={item.DyeSecond}
           is_open={is_s_open}
           is_facewear={itemRef.current.EquipSlotCategory === 24}
-
           palette_controll={palette_s_controll}
           dye_slot={2}
         />
       )}
 
-      <button onClick={modal_close}>저장하기</button>
+      <button className="item-submit-button" onClick={modal_close}>
+        저장하기
+      </button>
     </div>
   );
 }

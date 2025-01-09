@@ -72,10 +72,12 @@ export default function ItemSearchModal({
           e.stopPropagation();
         }}
       >
-        <span>{slots[slot]}</span>
-        <button className="image" onClick={modal_close}>
-          <img src="./img/cancle.svg" alt="cancle button" />
-        </button>
+        <div className="item-search-modal-title">
+          <span>{slots[slot]}</span>
+          <button className="image" onClick={modal_close}>
+            <img src="./img/cancle.svg" alt="cancle button" />
+          </button>
+        </div>
         <ItemSearch
           keyword={keyword}
           set_keyword={set_keyword}

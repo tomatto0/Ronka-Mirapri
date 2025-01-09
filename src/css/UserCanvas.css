@@ -52,7 +52,7 @@ div.canvas-container {
   }
 }
 
-@media (min-width: 1216px) {
+@media (min-width: 1024px) {
   div.canvas-container {
     height: 70vh;
 

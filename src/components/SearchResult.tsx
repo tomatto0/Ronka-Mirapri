@@ -34,17 +34,6 @@ export default function SearchResult({
       edit_equiped_item(slot, dye_item);
       reset_keyword();
     };
-    // useEffect(() => {
-    //   const div = component.current;
-    //   if (div == null) {
-    //     return;
-    //   }
-
-    //   div.addEventListener("click", click_handler);
-    //   return () => {
-    //     div.removeEventListener("click", click_handler);
-    //   };
-    // }, [edit_equiped_item, item]);
 
     return (
       <div className="search-result" ref={component} onClick={click_handler}>
@@ -106,11 +95,9 @@ export default function SearchResult({
           reset_keyword={reset_keyword}
         />
       ))}
-      {!is_loading &&
-        show_result.length >= 10 &&
-        show_result.length < search_result.length && (
-          <div ref={loader} className="loader"></div>
-        )}
+      {!is_loading && show_result.length < search_result.length && (
+        <div ref={loader} className="loader"></div>
+      )}
       {is_loading && (
         <div ref={loader} className="loader">
           <span></span>

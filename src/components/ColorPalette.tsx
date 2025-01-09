@@ -224,7 +224,7 @@ export default function ColorPalette({
         <div className="color-palette-modal">
           {!is_facewear && (
             <div className="color-category-container">
-              {[0, 1, 2, 3, 4, 5, 6, 7].map(i => (
+              {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
                 <ColorCategory
                   category={i}
                   color={color_categories[i]}
@@ -235,11 +235,11 @@ export default function ColorPalette({
               ))}
             </div>
           )}
-          <hr className="color-palette-divider" />
+          {!is_facewear && <hr className="color-palette-divider" />}
           <div className="color-category-detail">
             <p>{Color_background_list[color_id].name}</p>
             <div className="color-category-container">
-              {colors[color_category].map(colorInfo => (
+              {colors[color_category].map((colorInfo) => (
                 <Color
                   colorInfo={colorInfo}
                   color_id={color_id}

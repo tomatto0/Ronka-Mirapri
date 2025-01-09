@@ -47,28 +47,31 @@ export default function UserCanvas({
   const [is_selected, set_is_selected] = useState<boolean>(false);
 
   // 사용자의 이미지를 그리는 함수
-  const user_image_draw = useCallback((x: number, y: number) => {
-    const user_canvas = imageRef.current;
-    const image = user_image.current;
-    if (user_canvas) {
-      const ctx = user_canvas.getContext("2d");
-      if (ctx) {
-        ctx.fillStyle = "#EFF1F5";
-        ctx.fillRect(0, 0, box_width, box_height); // 캔버스 초기화
-        ctx.drawImage(
-          image,
-          -x,
-          -y,
-          image.height * ratio,
-          image.height, // 원본 이미지의 위치 및 크기
-          0,
-          0,
-          box_width,
-          box_height // 캔버스에서의 위치 및 크기
-        );
+  const user_image_draw = useCallback(
+    (x: number, y: number) => {
+      const user_canvas = imageRef.current;
+      const image = user_image.current;
+      if (user_canvas) {
+        const ctx = user_canvas.getContext("2d");
+        if (ctx) {
+          ctx.fillStyle = "#EFF1F5";
+          ctx.fillRect(0, 0, box_width, box_height); // 캔버스 초기화
+          ctx.drawImage(
+            image,
+            -x,
+            -y,
+            image.height * ratio,
+            image.height, // 원본 이미지의 위치 및 크기
+            0,
+            0,
+            box_width,
+            box_height // 캔버스에서의 위치 및 크기
+          );
+        }
       }
-    }
-  }, []);
+    },
+    [box_width, ratio]
+  );
 
   // 장착된 아이템을 그리는 함수
   function user_item_draw(item_list: Item[]) {
@@ -82,7 +85,18 @@ export default function UserCanvas({
         ctx.textBaseline = "top";
 
         // 아이템 표시 영역 초기화
-        ctx.fillStyle = "#26272B";
+        const linear_gradient = ctx.createLinearGradient(
+          box_width,
+          0,
+          box_width,
+          1080
+        );
+        linear_gradient.addColorStop(0, "#111111");
+        linear_gradient.addColorStop(0.16, "#2E2E2E");
+        linear_gradient.addColorStop(0.84, "#2E2E2E");
+        linear_gradient.addColorStop(1, "#111111");
+        ctx.fillStyle = linear_gradient;
+
         ctx.fillRect(box_width, 0, user_canvas.width, user_canvas.height);
         let i = 0;
         // for (let [i, item] of item_list.entries()) {
@@ -92,10 +106,13 @@ export default function UserCanvas({
 
           // 아이템 아이콘 그리기
           if (image)
-            ctx.drawImage(image.Image, box_width + 31, i * 104 + 43, 85, 85);
+            ctx.drawImage(image.Image, box_width + 31, i * 114 + 43, 85, 85);
           ctx.font = "29px Pretendard-Regular";
           ctx.fillStyle = "#FFFFFF";
-          ctx.fillText(item.Name, box_width + 31 + 104, i * 104 + 51);
+          ctx.fillText(item.Name, box_width + 31 + 104, i * 114 + 51);
+
+          ctx.fillStyle = "#212125";
+          ctx.fillRect(box_width + 31, i * 114 + 138, 558, 1);
 
           // 1염색 컬러 표시
           // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
@@ -110,18 +127,20 @@ export default function UserCanvas({
 
             // 텍스트 배경 그리기
             ctx.font = "21px Pretendard-Regular";
-            const textWidth = ctx.measureText(colorInfo1.name).width;
+            const textWidth = ctx.measureText("1 - " + colorInfo1.name).width;
             dyeFirstWidthRef.current = textWidth;
             ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
-            ctx.fillRect(box_width + 135, i * 104 + 96, textWidth + 44, 26); // 배경 사각형 (텍스트 크기 기반)
+            ctx.fillRect(box_width + 135, i * 114 + 96, textWidth + 8, 26); // 배경 사각형 (텍스트 크기 기반)
 
             // 텍스트 그리기
             ctx.fillStyle = textColor; // 텍스트 색상
             ctx.fillText(
               "1 - " + colorInfo1.name,
               box_width + 139,
-              i * 104 + 100
+              i * 114 + 100
             );
+          } else {
+            dyeFirstWidthRef.current = 0;
           }
 
           // 2염색 컬러 표시
@@ -137,14 +156,14 @@ export default function UserCanvas({
 
             // 텍스트 배경 그리기
             ctx.font = "21px Pretendard-Regular";
-            const textWidth = ctx.measureText(colorInfo2.name).width;
+            const textWidth = ctx.measureText("2 - " + colorInfo2.name).width;
             ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
 
-            if (colorInfo1) {
+            if (colorInfo1 && item.DyeFirst !== 0) {
               ctx.fillRect(
-                box_width + dyeFirstWidthRef.current + 187,
-                i * 104 + 96,
-                textWidth + 44,
+                box_width + dyeFirstWidthRef.current + 151,
+                i * 114 + 96,
+                textWidth + 8,
                 26
               ); // 배경 사각형 (텍스트 크기 기반)
 
@@ -152,23 +171,36 @@ export default function UserCanvas({
               ctx.fillStyle = textColor; // 텍스트 색상
               ctx.fillText(
                 "2 - " + colorInfo2.name,
-                box_width + dyeFirstWidthRef.current + 191,
-                i * 104 + 100
+                box_width + dyeFirstWidthRef.current + 155,
+                i * 114 + 100
               );
             } else {
-              ctx.fillRect(box_width + 135, i * 104 + 96, textWidth + 44, 26); // 배경 사각형 (텍스트 크기 기반)
+              ctx.fillRect(box_width + 135, i * 114 + 96, textWidth + 8, 26); // 배경 사각형 (텍스트 크기 기반)
 
               // 텍스트 그리기
               ctx.fillStyle = textColor; // 텍스트 색상
               ctx.fillText(
-                "1 - " + colorInfo2.name,
+                "2 - " + colorInfo2.name,
                 box_width + 139,
-                i * 104 + 100
+                i * 114 + 100
               );
             }
           }
           i++;
         }
+
+        ctx.textAlign = "end";
+        ctx.textBaseline = "bottom";
+        ctx.font = "16px Pretendard-Regular";
+        ctx.fillStyle = "#BEBEBE";
+
+        //ronkacloset.com
+        ctx.fillText("ronkacloset.com", 1064, 1048);
+        ctx.fillText(
+          "© SQUARE ENIX Published in Korea by Actoz Soft CO., LTD.",
+          1064,
+          1064
+        );
       }
     }
   }

@@ -73,7 +73,11 @@ export default function ItemSearchModal({
         }}
       >
         <div className="item-search-modal-title">
-          <span>{slots[slot]}</span>
+          <span>
+            {slots[slot] === "추가 옵션"
+              ? "추가 옵션 (무기, 악세서리, 얼굴장식)"
+              : slots[slot]}
+          </span>
           <button className="image" onClick={modal_close}>
             <img src="./img/cancle.svg" alt="cancle button" />
           </button>

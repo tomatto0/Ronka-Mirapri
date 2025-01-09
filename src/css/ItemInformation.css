@@ -29,11 +29,11 @@ div.item-information {
       display: inline-block;
       background-image: url("../../public/img/refresh.svg");
       width: 1.5rem;
-      height: 1.4rem;
+      height: 1.5rem;
       background-size: cover;
       background-position: center;
       vertical-align: middle;
-      margin-right: 10px;
+      margin-right: 1px;
     }
   }
 
@@ -51,7 +51,7 @@ div.item-information {
         flex-grow: 0;
         display: inline-flex;
         flex-direction: column;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
         width: 20%;
         min-width: 74px;
 
@@ -77,9 +77,7 @@ div.item-information {
     }
   }
   .image-download {
-    width: calc(100% - 52px);
-    border-radius: 8px;
-    background-color: transparent;
+    background-color: #f6fefc;
 
     position: absolute;
     left: 26px;
@@ -88,28 +86,45 @@ div.item-information {
 
     width: 348px;
     height: 5rem;
-    border: 2px #d0d5dd solid;
+    border: 1px #107569 solid;
+    border-radius: 8px;
     padding: 11px 0;
 
-    font-weight: 500;
-    color: #98a2b3;
+    font-weight: bold;
+    color: #344054;
     font-size: 1.6rem;
     font-family: inherit;
+  }
+  .image-download::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../../public/img/download.svg");
+    width: 1.6rem;
+    height: 1.6rem;
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  .image-download.inactive {
+    border: 1px #d0d5dd solid;
+    background-color: transparent;
+
+    color: #98a2b3;
+  }
+  .image-download.inactive::before {
+    background-image: url("../../public/img/download_inactive.svg");
   }
 }
 
 @media (min-width: 1216px) {
   div.item-information {
-    position: relative;
     width: 444px;
-    flex-shrink: 0;
-    padding: 0 50px;
+    padding: 0 5rem;
     padding-bottom: 2rem;
 
     .item-information-header {
-      display: flex;
-      justify-content: space-between;
-
       span {
         font-weight: 700;
         font-size: 1.6rem;
@@ -118,83 +133,31 @@ div.item-information {
       }
 
       button {
-        font-size: 1.4rem;
-        color: #7d89b0;
-        border: 0;
         background-color: #e3e9fc;
-        cursor: pointer;
         letter-spacing: -0.42px;
         font-weight: 500;
       }
-
-      button::before {
-        content: "";
-        display: inline-block;
-        background-image: url("../../public/img/refresh.svg");
-        width: 1.2rem;
-        height: 1.1rem;
-        background-size: cover;
-        background-position: center;
-        vertical-align: middle;
-        margin-right: 10px;
-      }
-    }
-
-    hr {
-      margin: 2rem 0;
-      border: 1px #7d89b0 solid;
     }
 
     .item-slot-container {
       .item-slot-row {
-        display: flex;
-        justify-content: space-between;
-
         .item-slot {
-          flex-grow: 0;
-          display: inline-flex;
-          flex-direction: column;
-          margin-bottom: 20px;
-
-          cursor: pointer;
-
-          span {
-            text-align: left;
-            font-size: 1.3rem;
-            color: #5d6b98;
-            margin-bottom: 5px;
-          }
           img {
             width: 72px;
-            cursor: pointer;
-            -webkit-user-drag: none;
-            -khtml-user-drag: none;
-            -moz-user-drag: none;
-            -o-user-drag: none;
-            user-select: none;
           }
         }
       }
     }
     .image-download {
       box-sizing: border-box;
-      width: 348px;
-      height: 5rem;
-      border: 2px #d0d5dd solid;
-      border-radius: 8px;
-      background-color: transparent;
-      padding: 11px 0;
+      background-color: #f6fefc;
 
-      font-weight: 500;
-      color: #98a2b3;
+      font-weight: bold;
+      color: #344054;
       font-size: 1.6rem;
       font-family: inherit;
 
-      position: absolute;
       left: 50px;
-      bottom: 0;
-
-      cursor: pointer;
     }
   }
 }

@@ -77,21 +77,23 @@ export default function UserCanvas({
       const ctx = user_canvas.getContext("2d");
       if (ctx) {
         ctx.textAlign = "start";
-        ctx.textBaseline = "middle";
+        ctx.textBaseline = "top";
 
         // 아이템 표시 영역 초기화
         ctx.fillStyle = "#26272B";
         ctx.fillRect(box_width, 0, user_canvas.width, user_canvas.height);
-
-        for (let [i, item] of item_list.entries()) {
+        let i = 0;
+        // for (let [i, item] of item_list.entries()) {
+        for (let item of item_list) {
           const image = item_images.current.find((i) => i.Id === item.Id);
+          if (item.Id === 0) continue;
 
           // 아이템 아이콘 그리기
           if (image)
-            ctx.drawImage(image.Image, box_width + 20, i * 100 + 20, 80, 80);
+            ctx.drawImage(image.Image, box_width + 31, i * 104 + 43, 85, 85);
           ctx.font = "29px Pretendard-Regular";
           ctx.fillStyle = "#FFFFFF";
-          ctx.fillText(item.Name, box_width + 120, i * 100 + 45);
+          ctx.fillText(item.Name, box_width + 31 + 104, i * 104 + 51);
 
           // 1염색 컬러 표시
           // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
@@ -99,7 +101,7 @@ export default function UserCanvas({
             (color) => color.color_id === item.DyeFirst
           );
 
-          if (colorInfo1) {
+          if (colorInfo1 && item.DyeFirst !== 0) {
             // 배경색과 텍스트 색상 설정
             const backgroundColor = colorInfo1.background_color || "#FFFFFF"; // 기본값 설정
             const textColor = colorInfo1.text_color || "black";
@@ -109,14 +111,14 @@ export default function UserCanvas({
             const textWidth = ctx.measureText(colorInfo1.name).width;
             dyeFirstWidthRef.current = textWidth;
             ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
-            ctx.fillRect(box_width + 120, i * 100 + 70, textWidth + 44, 26); // 배경 사각형 (텍스트 크기 기반)
+            ctx.fillRect(box_width + 135, i * 104 + 96, textWidth + 44, 26); // 배경 사각형 (텍스트 크기 기반)
 
             // 텍스트 그리기
             ctx.fillStyle = textColor; // 텍스트 색상
             ctx.fillText(
               "1 - " + colorInfo1.name,
-              box_width + 127,
-              i * 100 + 84
+              box_width + 139,
+              i * 104 + 100
             );
           }
 
@@ -126,7 +128,7 @@ export default function UserCanvas({
             (color) => color.color_id === item.DyeSecond
           );
 
-          if (colorInfo2) {
+          if (colorInfo2 && item.DyeSecond !== 0) {
             // 배경색과 텍스트 색상 설정
             const backgroundColor = colorInfo2.background_color || "#FFFFFF"; // 기본값 설정
             const textColor = colorInfo2.text_color || "black";
@@ -138,8 +140,8 @@ export default function UserCanvas({
 
             if (colorInfo1) {
               ctx.fillRect(
-                box_width + dyeFirstWidthRef.current + 174,
-                i * 100 + 70,
+                box_width + dyeFirstWidthRef.current + 187,
+                i * 104 + 96,
                 textWidth + 44,
                 26
               ); // 배경 사각형 (텍스트 크기 기반)
@@ -148,21 +150,22 @@ export default function UserCanvas({
               ctx.fillStyle = textColor; // 텍스트 색상
               ctx.fillText(
                 "2 - " + colorInfo2.name,
-                box_width + dyeFirstWidthRef.current + 180,
-                i * 100 + 84
+                box_width + dyeFirstWidthRef.current + 191,
+                i * 104 + 100
               );
             } else {
-              ctx.fillRect(box_width + 120, i * 100 + 70, textWidth + 44, 26); // 배경 사각형 (텍스트 크기 기반)
+              ctx.fillRect(box_width + 135, i * 104 + 96, textWidth + 44, 26); // 배경 사각형 (텍스트 크기 기반)
 
               // 텍스트 그리기
               ctx.fillStyle = textColor; // 텍스트 색상
               ctx.fillText(
-                "2 - " + colorInfo2.name,
-                box_width + 127,
-                i * 100 + 84
+                "1 - " + colorInfo2.name,
+                box_width + 139,
+                i * 104 + 100
               );
             }
           }
+          i++;
         }
       }
     }

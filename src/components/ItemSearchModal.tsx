@@ -82,8 +82,7 @@ export default function ItemSearchModal({
           set_is_item_select={set_is_item_select}
           slot={slot}
         />
-
-        {!is_item_select && (
+        {!is_item_select && search_result.length > 0 && (
           <SearchResult
             slot={slot}
             search_result={search_result}

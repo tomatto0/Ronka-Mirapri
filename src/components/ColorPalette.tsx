@@ -30,7 +30,6 @@ export default function ColorPalette({
   const itemRef = useRef<Item>(item);
   useEffect(() => {
     itemRef.current = { ...item };
-    console.log("item_change_effect");
   }, [item]);
 
   const [is_f_open, set_is_f_open] = useState<boolean>(false);

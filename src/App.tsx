@@ -1,99 +1,119 @@
-import './css/App.css';
-import React, { useState, useCallback, useEffect } from 'react';
-import { Item } from './type/Item.ts';
-import { EquipSlot } from './type/EquipSlot.ts';
-import equip_slot_categories from './json/equip_slot_categories.json';
-import UserCanvas from './components/UserCanvas.tsx';
-import ItemInformation from './components/ItemInformation.tsx';
-import ItemSearchModal from './components/ItemSearchModal.tsx';
-import { click } from '@testing-library/user-event/dist/click';
+import "./css/App.css";
+import React, { useState, useCallback, useEffect } from "react";
+import { Item } from "./type/Item.ts";
+import { EquipSlot } from "./type/EquipSlot.ts";
+import equip_slot_categories from "./json/equip_slot_categories.json";
+import UserCanvas from "./components/UserCanvas.tsx";
+import ItemInformation from "./components/ItemInformation.tsx";
+import ItemSearchModal from "./components/ItemSearchModal.tsx";
+import { click } from "@testing-library/user-event/dist/click";
 
 function App() {
-    const [image_src, set_image_src] = useState<string>('./img/thumbnail_mobile.svg');
-    const [is_open, set_is_open] = useState<boolean>(false);
-    const [modal_slot, set_modal_slot] = useState<number>(0);
-    const [slot_active, set_slot_active] = useState<boolean[]>(new Array(8).fill(true));
+  const [image_src, set_image_src] = useState<string>(
+    "./img/thumbnail_mobile.svg"
+  );
+  const [is_open, set_is_open] = useState<boolean>(false);
+  const [modal_slot, set_modal_slot] = useState<number>(0);
+  const [slot_active, set_slot_active] = useState<boolean[]>(
+    new Array(8).fill(true)
+  );
 
-    const item_null = {
-        Id: 0,
-        Name: '',
-        Icon: './img/item_slot.svg',
-        EquipSlotCategory: 6,
-        ClassJobCategory: 0,
-        DyeCount: 0,
-        DyeFirst: 0,
-        DyeSecond: 0
-    }
+  const item_null = {
+    Id: 0,
+    Name: "",
+    Icon: "./img/item_slot.svg",
+    EquipSlotCategory: 6,
+    ClassJobCategory: 0,
+    DyeCount: 0,
+    DyeFirst: 0,
+    DyeSecond: 0,
+  };
 
-    const [equiped_item, set_equiped_item] = useState<Item[]>(new Array(8).fill(item_null));
-    
-    const edit_equiped_item = useCallback((slot: number, item: Item) => {
-        set_equiped_item((items) => {
-            const new_equiped_item = [...items];
-            new_equiped_item[slot] = item;
+  const [equiped_item, set_equiped_item] = useState<Item[]>(
+    new Array(8).fill(item_null)
+  );
 
-            const slot_category: {[key: number]: EquipSlot} = equip_slot_categories;
-            const new_slot_active = new Array(8).fill(true);
+  const edit_equiped_item = useCallback((slot: number, item: Item) => {
+    set_equiped_item((items) => {
+      const new_equiped_item = [...items];
+      new_equiped_item[slot] = item;
 
-            for (let item of new_equiped_item) {
-                const eslot = slot_category[item.EquipSlotCategory];
-                if (eslot.Head === -1) {
-                    new_equiped_item[0] = item_null;
-                    new_slot_active[0] = false;
-                }
-                if (eslot.Body === -1) {
-                    new_equiped_item[1] = item_null;
-                    new_slot_active[1] = false;
-                }
-                if (eslot.Gloves === -1) {
-                    new_equiped_item[2] = item_null;
-                    new_slot_active[2] = false;
-                }
-                if (eslot.Legs === -1) {
-                    new_equiped_item[3] = item_null;
-                    new_slot_active[3] = false;
-                }
-                if (eslot.Feet === -1) {
-                    new_equiped_item[4] = item_null;
-                    new_slot_active[4] = false;
-                }
-            }
-            set_slot_active(new_slot_active);
-            return new_equiped_item;
-        });
-    }, []);
+      const slot_category: { [key: number]: EquipSlot } = equip_slot_categories;
+      const new_slot_active = new Array(8).fill(true);
 
-    const open_modal = useCallback((slot: number) => {
-        set_is_open(true);
-        set_modal_slot(slot);
-    }, []);
+      for (let item of new_equiped_item) {
+        const eslot = slot_category[item.EquipSlotCategory];
+        if (eslot.Head === -1) {
+          new_equiped_item[0] = item_null;
+          new_slot_active[0] = false;
+        }
+        if (eslot.Body === -1) {
+          new_equiped_item[1] = item_null;
+          new_slot_active[1] = false;
+        }
+        if (eslot.Gloves === -1) {
+          new_equiped_item[2] = item_null;
+          new_slot_active[2] = false;
+        }
+        if (eslot.Legs === -1) {
+          new_equiped_item[3] = item_null;
+          new_slot_active[3] = false;
+        }
+        if (eslot.Feet === -1) {
+          new_equiped_item[4] = item_null;
+          new_slot_active[4] = false;
+        }
+      }
+      set_slot_active(new_slot_active);
+      return new_equiped_item;
+    });
+  }, []);
 
-    const click_handler = () => {
-        console.log(equiped_item);
-    }
+  const reset_equiped_item = useCallback(() => {
+    set_equiped_item(new Array(8).fill(item_null));
+  }, []);
 
-    return (
-        <div className="App">
-            <div className="header" onClick={click_handler}>
-                <img alt="FFXIV-KOR MIRAPRI GENERATOR" id="title"/>
-            </div>
-            <div className="main-container">
-                <UserCanvas image_src={image_src} equiped_item={equiped_item} set_image_src={set_image_src}/>
-                <ItemInformation open_modal={open_modal} equiped_item={equiped_item} slot_active={slot_active}/>
-            </div>
-            <div className="footer">
-                <a href="https://ronkacloset.com">https://ronkacloset.com</a><br/>
-                <p>© SQUARE ENIX Published in Korea by Actoz Soft CO., LTD.</p>
-            </div>
-            <ItemSearchModal
-                slot={modal_slot}
-                is_open={is_open}
-                equiped_item={equiped_item}
-                set_is_open={set_is_open}
-                edit_equiped_item={edit_equiped_item}
-            />
-        </div>
-    );
+  const open_modal = useCallback((slot: number) => {
+    set_is_open(true);
+    set_modal_slot(slot);
+  }, []);
+
+  const click_handler = () => {
+    console.log(equiped_item);
+  };
+
+  return (
+    <div className="App">
+      <div className="header" onClick={click_handler}>
+        <img alt="FFXIV-KOR MIRAPRI GENERATOR" id="title" />
+      </div>
+      <div className="main-container">
+        <UserCanvas
+          image_src={image_src}
+          equiped_item={equiped_item}
+          set_image_src={set_image_src}
+        />
+        <ItemInformation
+          open_modal={open_modal}
+          equiped_item={equiped_item}
+          slot_active={slot_active}
+          reset_equiped_item={reset_equiped_item}
+        />
+      </div>
+      <div className="footer">
+        <a href="https://ronkacloset.com">https://ronkacloset.com</a>
+        <br />
+        <p>© SQUARE ENIX Published in Korea by Actoz Soft CO., LTD.</p>
+      </div>
+      <ItemSearchModal
+        slot={modal_slot}
+        is_open={is_open}
+        equiped_item={equiped_item}
+        set_is_open={set_is_open}
+        edit_equiped_item={edit_equiped_item}
+      />
+    </div>
+  );
 }
 
 export default App;

@@ -36,5 +36,26 @@ div.search-result-container {
 }
 
 div.loader {
-  height: 50px;
+  text-align: center;
+  padding: 1rem;
+  span {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 0.5rem solid #e4e7ec;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin: auto 0;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

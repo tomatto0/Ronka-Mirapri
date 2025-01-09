@@ -5,10 +5,12 @@ export default function ItemInformation({
   open_modal,
   equiped_item,
   slot_active,
+  reset_equiped_item,
 }: {
   open_modal: (slot: number) => void;
   equiped_item: Item[];
   slot_active: boolean[];
+  reset_equiped_item: () => void;
 }) {
   const slots = [
     "머리 방어구",
@@ -60,7 +62,7 @@ export default function ItemInformation({
     <div className="item-information">
       <div className="item-information-header">
         <span>코디 정보 입력</span>
-        <button>초기화</button>
+        <button onClick={reset_equiped_item}>초기화</button>
       </div>
       <hr />
       <div className="item-slot-container">
@@ -89,7 +91,7 @@ export default function ItemInformation({
           ))}
         </div>
       </div>
-      <button className="image-download" onClick={image_download}>
+      <button className="image-download inactive" onClick={image_download}>
         이미지 다운로드
       </button>
     </div>

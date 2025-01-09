@@ -111,10 +111,13 @@ export default function SearchResult({
       {!is_loading &&
         show_result.length >= 10 &&
         show_result.length < search_result.length && (
-          <div ref={loader} className="loader">
-            Loading...
-          </div>
+          <div ref={loader} className="loader"></div>
         )}
+      {is_loading && (
+        <div ref={loader} className="loader">
+          <span></span>
+        </div>
+      )}
     </div>
   );
 }

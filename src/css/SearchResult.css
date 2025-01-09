@@ -33,6 +33,11 @@ div.search-result-container {
       width: 32px;
     }
   }
+
+  .search-result:hover {
+    background-color: #f2f4f7;
+    border: 1px solid #d0d5dd;
+  }
 }
 
 div.loader {

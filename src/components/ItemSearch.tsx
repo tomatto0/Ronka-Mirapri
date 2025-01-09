@@ -1,3 +1,4 @@
+import "../css/ItemSearchModal.css";
 import { useState } from "react";
 import filtered_item_list from "../json/filtered_items.json";
 import equip_slot_categories from "../json/equip_slot_categories.json";
@@ -33,7 +34,7 @@ export default function ItemSearch({
     }
     set_is_item_select(false);
     const result = item_list.filter(
-      (item) =>
+      item =>
         searcher.search(item.Name) >= 0 &&
         slot_category[item.EquipSlotCategory]["Slot"] == eslot
     );
@@ -41,9 +42,10 @@ export default function ItemSearch({
   };
   return (
     <div className="item-search-container">
+      <img className="search-icon" src="./img/search.svg" alt="search icon" />
       <input
         type="text"
-        placeholder="search..."
+        placeholder="아이템을 검색하세요"
         value={keyword}
         onChange={keyword_update}
       />

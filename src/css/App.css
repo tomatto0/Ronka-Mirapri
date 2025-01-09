@@ -6,6 +6,7 @@ button.image {
   border: 0;
   background: transparent;
   cursor: pointer;
+  height: 18px;
 }
 
 img.item-icon {
@@ -43,7 +44,7 @@ div.footer {
   }
 }
 
-@media (min-width: 1216px) {
+@media (min-width: 1024px) {
   div.header {
     --height: max(15vh, 100px);
     height: var(--height);

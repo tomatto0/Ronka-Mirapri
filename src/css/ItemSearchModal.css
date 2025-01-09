@@ -77,13 +77,13 @@ div.item-search-modal {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: max(15vh, 100px);
-    padding-left: calc(50% + 150px);
+    padding-top: 151px;
+    padding-left: calc(50% + 120px);
   }
 
   div.item-search-modal {
     width: 396px;
-    height: 610px;
+    height: 608px;
     font-size: 1.8rem;
     font-weight: 600;
 
@@ -94,7 +94,9 @@ div.item-search-modal {
     }
   }
 
-  .search-icon {
-    top: 21px;
+  .item-search-container {
+    .search-icon {
+      top: 21px;
+    }
   }
 }

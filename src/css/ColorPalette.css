@@ -168,3 +168,21 @@ div.palette-container:hover {
 .item-submit-button:hover {
   background-color: #e4e7ec;
 }
+
+@media (min-width: 1024px) {
+  .item-submit-button {
+    width: 364px;
+  }
+
+  div.palette-container {
+    div.color-palette-modal {
+      padding: 20px 26px;
+    }
+  }
+
+  .color-select-button-wrap {
+    .color-select-submit {
+      width: 150px;
+    }
+  }
+}

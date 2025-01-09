@@ -5,11 +5,13 @@ export default function ItemInformation({
   open_modal,
   equiped_item,
   slot_active,
+  image_src,
   reset_equiped_item,
 }: {
   open_modal: (slot: number) => void;
   equiped_item: Item[];
   slot_active: boolean[];
+  image_src: string;
   reset_equiped_item: () => void;
 }) {
   const slots = [
@@ -22,7 +24,49 @@ export default function ItemInformation({
     "추가 옵션",
     "추가 옵션",
   ];
-  const image_download = () => {};
+  function is_null_equiped_item(equiped_item: Item[]): boolean {
+    if (
+      image_src === "./img/thumbnail_mobile.svg" ||
+      image_src === "./img/thumbnail.svg"
+    ) {
+      return true;
+    }
+    for (let item of equiped_item) {
+      if (item.Id !== 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  const image_download = () => {
+    if (!is_null_equiped_item(equiped_item)) {
+      const options: Intl.DateTimeFormatOptions = {
+        month: "2-digit", // 두 자리 월
+        day: "2-digit", // 두 자리 일
+        hour: "2-digit", // 두 자리 시간
+        minute: "2-digit", // 두 자리 분
+        hour12: false, // 24시간제
+        timeZone: "Asia/Seoul", // 한국 시간대
+      };
+
+      const formattedDate = new Intl.DateTimeFormat("ko-KR", options)
+        .format(new Date())
+        .replace(". ", "")
+        .replace(". ", "")
+        .replace(":", "");
+
+      console.log(formattedDate);
+
+      const canvas = document.querySelector(".user-canvas");
+      if (canvas instanceof HTMLCanvasElement) {
+        const a = document.createElement("a");
+        a.href = canvas.toDataURL();
+        a.download = `RonkaMirapri ${formattedDate}.jpg`;
+        a.click();
+      }
+    }
+  };
 
   const ItemSlot = ({
     slot_name,
@@ -91,7 +135,13 @@ export default function ItemInformation({
           ))}
         </div>
       </div>
-      <button className="image-download inactive" onClick={image_download}>
+      <button
+        className={
+          "image-download " +
+          (is_null_equiped_item(equiped_item) ? "inactive" : "")
+        }
+        onClick={image_download}
+      >
         이미지 다운로드
       </button>
     </div>

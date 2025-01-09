@@ -20,10 +20,12 @@ export default function UserCanvas({
   image_src,
   equiped_item,
   set_image_src,
+  image_thumbnail,
 }: {
   image_src: string;
   equiped_item: Item[];
   set_image_src: (image_src: string) => void;
+  image_thumbnail: () => string;
 }) {
   const imageRef = useRef<HTMLCanvasElement | null>(null); // 캔버스 참조
   const user_image = useRef<HTMLImageElement>(new Image());
@@ -364,7 +366,7 @@ export default function UserCanvas({
   };
 
   const image_delete = () => {
-    set_image_src("../img/thumbnail.svg");
+    set_image_src(image_thumbnail());
     set_is_selected(false);
   };
 

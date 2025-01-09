@@ -25,31 +25,29 @@ export default function SearchResult({
     reset_keyword: () => void;
   }) => {
     const component = useRef<HTMLDivElement | null>(null);
-
-    useEffect(() => {
-      const div = component.current;
-      if (div == null) {
-        return;
-      }
-
-      const click_handler = () => {
-        const dye_item = {
-          ...item,
-          DyeFirst: 0,
-          DyeSecond: 0,
-        };
-        edit_equiped_item(slot, dye_item);
-        reset_keyword();
+    const click_handler = () => {
+      const dye_item = {
+        ...item,
+        DyeFirst: 0,
+        DyeSecond: 0,
       };
+      edit_equiped_item(slot, dye_item);
+      reset_keyword();
+    };
+    // useEffect(() => {
+    //   const div = component.current;
+    //   if (div == null) {
+    //     return;
+    //   }
 
-      div.addEventListener("click", click_handler);
-      return () => {
-        div.removeEventListener("click", click_handler);
-      };
-    }, [edit_equiped_item, item]);
+    //   div.addEventListener("click", click_handler);
+    //   return () => {
+    //     div.removeEventListener("click", click_handler);
+    //   };
+    // }, [edit_equiped_item, item]);
 
     return (
-      <div className="search-result" ref={component}>
+      <div className="search-result" ref={component} onClick={click_handler}>
         <img className="item-icon" src={"./" + item.Icon} alt={item.Name} />
         <span>{item.Name}</span>
       </div>

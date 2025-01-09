@@ -33,6 +33,11 @@ div.item-search-modal {
     color: #475467;
     letter-spacing: -0.39px;
   }
+  input::placeholder {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
 }
 
 @media (min-width: 1216px) {

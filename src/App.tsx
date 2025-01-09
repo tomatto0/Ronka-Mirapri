@@ -6,12 +6,16 @@ import equip_slot_categories from "./json/equip_slot_categories.json";
 import UserCanvas from "./components/UserCanvas.tsx";
 import ItemInformation from "./components/ItemInformation.tsx";
 import ItemSearchModal from "./components/ItemSearchModal.tsx";
-import { click } from "@testing-library/user-event/dist/click";
 
 function App() {
-  const [image_src, set_image_src] = useState<string>(
-    "./img/thumbnail_mobile.svg"
-  );
+  const image_thumbnail = () => {
+    if (document.documentElement.clientWidth >= 1024) {
+      return "./img/thumbnail.svg";
+    } else {
+      return "./img/thumbnail_mobile.svg";
+    }
+  };
+  const [image_src, set_image_src] = useState<string>(image_thumbnail());
   const [is_open, set_is_open] = useState<boolean>(false);
   const [modal_slot, set_modal_slot] = useState<number>(0);
   const [slot_active, set_slot_active] = useState<boolean[]>(
@@ -78,13 +82,24 @@ function App() {
     set_modal_slot(slot);
   }, []);
 
-  const click_handler = () => {
-    console.log(equiped_item);
-  };
+  useEffect(() => {
+    const resize_handler = () => {
+      if (
+        image_src === "./img/thumbnail.svg" ||
+        image_src === "./img/thumbnail_mobile.svg"
+      ) {
+        set_image_src(image_thumbnail());
+      }
+    };
+    window.addEventListener("resize", resize_handler);
+    return () => {
+      window.removeEventListener("resize", resize_handler);
+    };
+  }, [image_src]);
 
   return (
     <div className="App">
-      <div className="header" onClick={click_handler}>
+      <div className="header">
         <img alt="FFXIV-KOR MIRAPRI GENERATOR" id="title" />
       </div>
       <div className="main-container">
@@ -92,8 +107,10 @@ function App() {
           image_src={image_src}
           equiped_item={equiped_item}
           set_image_src={set_image_src}
+          image_thumbnail={image_thumbnail}
         />
         <ItemInformation
+          image_src={image_src}
           open_modal={open_modal}
           equiped_item={equiped_item}
           slot_active={slot_active}

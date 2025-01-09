@@ -58,6 +58,7 @@ export default function ItemSearchModal({
   };
 
   const reset_keyword = () => {
+    set_search_result([]);
     set_keyword("");
   };
 

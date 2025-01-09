@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import filtered_item_list from "../json/filtered_items.json";
 import equip_slot_categories from "../json/equip_slot_categories.json";
 import { Item } from "../type/Item.ts";
@@ -20,7 +20,13 @@ export default function ItemSearch({
 }) {
   const item_list: Item[] = filtered_item_list as Item[];
   const slot_category: { [key: number]: EquipSlot } = equip_slot_categories;
+  const input_ref = useRef<HTMLInputElement>(null);
 
+  useEffect(() => {
+    if (input_ref.current) {
+      input_ref.current.focus();
+    }
+  }, [input_ref]);
   const keyword_update = (e: React.ChangeEvent<HTMLInputElement>) => {
     const input_keyword = e.target.value.trim();
     set_keyword(e.target.value);
@@ -46,6 +52,7 @@ export default function ItemSearch({
         placeholder="search..."
         value={keyword}
         onChange={keyword_update}
+        ref={input_ref}
       />
     </div>
   );

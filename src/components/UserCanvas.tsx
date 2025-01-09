@@ -74,136 +74,137 @@ export default function UserCanvas({
   );
 
   // 장착된 아이템을 그리는 함수
-  function user_item_draw(item_list: Item[]) {
-    // console.log('item_list:', item_list);
+  const user_item_draw = useCallback(
+    (item_list: Item[]) => {
+      const user_canvas = imageRef.current;
+      if (user_canvas) {
+        const ctx = user_canvas.getContext("2d");
+        if (ctx) {
+          ctx.textAlign = "start";
+          ctx.textBaseline = "top";
 
-    const user_canvas = imageRef.current;
-    if (user_canvas) {
-      const ctx = user_canvas.getContext("2d");
-      if (ctx) {
-        ctx.textAlign = "start";
-        ctx.textBaseline = "top";
-
-        // 아이템 표시 영역 초기화
-        const linear_gradient = ctx.createLinearGradient(
-          box_width,
-          0,
-          box_width,
-          1080
-        );
-        linear_gradient.addColorStop(0, "#111111");
-        linear_gradient.addColorStop(0.16, "#2E2E2E");
-        linear_gradient.addColorStop(0.84, "#2E2E2E");
-        linear_gradient.addColorStop(1, "#111111");
-        ctx.fillStyle = linear_gradient;
-
-        ctx.fillRect(box_width, 0, user_canvas.width, user_canvas.height);
-        let i = 0;
-        // for (let [i, item] of item_list.entries()) {
-        for (let item of item_list) {
-          const image = item_images.current.find((i) => i.Id === item.Id);
-          if (item.Id === 0) continue;
-
-          // 아이템 아이콘 그리기
-          if (image)
-            ctx.drawImage(image.Image, box_width + 31, i * 114 + 43, 85, 85);
-          ctx.font = "29px Pretendard-Regular";
-          ctx.fillStyle = "#FFFFFF";
-          ctx.fillText(item.Name, box_width + 31 + 104, i * 114 + 51);
-
-          ctx.fillStyle = "#212125";
-          ctx.fillRect(box_width + 31, i * 114 + 138, 558, 1);
-
-          // 1염색 컬러 표시
-          // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
-          const colorInfo1 = Color_background_list.find(
-            (color) => color.color_id === item.DyeFirst
+          // 아이템 표시 영역 초기화
+          const linear_gradient = ctx.createLinearGradient(
+            box_width,
+            0,
+            box_width,
+            1080
           );
+          linear_gradient.addColorStop(0, "#111111");
+          linear_gradient.addColorStop(0.16, "#2E2E2E");
+          linear_gradient.addColorStop(0.84, "#2E2E2E");
+          linear_gradient.addColorStop(1, "#111111");
+          ctx.fillStyle = linear_gradient;
 
-          if (colorInfo1 && item.DyeFirst !== 0) {
-            // 배경색과 텍스트 색상 설정
-            const backgroundColor = colorInfo1.background_color || "#FFFFFF"; // 기본값 설정
-            const textColor = colorInfo1.text_color || "black";
+          ctx.fillRect(box_width, 0, user_canvas.width, user_canvas.height);
+          let i = 0;
+          // for (let [i, item] of item_list.entries()) {
+          for (let item of item_list) {
+            const image = item_images.current.find((i) => i.Id === item.Id);
+            if (item.Id === 0) continue;
 
-            // 텍스트 배경 그리기
-            ctx.font = "21px Pretendard-Regular";
-            const textWidth = ctx.measureText("1 - " + colorInfo1.name).width;
-            dyeFirstWidthRef.current = textWidth;
-            ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
-            ctx.fillRect(box_width + 135, i * 114 + 96, textWidth + 8, 26); // 배경 사각형 (텍스트 크기 기반)
+            // 아이템 아이콘 그리기
+            if (image)
+              ctx.drawImage(image.Image, box_width + 31, i * 114 + 43, 85, 85);
+            ctx.font = "29px Pretendard-Regular";
+            ctx.fillStyle = "#FFFFFF";
+            ctx.fillText(item.Name, box_width + 31 + 104, i * 114 + 51);
 
-            // 텍스트 그리기
-            ctx.fillStyle = textColor; // 텍스트 색상
-            ctx.fillText(
-              "1 - " + colorInfo1.name,
-              box_width + 139,
-              i * 114 + 100
+            ctx.fillStyle = "#212125";
+            ctx.fillRect(box_width + 31, i * 114 + 138, 558, 1);
+
+            // 1염색 컬러 표시
+            // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
+            const colorInfo1 = Color_background_list.find(
+              (color) => color.color_id === item.DyeFirst
             );
-          } else {
-            dyeFirstWidthRef.current = 0;
-          }
-
-          // 2염색 컬러 표시
-          // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
-          const colorInfo2 = Color_background_list.find(
-            (color) => color.color_id === item.DyeSecond
-          );
-
-          if (colorInfo2 && item.DyeSecond !== 0) {
-            // 배경색과 텍스트 색상 설정
-            const backgroundColor = colorInfo2.background_color || "#FFFFFF"; // 기본값 설정
-            const textColor = colorInfo2.text_color || "black";
-
-            // 텍스트 배경 그리기
-            ctx.font = "21px Pretendard-Regular";
-            const textWidth = ctx.measureText("2 - " + colorInfo2.name).width;
-            ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
 
             if (colorInfo1 && item.DyeFirst !== 0) {
-              ctx.fillRect(
-                box_width + dyeFirstWidthRef.current + 151,
-                i * 114 + 96,
-                textWidth + 8,
-                26
-              ); // 배경 사각형 (텍스트 크기 기반)
+              // 배경색과 텍스트 색상 설정
+              const backgroundColor = colorInfo1.background_color || "#FFFFFF"; // 기본값 설정
+              const textColor = colorInfo1.text_color || "black";
 
-              // 텍스트 그리기
-              ctx.fillStyle = textColor; // 텍스트 색상
-              ctx.fillText(
-                "2 - " + colorInfo2.name,
-                box_width + dyeFirstWidthRef.current + 155,
-                i * 114 + 100
-              );
-            } else {
+              // 텍스트 배경 그리기
+              ctx.font = "21px Pretendard-Regular";
+              const textWidth = ctx.measureText("1 - " + colorInfo1.name).width;
+              dyeFirstWidthRef.current = textWidth;
+              ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
               ctx.fillRect(box_width + 135, i * 114 + 96, textWidth + 8, 26); // 배경 사각형 (텍스트 크기 기반)
 
               // 텍스트 그리기
               ctx.fillStyle = textColor; // 텍스트 색상
               ctx.fillText(
-                "2 - " + colorInfo2.name,
+                "1 - " + colorInfo1.name,
                 box_width + 139,
                 i * 114 + 100
               );
+            } else {
+              dyeFirstWidthRef.current = 0;
             }
+
+            // 2염색 컬러 표시
+            // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
+            const colorInfo2 = Color_background_list.find(
+              (color) => color.color_id === item.DyeSecond
+            );
+
+            if (colorInfo2 && item.DyeSecond !== 0) {
+              // 배경색과 텍스트 색상 설정
+              const backgroundColor = colorInfo2.background_color || "#FFFFFF"; // 기본값 설정
+              const textColor = colorInfo2.text_color || "black";
+
+              // 텍스트 배경 그리기
+              ctx.font = "21px Pretendard-Regular";
+              const textWidth = ctx.measureText("2 - " + colorInfo2.name).width;
+              ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
+
+              if (colorInfo1 && item.DyeFirst !== 0) {
+                ctx.fillRect(
+                  box_width + dyeFirstWidthRef.current + 151,
+                  i * 114 + 96,
+                  textWidth + 8,
+                  26
+                ); // 배경 사각형 (텍스트 크기 기반)
+
+                // 텍스트 그리기
+                ctx.fillStyle = textColor; // 텍스트 색상
+                ctx.fillText(
+                  "2 - " + colorInfo2.name,
+                  box_width + dyeFirstWidthRef.current + 155,
+                  i * 114 + 100
+                );
+              } else {
+                ctx.fillRect(box_width + 135, i * 114 + 96, textWidth + 8, 26); // 배경 사각형 (텍스트 크기 기반)
+
+                // 텍스트 그리기
+                ctx.fillStyle = textColor; // 텍스트 색상
+                ctx.fillText(
+                  "2 - " + colorInfo2.name,
+                  box_width + 139,
+                  i * 114 + 100
+                );
+              }
+            }
+            i++;
           }
-          i++;
+
+          ctx.textAlign = "end";
+          ctx.textBaseline = "bottom";
+          ctx.font = "16px Pretendard-Regular";
+          ctx.fillStyle = "#BEBEBE";
+
+          //ronkacloset.com
+          ctx.fillText("ronkacloset.com", 1064, 1048);
+          ctx.fillText(
+            "© SQUARE ENIX Published in Korea by Actoz Soft CO., LTD.",
+            1064,
+            1064
+          );
         }
-
-        ctx.textAlign = "end";
-        ctx.textBaseline = "bottom";
-        ctx.font = "16px Pretendard-Regular";
-        ctx.fillStyle = "#BEBEBE";
-
-        //ronkacloset.com
-        ctx.fillText("ronkacloset.com", 1064, 1048);
-        ctx.fillText(
-          "© SQUARE ENIX Published in Korea by Actoz Soft CO., LTD.",
-          1064,
-          1064
-        );
       }
-    }
-  }
+    },
+    [Color_background_list, box_width]
+  );
 
   // 캔버스 이벤트 등록
   useEffect(() => {
@@ -228,9 +229,9 @@ export default function UserCanvas({
       isDown.current = false;
       e.preventDefault();
     };
-    const mouseleave_handler = () => {
-      isDown.current = false;
-    };
+    // const mouseleave_handler = () => {
+    //   isDown.current = false;
+    // };
     const mousemove_handler = (e: MouseEvent) => {
       if (!isDown.current) {
         return;
@@ -332,7 +333,7 @@ export default function UserCanvas({
       user_canvas.removeEventListener("touchcancel", touchcancel_handler);
       user_canvas.removeEventListener("touchmove", touchmove_handler);
     };
-  }, [user_image_draw]);
+  }, [box_width, ratio, user_image_draw]);
 
   // 이미지 로드 및 초기화
   useEffect(() => {
@@ -367,7 +368,7 @@ export default function UserCanvas({
       console.error(error);
     }
     user_item_draw(equiped_item_ref.current);
-  }, []);
+  }, [user_item_draw]);
 
   // 장착 아이템이 변경될 때 이미지 로드
   useEffect(() => {

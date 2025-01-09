@@ -1,5 +1,5 @@
 import "../css/ItemSearchModal.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import filtered_item_list from "../json/filtered_items.json";
 import equip_slot_categories from "../json/equip_slot_categories.json";
 import { Item } from "../type/Item.ts";
@@ -42,7 +42,7 @@ export default function ItemSearch({
     const result = item_list.filter(
       (item) =>
         searcher.search(item.Name) >= 0 &&
-        slot_category[item.EquipSlotCategory]["Slot"] == eslot
+        slot_category[item.EquipSlotCategory]["Slot"] === eslot
     );
     set_search_result(result);
   };

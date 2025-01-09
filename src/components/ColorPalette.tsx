@@ -234,22 +234,31 @@ export default function ColorPalette({
                   key={i}
                 />
               ))}
-              <hr />
+              <hr className="color-palette-divider" />
             </div>
           )}
-          <div className="color-category-container">
+   
+          <div className="color-category-detail">
             <p>{Color_background_list[color_id].name}</p>
-            {colors[color_category].map((colorInfo) => (
-              <Color
-                colorInfo={colorInfo}
-                color_id={color_id}
-                set_color_id={set_color_id}
-                key={colorInfo.color_id}
-              />
-            ))}
+            <div className="color-category-container">
+              {colors[color_category].map(colorInfo => (
+                <Color
+                  colorInfo={colorInfo}
+                  color_id={color_id}
+                  set_color_id={set_color_id}
+                  key={colorInfo.color_id}
+                />
+              ))}
+            </div>
           </div>
-          <button onClick={cancle}>취소</button>
-          <button onClick={commit}>색상 선택</button>
+          <div className="color-select-button-wrap">
+            <button className="color-select-dismiss" onClick={cancle}>
+              취소
+            </button>
+            <button className="color-select-submit" onClick={commit}>
+              색상 선택
+            </button>
+          </div>
         </div>
       );
     };
@@ -283,6 +292,7 @@ export default function ColorPalette({
             </button>
           </div>
         )}
+
         {is_open && (
           <ColorPaletteModal
             color_id={color_id}
@@ -294,7 +304,6 @@ export default function ColorPalette({
             is_facewear={is_facewear}
           />
         )}
-        <hr />
       </div>
     );
   };
@@ -320,9 +329,11 @@ export default function ColorPalette({
       )}
       {item.DyeCount >= 2 && (
         <ColorPaletteRow
+ 
           color={item.DyeSecond}
           is_open={is_s_open}
           is_facewear={itemRef.current.EquipSlotCategory === 24}
+
           palette_controll={palette_s_controll}
           dye_slot={2}
         />

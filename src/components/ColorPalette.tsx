@@ -88,6 +88,8 @@ export default function ColorPalette({
 
       const cancle = () => {
         set_color_id(0);
+
+        palette_controll();
       };
 
       const ColorCategory = ({
@@ -146,7 +148,7 @@ export default function ColorPalette({
       return (
         <div className="color-palette-modal">
           <div className="color-category-container">
-            {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+            {[0, 1, 2, 3, 4, 5, 6, 7].map(i => (
               <ColorCategory
                 category={i}
                 color={color_categories[i]}
@@ -156,24 +158,32 @@ export default function ColorPalette({
               />
             ))}
           </div>
-          <hr />
-          <div className="color-category-container">
+          <hr className="color-palette-divider" />
+          <div className="color-category-detail">
             <p>
               {color_id === 0
                 ? "테레빈유"
                 : Color_background_list[color_id - 1].name}
             </p>
-            {colors[color_category].map((colorInfo) => (
-              <Color
-                colorInfo={colorInfo}
-                color_id={color_id}
-                set_color_id={set_color_id}
-                key={colorInfo.color_id}
-              />
-            ))}
+            <div className="color-category-container">
+              {colors[color_category].map(colorInfo => (
+                <Color
+                  colorInfo={colorInfo}
+                  color_id={color_id}
+                  set_color_id={set_color_id}
+                  key={colorInfo.color_id}
+                />
+              ))}
+            </div>
           </div>
-          <button onClick={cancle}>취소</button>
-          <button onClick={commit}>색상 선택</button>
+          <div className="color-select-button-wrap">
+            <button className="color-select-dismiss" onClick={cancle}>
+              취소
+            </button>
+            <button className="color-select-submit" onClick={commit}>
+              색상 선택
+            </button>
+          </div>
         </div>
       );
     };
@@ -181,13 +191,12 @@ export default function ColorPalette({
     return (
       <div className="palette-container">
         <div className="palette-name" onClick={palette_controll}>
-          <img src="../../public/img/color_plus.svg" alt="add_color_icon" />
+          <img src="./img/color_plus.svg" alt="add_color_icon" />
           {dye_slot}염색 색상추가
         </div>
         {is_open && (
           <ColorPaletteModal slot={slot} palette_controll={palette_controll} />
         )}
-        <hr />
       </div>
     );
   };
@@ -206,9 +215,9 @@ export default function ColorPalette({
       )}
       {item.DyeCount >= 2 && (
         <ColorPaletteRow
-          is_open={is_f_open}
-          palette_controll={palette_f_controll}
-          dye_slot={1}
+          is_open={is_s_open}
+          palette_controll={palette_s_controll}
+          dye_slot={2}
         />
       )}
     </div>

@@ -1,5 +1,7 @@
 import "../css/ItemInformation.css";
 import { Item } from "../type/Item.ts";
+import { ColorInfo } from "../type/color_info";
+import Color_background_list_raw from "../json/color_background.json";
 
 export default function ItemInformation({
   open_modal,
@@ -24,6 +26,8 @@ export default function ItemInformation({
     "추가 옵션",
     "추가 옵션",
   ];
+  const Color_background_list: ColorInfo[] =
+    Color_background_list_raw as ColorInfo[];
   function is_null_equiped_item(equiped_item: Item[]): boolean {
     if (
       image_src === "./img/thumbnail_mobile.svg" ||
@@ -72,23 +76,21 @@ export default function ItemInformation({
     slot_name,
     open_modal,
     slot,
-    src,
     is_active,
+    item,
   }: {
     slot_name: string;
     open_modal: (slot: number) => void;
     slot: number;
-    src: string;
     is_active: boolean;
+    item: Item;
   }) => {
     const item_search_modal_open = () => {
       if (is_active) {
         open_modal(slot);
       }
     };
-    if (!is_active) {
-      src = "./img/item_slot_inactive.svg";
-    }
+    const src = is_active ? item.Icon : "./img/item_slot_inactive.svg";
 
     return (
       <div className="item-slot">
@@ -98,6 +100,42 @@ export default function ItemInformation({
           alt={slot_name + "아이콘"}
           onClick={item_search_modal_open}
         />
+        <div className="dye-palette-container">
+          {item.DyeCount > 0 && (
+            <div
+              className="dye-palette"
+              style={
+                item.DyeFirst === 0
+                  ? {
+                      backgroundImage: "url(./img/base_color.svg)",
+                      backgroundPosition: "center",
+                    }
+                  : {
+                      backgroundColor:
+                        "#" +
+                        Color_background_list[item.DyeFirst].background_color,
+                    }
+              }
+            ></div>
+          )}
+          {item.DyeCount > 1 && (
+            <div
+              className="dye-palette"
+              style={
+                item.DyeSecond === 0
+                  ? {
+                      backgroundImage: "url(./img/base_color.svg)",
+                      backgroundPosition: "center",
+                    }
+                  : {
+                      backgroundColor:
+                        "#" +
+                        Color_background_list[item.DyeSecond].background_color,
+                    }
+              }
+            ></div>
+          )}
+        </div>
       </div>
     );
   };
@@ -116,8 +154,8 @@ export default function ItemInformation({
               slot_name={slots[i]}
               open_modal={open_modal}
               slot={i}
-              src={equiped_item[i].Icon}
               is_active={slot_active[i]}
+              item={equiped_item[i]}
               key={i}
             />
           ))}
@@ -128,8 +166,8 @@ export default function ItemInformation({
               slot_name={slots[i]}
               open_modal={open_modal}
               slot={i}
-              src={equiped_item[i].Icon}
               is_active={slot_active[i]}
+              item={equiped_item[i]}
               key={i}
             />
           ))}

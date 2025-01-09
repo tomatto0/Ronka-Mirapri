@@ -106,7 +106,7 @@ export default function UserCanvas({
             // 아이템 아이콘 그리기
             if (image)
               ctx.drawImage(image.Image, box_width + 31, i * 114 + 43, 85, 85);
-            ctx.font = "29px Pretendard-Regular";
+            ctx.font = "29px Pretendard";
             ctx.fillStyle = "#FFFFFF";
             ctx.fillText(item.Name, box_width + 31 + 104, i * 114 + 51);
 
@@ -125,7 +125,7 @@ export default function UserCanvas({
               const textColor = colorInfo1.text_color || "black";
 
               // 텍스트 배경 그리기
-              ctx.font = "21px Pretendard-Regular";
+              ctx.font = "21px Pretendard";
               const textWidth = ctx.measureText("1 - " + colorInfo1.name).width;
               dyeFirstWidthRef.current = textWidth;
               ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
@@ -154,7 +154,7 @@ export default function UserCanvas({
               const textColor = colorInfo2.text_color || "black";
 
               // 텍스트 배경 그리기
-              ctx.font = "21px Pretendard-Regular";
+              ctx.font = "21px Pretendard";
               const textWidth = ctx.measureText("2 - " + colorInfo2.name).width;
               ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
 
@@ -190,7 +190,7 @@ export default function UserCanvas({
 
           ctx.textAlign = "end";
           ctx.textBaseline = "bottom";
-          ctx.font = "16px Pretendard-Regular";
+          ctx.font = "16px Pretendard";
           ctx.fillStyle = "#BEBEBE";
 
           //ronkacloset.com
@@ -229,9 +229,6 @@ export default function UserCanvas({
       isDown.current = false;
       e.preventDefault();
     };
-    // const mouseleave_handler = () => {
-    //   isDown.current = false;
-    // };
     const mousemove_handler = (e: MouseEvent) => {
       if (!isDown.current) {
         return;
@@ -252,9 +249,6 @@ export default function UserCanvas({
       );
 
       startX.current = e.pageX - user_canvas.offsetParent.offsetLeft; // 현재 X좌표 갱신
-      // y.current += e.pageY -user_canvas.offsetTop -startY.current;
-      // y.current = clamp(box_height -image_height.current, y.current, 0);
-      // startY.current = e.pageY -user_canvas.offsetTop;
       user_image_draw(x.current, 0);
     };
 
@@ -310,9 +304,6 @@ export default function UserCanvas({
     user_canvas.addEventListener("mousedown", mousedown_handler);
     window.addEventListener("mouseup", mouseup_handler);
     window.addEventListener("mousemove", mousemove_handler);
-    // user_canvas.addEventListener('mouseup', mouseup_handler);
-    // user_canvas.addEventListener('mouseleave', mouseleave_handler);
-    // user_canvas.addEventListener('mousemove', mousemove_handler);
 
     user_canvas.addEventListener("touchstart", touchstart_handler);
     user_canvas.addEventListener("touchend", touchend_handler);
@@ -324,9 +315,6 @@ export default function UserCanvas({
       user_canvas.removeEventListener("mousedown", mousedown_handler);
       window.removeEventListener("mouseup", mouseup_handler);
       window.removeEventListener("mousemove", mousemove_handler);
-      // user_canvas.removeEventListener('mouseup', mouseup_handler);
-      // user_canvas.removeEventListener('mouseleave', mouseleave_handler);
-      // user_canvas.removeEventListener('mousemove', mousemove_handler);
 
       user_canvas.removeEventListener("touchstart", touchstart_handler);
       user_canvas.removeEventListener("touchend", touchend_handler);

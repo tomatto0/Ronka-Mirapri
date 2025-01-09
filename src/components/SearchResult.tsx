@@ -57,6 +57,9 @@ export default function SearchResult({
   };
 
   useEffect(() => {
+    if (search_result.length === show_result.length) {
+      return;
+    }
     const observer = new IntersectionObserver(
       (e) => {
         if (e[0].isIntersecting && !is_loading) {
@@ -79,7 +82,7 @@ export default function SearchResult({
         observer.unobserve(loader_current);
       }
     };
-  }, [is_loading, page, search_result]);
+  }, [is_loading, page, search_result, show_result]);
 
   useEffect(() => {
     set_show_result(search_result.slice(0, 10));

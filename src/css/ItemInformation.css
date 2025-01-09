@@ -23,6 +23,8 @@ div.item-information {
       border: 0;
       background-color: #e3e9fc;
       cursor: pointer;
+      padding: 5px;
+      border-radius: 4px;
     }
     button::before {
       content: "";
@@ -51,11 +53,9 @@ div.item-information {
         flex-grow: 0;
         display: inline-flex;
         flex-direction: column;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         width: 20%;
         min-width: 74px;
-
-        cursor: pointer;
 
         span {
           text-align: left;
@@ -73,6 +73,19 @@ div.item-information {
           -o-user-drag: none;
           user-select: none;
           border-radius: 8px;
+          cursor: pointer;
+        }
+        div.dye-palette-container {
+          margin-top: 5px;
+          display: flex;
+          div.dye-palette {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 0px 1px #1018282e;
+            display: inline-block;
+            margin-right: 3px;
+          }
         }
       }
     }
@@ -113,6 +126,7 @@ div.item-information {
     background-color: transparent;
 
     color: #98a2b3;
+    cursor: default;
   }
   .image-download.inactive::before {
     background-image: url("../../public/img/download_inactive.svg");

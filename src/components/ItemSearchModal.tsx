@@ -39,16 +39,19 @@ export default function ItemSearchModal({
     if (selected_item !== equiped_item[slot]) {
       set_selected_item(equiped_item[slot]);
     }
-    if ((equiped_item[slot].Id! == 0) === is_item_select) {
+    if ((equiped_item[slot].Id! === 0) === is_item_select) {
       set_is_item_select(equiped_item[slot].Id !== 0);
     }
-  }, [equiped_item, slot]);
+  }, [is_item_select, selected_item, equiped_item, slot]);
 
-  const select_item = useCallback((slot: number, item: Item) => {
-    edit_equiped_item(slot, item);
-    set_selected_item(item);
-    set_is_item_select(true);
-  }, []);
+  const select_item = useCallback(
+    (slot: number, item: Item) => {
+      edit_equiped_item(slot, item);
+      set_selected_item(item);
+      set_is_item_select(true);
+    },
+    [edit_equiped_item]
+  );
 
   const modal_close = () => {
     set_is_open(false);

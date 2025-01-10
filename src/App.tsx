@@ -1,5 +1,5 @@
 import "./css/App.css";
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect, useMemo } from "react";
 import { Item } from "./type/Item.ts";
 import { EquipSlot } from "./type/EquipSlot.ts";
 import equip_slot_categories from "./json/equip_slot_categories.json";
@@ -22,60 +22,66 @@ function App() {
     new Array(8).fill(true)
   );
 
-  const item_null = {
-    Id: 0,
-    Name: "",
-    Icon: "/img/item_slot.svg",
-    EquipSlotCategory: 6,
-    ClassJobCategory: 0,
-    DyeCount: 0,
-    DyeFirst: 0,
-    DyeSecond: 0,
-  };
+  const item_null = useMemo(() => {
+    return {
+      Id: 0,
+      Name: "",
+      Icon: "/img/item_slot.svg",
+      EquipSlotCategory: 6,
+      ClassJobCategory: 0,
+      DyeCount: 0,
+      DyeFirst: 0,
+      DyeSecond: 0,
+    };
+  }, []);
 
   const [equiped_item, set_equiped_item] = useState<Item[]>(
     new Array(8).fill(item_null)
   );
 
-  const edit_equiped_item = useCallback((slot: number, item: Item) => {
-    set_equiped_item((items) => {
-      const new_equiped_item = [...items];
-      new_equiped_item[slot] = item;
+  const edit_equiped_item = useCallback(
+    (slot: number, item: Item) => {
+      set_equiped_item((items) => {
+        const new_equiped_item = [...items];
+        new_equiped_item[slot] = item;
 
-      const slot_category: { [key: number]: EquipSlot } = equip_slot_categories;
-      const new_slot_active = new Array(8).fill(true);
+        const slot_category: { [key: number]: EquipSlot } =
+          equip_slot_categories;
+        const new_slot_active = new Array(8).fill(true);
 
-      for (let item of new_equiped_item) {
-        const eslot = slot_category[item.EquipSlotCategory];
-        if (eslot.Head === -1) {
-          new_equiped_item[0] = item_null;
-          new_slot_active[0] = false;
+        for (let item of new_equiped_item) {
+          const eslot = slot_category[item.EquipSlotCategory];
+          if (eslot.Head === -1) {
+            new_equiped_item[0] = item_null;
+            new_slot_active[0] = false;
+          }
+          if (eslot.Body === -1) {
+            new_equiped_item[1] = item_null;
+            new_slot_active[1] = false;
+          }
+          if (eslot.Gloves === -1) {
+            new_equiped_item[2] = item_null;
+            new_slot_active[2] = false;
+          }
+          if (eslot.Legs === -1) {
+            new_equiped_item[3] = item_null;
+            new_slot_active[3] = false;
+          }
+          if (eslot.Feet === -1) {
+            new_equiped_item[4] = item_null;
+            new_slot_active[4] = false;
+          }
         }
-        if (eslot.Body === -1) {
-          new_equiped_item[1] = item_null;
-          new_slot_active[1] = false;
-        }
-        if (eslot.Gloves === -1) {
-          new_equiped_item[2] = item_null;
-          new_slot_active[2] = false;
-        }
-        if (eslot.Legs === -1) {
-          new_equiped_item[3] = item_null;
-          new_slot_active[3] = false;
-        }
-        if (eslot.Feet === -1) {
-          new_equiped_item[4] = item_null;
-          new_slot_active[4] = false;
-        }
-      }
-      set_slot_active(new_slot_active);
-      return new_equiped_item;
-    });
-  }, []);
+        set_slot_active(new_slot_active);
+        return new_equiped_item;
+      });
+    },
+    [item_null]
+  );
 
   const reset_equiped_item = useCallback(() => {
     set_equiped_item(new Array(8).fill(item_null));
-  }, []);
+  }, [item_null]);
 
   const open_modal = useCallback((slot: number) => {
     set_is_open(true);

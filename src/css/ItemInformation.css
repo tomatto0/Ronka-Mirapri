@@ -3,7 +3,7 @@ div.item-information {
   width: 400px;
   flex-shrink: 0;
   padding: 2rem 26px calc(5rem + 39px) 26px;
-  min-height: 418px;
+  min-height: 457px;
   margin: 0 auto;
 
   .item-information-header {

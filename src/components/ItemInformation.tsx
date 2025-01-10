@@ -156,9 +156,9 @@ export default function ItemInformation({
             </p>
             <h3>사용방법 </h3>
             <ol>
-              <li>코디 예시 이미지 추가하기</li>
-              <li>원하는 아이템 추가하기 이미지</li>
-              <li> 다운로드 버튼 클릭!(jpg, png 지원)</li>
+              <li>코디 예시 이미지 추가하기(이미지 드래그 가능)</li>
+              <li>원하는 아이템 추가하기</li>
+              <li>이미지 다운로드 버튼 클릭!</li>
             </ol>
             <h3>주의사항</h3>
             <ul>

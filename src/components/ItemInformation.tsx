@@ -240,13 +240,13 @@ export default function ItemInformation({
           className={"ext-selector" + (is_jpg ? "" : " inactive")}
           onClick={set_jpg}
         >
-          jpg
+          JPG
         </button>
         <button
           className={"ext-selector" + (!is_jpg ? "" : " inactive")}
           onClick={set_png}
         >
-          png
+          PNG
         </button>
       </div>
     </div>

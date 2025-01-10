@@ -31,7 +31,8 @@ export default function UserCanvas({
   const user_image = useRef<HTMLImageElement>(new Image()); // 사용자 이미지 Ref
   const item_background_image = useRef<HTMLImageElement>(new Image()); //아이템 배경 이미지 Ref
   const item_placeholder_image = useRef<HTMLImageElement>(new Image()); //아이템 플레이스홀더 이미지 Ref
-  const is_loaded = useRef<boolean>(false); //사용자 이미지, 아이템 배경, 플레이스 홀더 로드 완료 여부
+  const is_user_image_loaded = useRef<boolean>(false);
+  const is_image_loaded = useRef<boolean>(false); //아이템 배경, 플레이스 홀더 로드 완료 여부
   const isDown = useRef<boolean>(false); // 마우스 클릭 여부 확인
   const startX = useRef<number>(0); // 마우스 시작 X좌표
   // const startY = useRef<number>(0);
@@ -52,7 +53,7 @@ export default function UserCanvas({
   // 사용자의 이미지를 그리는 함수
   const user_image_draw = useCallback(
     (x: number, y: number) => {
-      if (!is_loaded.current) return;
+      if (!is_user_image_loaded.current) return;
       const user_canvas = imageRef.current;
       const image = user_image.current;
       if (user_canvas) {
@@ -80,7 +81,7 @@ export default function UserCanvas({
   // 장착된 아이템을 그리는 함수
   const user_item_draw = useCallback(
     (item_list: Item[]) => {
-      if (!is_loaded.current) return;
+      if (!is_image_loaded.current) return;
       const user_canvas = imageRef.current;
       if (user_canvas) {
         const ctx = user_canvas.getContext("2d");
@@ -332,12 +333,9 @@ export default function UserCanvas({
     };
   }, [box_width, ratio, user_image_draw]);
 
-  // 이미지 로드 및 초기화
+  // 아이템 배경 이미지 로드 및 초기화
   useEffect(() => {
-    is_loaded.current = false;
-    x.current = 0;
-    // y.current = 0;
-    user_image.current.src = image_src;
+    is_image_loaded.current = false;
     item_background_image.current.src =
       process.env.PUBLIC_URL + "/img/item_background.svg";
     item_placeholder_image.current.src =
@@ -345,21 +343,32 @@ export default function UserCanvas({
 
     const onload_handler = () => {
       if (
-        user_image.current.complete &&
         item_background_image.current.complete &&
         item_placeholder_image.current.complete
       ) {
-        is_loaded.current = true;
-        image_width.current = user_image.current.width;
-        image_height.current = user_image.current.height;
-        user_image_draw(0, 0); // 초기 이미지 그리기
+        is_image_loaded.current = true;
         user_item_draw([]);
       }
     };
-
-    user_image.current.onload = onload_handler;
     item_background_image.current.onload = onload_handler;
     item_placeholder_image.current.onload = onload_handler;
+  }, [user_item_draw]);
+
+  // 사용자 이미지 로드 및 초기화
+  useEffect(() => {
+    is_user_image_loaded.current = false;
+    x.current = 0;
+    // y.current = 0;
+    user_image.current.src = image_src;
+
+    const onload_handler = () => {
+      is_user_image_loaded.current = true;
+      image_width.current = user_image.current.width;
+      image_height.current = user_image.current.height;
+      user_image_draw(0, 0); // 초기 이미지 그리기
+    };
+
+    user_image.current.onload = onload_handler;
   }, [image_src, user_image_draw]);
 
   // 아이템 이미지 로드 확인

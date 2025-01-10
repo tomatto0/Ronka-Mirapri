@@ -222,6 +222,9 @@ export default function ItemInformation({
           ))}
         </div>
       </div>
+      <p className="description">
+        * 무기, 악세서리, 얼굴장식은 추가옵션으로 등록할 수 있습니다
+      </p>
       <div className="download-container">
         {is_null_equiped_item(equiped_item) && (
           <img

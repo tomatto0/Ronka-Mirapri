@@ -144,7 +144,13 @@ div.item-information {
       }
     }
   }
-
+  p.description {
+    color: #5d6b98;
+    font-size: 1.2rem;
+    text-align: start;
+    line-height: 19px;
+    letter-spacing: -0.42px;
+  }
   div.download-container {
     position: absolute;
     bottom: 0;

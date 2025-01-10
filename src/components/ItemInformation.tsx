@@ -2,6 +2,7 @@ import "../css/ItemInformation.css";
 import { Item } from "../type/Item.ts";
 import { ColorInfo } from "../type/color_info";
 import Color_background_list_raw from "../json/color_background.json";
+import { useState } from "react";
 
 export default function ItemInformation({
   open_modal,
@@ -28,6 +29,8 @@ export default function ItemInformation({
   ];
   const Color_background_list: ColorInfo[] =
     Color_background_list_raw as ColorInfo[];
+  const [is_jpg, set_is_jpg] = useState<boolean>(true);
+
   function is_null_equiped_item(equiped_item: Item[]): boolean {
     if (
       image_src === "./img/thumbnail_mobile.svg" ||
@@ -60,14 +63,19 @@ export default function ItemInformation({
         .replace(". ", "")
         .replace(":", "");
 
-      console.log(formattedDate);
-
       const canvas = document.querySelector(".user-canvas");
       if (canvas instanceof HTMLCanvasElement) {
-        const a = document.createElement("a");
-        a.href = canvas.toDataURL();
-        a.download = `RonkaMirapri ${formattedDate}.jpg`;
-        a.click();
+        if (is_jpg) {
+          const a = document.createElement("a");
+          a.href = canvas.toDataURL("image/jpeg");
+          a.download = `RonkaMirapri ${formattedDate}.jpg`;
+          a.click();
+        } else {
+          const a = document.createElement("a");
+          a.href = canvas.toDataURL("image/png");
+          a.download = `RonkaMirapri ${formattedDate}.png`;
+          a.click();
+        }
       }
     }
   };
@@ -140,6 +148,13 @@ export default function ItemInformation({
     );
   };
 
+  const set_png = () => {
+    set_is_jpg(false);
+  };
+  const set_jpg = () => {
+    set_is_jpg(true);
+  };
+
   return (
     <div className="item-information">
       <div className="item-information-header">
@@ -186,22 +201,36 @@ export default function ItemInformation({
           ))}
         </div>
       </div>
-      {is_null_equiped_item(equiped_item) && (
-        <img
-          className="download-info"
-          src="./img/download_info.svg"
-          alt="예시 이미지와 아이템 등록시 다운로드 가능"
-        />
-      )}
-      <button
-        className={
-          "image-download " +
-          (is_null_equiped_item(equiped_item) ? "inactive" : "")
-        }
-        onClick={image_download}
-      >
-        이미지 다운로드
-      </button>
+      <div className="download-container">
+        {is_null_equiped_item(equiped_item) && (
+          <img
+            className="download-info"
+            src="./img/download_info.svg"
+            alt="예시 이미지와 아이템 등록시 다운로드 가능"
+          />
+        )}
+        <button
+          className={
+            "image-download " +
+            (is_null_equiped_item(equiped_item) ? "inactive" : "")
+          }
+          onClick={image_download}
+        >
+          이미지 다운로드
+        </button>
+        <button
+          className={"ext-selector" + (is_jpg ? "" : " inactive")}
+          onClick={set_jpg}
+        >
+          jpg
+        </button>
+        <button
+          className={"ext-selector" + (!is_jpg ? "" : " inactive")}
+          onClick={set_png}
+        >
+          png
+        </button>
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ div.item-information {
   position: relative;
   width: 400px;
   flex-shrink: 0;
-  padding: 2rem 26px 5rem 26px;
+  padding: 2rem 26px calc(5rem + 39px) 26px;
   min-height: 418px;
   margin: 0 auto;
 
@@ -110,6 +110,7 @@ div.item-information {
         margin-bottom: 1rem;
         width: 20%;
         min-width: 74px;
+        height: 112px;
 
         span {
           text-align: left;
@@ -229,7 +230,7 @@ div.item-information {
 @media (min-width: 1024px) {
   div.item-information {
     width: 444px;
-    padding: 0 5rem 5rem;
+    padding: 0 5rem calc(5rem + 39px);
 
     .item-information-header {
       span {

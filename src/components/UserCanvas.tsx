@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect, useCallback } from "react";
-import { ColorInfo } from "../type/color_info";
+import { ColorInfo } from "../type/ColorInfo";
 import Color_background_list_raw from "../json/color_background.json";
 import { Item } from "../type/Item";
 import "../css/UserCanvas.css";

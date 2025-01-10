@@ -1,6 +1,6 @@
 import "../css/ItemInformation.css";
 import { Item } from "../type/Item.ts";
-import { ColorInfo } from "../type/color_info";
+import { ColorInfo } from "../type/ColorInfo.ts";
 import Color_background_list_raw from "../json/color_background.json";
 import { useState } from "react";
 

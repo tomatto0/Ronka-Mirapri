@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Ronka-Mirapri/static/css/main.b90366ed.css",
+    "main.js": "/Ronka-Mirapri/static/js/main.67859b2e.js",
+    "static/js/488.c0a94d25.chunk.js": "/Ronka-Mirapri/static/js/488.c0a94d25.chunk.js",
+    "static/media/Pretendard-ExtraBold.woff": "/Ronka-Mirapri/static/media/Pretendard-ExtraBold.f6491e200d1fb5c5917b.woff",
+    "static/media/Pretendard-Bold.woff": "/Ronka-Mirapri/static/media/Pretendard-Bold.1f1dbbbf311ffffcc770.woff",
+    "static/media/Pretendard-SemiBold.woff": "/Ronka-Mirapri/static/media/Pretendard-SemiBold.9f6b39f88e7e6a3fd0b2.woff",
+    "static/media/Pretendard-Medium.woff": "/Ronka-Mirapri/static/media/Pretendard-Medium.edd5e28caa1cc4a9e0b7.woff",
+    "static/media/Pretendard-Light.woff": "/Ronka-Mirapri/static/media/Pretendard-Light.7d1a33b829142e833fb9.woff",
+    "static/media/Pretendard-Regular.woff": "/Ronka-Mirapri/static/media/Pretendard-Regular.303253288b0ba99db532.woff",
+    "static/media/title_mobile.svg": "/Ronka-Mirapri/static/media/title_mobile.7a23eb8c7e9693ea6d2b.svg",
+    "static/media/title.svg": "/Ronka-Mirapri/static/media/title.057af960dd106e332cb0.svg",
+    "index.html": "/Ronka-Mirapri/index.html",
+    "static/media/download.svg": "/Ronka-Mirapri/static/media/download.84c0dc7c71618ea9b0bc.svg",
+    "static/media/download_inactive.svg": "/Ronka-Mirapri/static/media/download_inactive.61309a2848891e5365eb.svg",
+    "static/media/refresh.svg": "/Ronka-Mirapri/static/media/refresh.89d970d83e837e272d20.svg",
+    "static/media/image_delete.svg": "/Ronka-Mirapri/static/media/image_delete.14b3819368568d4c9dab.svg",
+    "static/media/plus.svg": "/Ronka-Mirapri/static/media/plus.cfb83c690aed24e58fac.svg",
+    "main.b90366ed.css.map": "/Ronka-Mirapri/static/css/main.b90366ed.css.map",
+    "main.67859b2e.js.map": "/Ronka-Mirapri/static/js/main.67859b2e.js.map",
+    "488.c0a94d25.chunk.js.map": "/Ronka-Mirapri/static/js/488.c0a94d25.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b90366ed.css",
+    "static/js/main.67859b2e.js"
+  ]
+}

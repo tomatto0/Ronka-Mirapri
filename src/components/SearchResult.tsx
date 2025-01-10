@@ -33,7 +33,11 @@ export default function SearchResult({
         ref={component}
         onClick={click_handler_container}
       >
-        <img className="item-icon" src={"./" + item.Icon} alt={item.Name} />
+        <img
+          className="item-icon"
+          src={process.env.PUBLIC_URL + item.Icon}
+          alt={item.Name}
+        />
         <span>{item.Name}</span>
       </div>
     );

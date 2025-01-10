@@ -49,7 +49,11 @@ export default function ItemSearch({
   };
   return (
     <div className="item-search-container">
-      <img className="search-icon" src="./img/search.svg" alt="search icon" />
+      <img
+        className="search-icon"
+        src={process.env.PUBLIC_URL + "/img/search.svg"}
+        alt="search icon"
+      />
       <input
         type="text"
         placeholder="아이템을 검색하세요"

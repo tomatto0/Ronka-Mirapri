@@ -198,7 +198,7 @@ export default function ColorPalette({
         const style =
           colorInfo.color_id === 0
             ? {
-                backgroundImage: "url(./img/base_color.svg)",
+                backgroundImage: `url(${process.env.PUBLIC_URL}/img/base_color.svg)`,
                 backgroundPosition: "center",
               }
             : { backgroundColor: "#" + colorInfo.background_color };
@@ -271,7 +271,7 @@ export default function ColorPalette({
             <div className="palette-name-info">
               <img
                 className="svg-image"
-                src="./img/color_plus.svg"
+                src={process.env.PUBLIC_URL + "/img/color_plus.svg"}
                 alt="add_color_icon"
               />
               {dye_slot}염색 색상추가
@@ -294,7 +294,10 @@ export default function ColorPalette({
               {dye_slot}염색 - {Color_background_list[color_id].name}
             </div>
             <button className="image" onClick={color_cancle}>
-              <img src="./img/cancle_small.svg" alt="color cancle button" />
+              <img
+                src={process.env.PUBLIC_URL + "/img/cancle_small.svg"}
+                alt="color cancle button"
+              />
             </button>
           </div>
         )}
@@ -320,7 +323,10 @@ export default function ColorPalette({
       <div className="selected-item-name">
         {item.Name}
         <button className="image" onClick={item_cancle}>
-          <img src="./img/cancle_small.svg" alt="item cancle button" />
+          <img
+            src={process.env.PUBLIC_URL + "/img/cancle_small.svg"}
+            alt="item cancle button"
+          />
         </button>
       </div>
 

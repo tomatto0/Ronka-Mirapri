@@ -25,7 +25,7 @@ function App() {
   const item_null = {
     Id: 0,
     Name: "",
-    Icon: "./img/item_slot.svg",
+    Icon: "/img/item_slot.svg",
     EquipSlotCategory: 6,
     ClassJobCategory: 0,
     DyeCount: 0,

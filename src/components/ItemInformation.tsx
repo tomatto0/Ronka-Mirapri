@@ -98,7 +98,7 @@ export default function ItemInformation({
         open_modal(slot);
       }
     };
-    const src = is_active ? item.Icon : "./img/item_slot_inactive.svg";
+    const src = is_active ? item.Icon : "/img/item_slot_inactive.svg";
 
     return (
       <div className="item-slot">
@@ -195,7 +195,7 @@ export default function ItemInformation({
       <hr />
       <div className="item-slot-container">
         <div className="item-slot-row">
-          {[0, 1, 2, 3].map(i => (
+          {[0, 1, 2, 3].map((i) => (
             <ItemSlot
               slot_name={slots[i]}
               open_modal={open_modal}
@@ -207,7 +207,7 @@ export default function ItemInformation({
           ))}
         </div>
         <div className="item-slot-row">
-          {[4, 5, 6, 7].map(i => (
+          {[4, 5, 6, 7].map((i) => (
             <ItemSlot
               slot_name={slots[i]}
               open_modal={open_modal}

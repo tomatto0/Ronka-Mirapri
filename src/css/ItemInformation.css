@@ -3,7 +3,7 @@ div.item-information {
   width: 400px;
   flex-shrink: 0;
   padding: 2rem 26px 5rem 26px;
-  min-height: 388px;
+  min-height: 418px;
   margin: 0 auto;
 
   .item-information-header {
@@ -19,8 +19,9 @@ div.item-information {
         font-size: 1.5rem;
         letter-spacing: -0.42px;
         color: #4a5578;
-        margin-right: 2px;
+        margin-right: 6px;
       }
+
       img {
         width: 1.5rem;
         height: 1.5rem;
@@ -30,8 +31,41 @@ div.item-information {
         position: absolute;
         width: 348px;
         background-color: #ffffff;
+        text-align: left;
+        padding: 23px 23px;
+        font-size: 1.3rem;
+        color: #475467;
+        border-radius: 12px;
+        /* left: 48px; */
+        top: 59px;
+        line-height: 19px;
+        box-shadow: 0px 12px 16px -4px rgba(1, 42, 123, 0.08),
+          0px 4px 6px -2px rgba(12, 45, 110, 0.03);
+        z-index: 333;
+
+        ol {
+          margin-top: 8px;
+          padding-left: 16px;
+          line-height: 23px;
+        }
+        ul {
+          margin-top: 8px;
+          padding-left: 16px;
+          font-size: 1.2rem;
+
+          li {
+            margin-bottom: 5px;
+          }
+        }
+
+        h3 {
+          margin-top: 25px;
+        }
       }
-      img:hover + div.information {
+      .infomation-icon {
+        background-color: #efeffd;
+      }
+      .infomation-icon:hover + div.information {
         display: block;
       }
     }
@@ -213,4 +247,24 @@ div.item-information {
 }
 
 @media (min-width: 1024px) {
+  div.item-information {
+    & .item-information-header {
+      & div {
+        span {
+          font-size: 1.6rem;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  div.item-information {
+    & .item-information-header {
+      & div {
+        div.information {
+          top: 39px;
+        }
+      }
+    }
+  }
 }

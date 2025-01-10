@@ -160,16 +160,34 @@ export default function ItemInformation({
       <div className="item-information-header">
         <div>
           <span>코디 정보 입력</span>
-          <img src="./img/help-circle.svg" alt="도움말" />
+          <div className="infomation-icon">
+            <img src="./img/help-circle.svg" alt="도움말" />
+          </div>
           <div className="information">
-            본 프로젝트는 롱카의 옷장? 서브 프로젝트로, 간단하게 파판14의 코디
-            이미지를 생성하고 공유할 수 있습니다. 사용방법 코디 예시 이미지
-            추가하기 원하는 아이템 추가하기 이미지 다운로드 버튼 클릭!(jpg, png
-            지원) 주의사항 본 이미지 생성기를 통해 생성된 이미지와 관련된 모든
-            활동으로 인해 발생하는 불미스러운 사건에 대해 롱카의 옷장?측은 이에
-            대해 책임을 지지 않습니다. 이미지 생성기를 사용하는 것으로, 해당
-            주의사항을 확인한 것으로 간주하므로 이 점에 유의하여 멋진 코디
-            생활을 즐기시길 바랍니다. 감사합니다.
+            <p>
+              본 프로젝트는 롱카의 옷장? 서브 프로젝트로, 간단하게
+              <br /> <strong>파판14의 코디 이미지를 생성</strong>하고 공유할 수
+              있습니다.
+            </p>
+            <h3>사용방법 </h3>
+            <ol>
+              <li>코디 예시 이미지 추가하기</li>
+              <li>원하는 아이템 추가하기 이미지</li>
+              <li> 다운로드 버튼 클릭!(jpg, png 지원)</li>
+            </ol>
+            <h3>주의사항</h3>
+            <ul>
+              <li>
+                본 이미지 생성기를 통해 생성된 이미지와 관련된 모든 활동으로
+                인해 발생하는 불미스러운 사건에 대해 롱카의 옷장?측은 이에 대해
+                책임을 지지 않습니다.
+              </li>
+              <li>
+                이미지 생성기를 사용하는 것으로, 해당 주의사항을 확인한 것으로
+                간주하므로 이 점에 유의하여 멋진 코디 생활을 즐기시길 바랍니다.
+                감사합니다.
+              </li>
+            </ul>
           </div>
         </div>
         <button onClick={reset_equiped_item}>초기화</button>
@@ -177,7 +195,7 @@ export default function ItemInformation({
       <hr />
       <div className="item-slot-container">
         <div className="item-slot-row">
-          {[0, 1, 2, 3].map((i) => (
+          {[0, 1, 2, 3].map(i => (
             <ItemSlot
               slot_name={slots[i]}
               open_modal={open_modal}
@@ -189,7 +207,7 @@ export default function ItemInformation({
           ))}
         </div>
         <div className="item-slot-row">
-          {[4, 5, 6, 7].map((i) => (
+          {[4, 5, 6, 7].map(i => (
             <ItemSlot
               slot_name={slots[i]}
               open_modal={open_modal}

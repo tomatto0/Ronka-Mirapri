@@ -104,7 +104,7 @@ export default function ItemInformation({
       <div className="item-slot">
         <span>{slot_name}</span>
         <img
-          src={src}
+          src={"." + src}
           alt={slot_name + "아이콘"}
           onClick={item_search_modal_open}
         />

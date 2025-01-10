@@ -28,7 +28,9 @@ export default function UserCanvas({
   image_thumbnail: () => string;
 }) {
   const imageRef = useRef<HTMLCanvasElement | null>(null); // 캔버스 참조
-  const user_image = useRef<HTMLImageElement>(new Image());
+  const user_image = useRef<HTMLImageElement>(new Image()); // 사용자 이미지 Ref
+  const item_background_image = useRef<HTMLImageElement>(new Image()); //아이템 배경 이미지 Ref
+  const item_placeholder_image = useRef<HTMLImageElement>(new Image()); //아이템 플레이스홀더 이미지 Ref
   const isDown = useRef<boolean>(false); // 마우스 클릭 여부 확인
   const startX = useRef<number>(0); // 마우스 시작 X좌표
   // const startY = useRef<number>(0);
@@ -46,6 +48,8 @@ export default function UserCanvas({
   const dyeFirstWidthRef = useRef<number>(0); // Ref로 선언
   const [is_selected, set_is_selected] = useState<boolean>(false);
 
+  item_background_image.current.src = "./img/item_background.svg";
+  item_placeholder_image.current.src = "./img/placeholder.svg";
   // 사용자의 이미지를 그리는 함수
   const user_image_draw = useCallback(
     (x: number, y: number) => {
@@ -84,21 +88,25 @@ export default function UserCanvas({
           ctx.textBaseline = "top";
 
           // 아이템 표시 영역 초기화
-          const linear_gradient = ctx.createLinearGradient(
+          ctx.drawImage(
+            item_background_image.current,
             box_width,
             0,
-            box_width,
-            1080
+            user_canvas.width - box_width,
+            user_canvas.height
           );
-          linear_gradient.addColorStop(0, "#111111");
-          linear_gradient.addColorStop(0.16, "#2E2E2E");
-          linear_gradient.addColorStop(0.84, "#2E2E2E");
-          linear_gradient.addColorStop(1, "#111111");
-          ctx.fillStyle = linear_gradient;
-
-          ctx.fillRect(box_width, 0, user_canvas.width, user_canvas.height);
           let i = 0;
-          // for (let [i, item] of item_list.entries()) {
+
+          if (item_list.every((item) => item.Id === 0)) {
+            ctx.drawImage(
+              item_placeholder_image.current,
+              box_width + 31,
+              43,
+              496,
+              326
+            );
+          }
+
           for (let item of item_list) {
             const image = item_images.current.find((i) => i.Id === item.Id);
             if (item.Id === 0) continue;
@@ -106,7 +114,7 @@ export default function UserCanvas({
             // 아이템 아이콘 그리기
             if (image)
               ctx.drawImage(image.Image, box_width + 31, i * 114 + 43, 85, 85);
-            ctx.font = "29px Pretendard";
+            ctx.font = "28px Pretendard";
             ctx.fillStyle = "#FFFFFF";
             ctx.fillText(item.Name, box_width + 31 + 104, i * 114 + 51);
 

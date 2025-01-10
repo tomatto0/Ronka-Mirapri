@@ -1,6 +1,6 @@
 import "../css/ItemSearchModal.css";
 import { useEffect, useRef } from "react";
-import filtered_item_list from "../json/filtered_items.json";
+import item_list_raw from "../json/filtered_items.json";
 import equip_slot_categories from "../json/equip_slot_categories.json";
 import { Item } from "../type/Item.ts";
 import { EquipSlot } from "../type/EquipSlot.ts";
@@ -19,7 +19,7 @@ export default function ItemSearch({
   set_search_result: (items: Item[]) => void;
   set_is_item_select: (is: boolean) => void;
 }) {
-  const item_list: Item[] = filtered_item_list as Item[];
+  const item_list: Item[] = item_list_raw as Item[];
   const slot_category: { [key: number]: EquipSlot } = equip_slot_categories;
   const input_ref = useRef<HTMLInputElement>(null);
 
@@ -44,6 +44,7 @@ export default function ItemSearch({
         searcher.search(item.Name) >= 0 &&
         slot_category[item.EquipSlotCategory]["Slot"] === eslot
     );
+    result.reverse();
     set_search_result(result);
   };
   return (

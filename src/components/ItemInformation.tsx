@@ -143,7 +143,20 @@ export default function ItemInformation({
   return (
     <div className="item-information">
       <div className="item-information-header">
-        <span>코디 정보 입력</span>
+        <div>
+          <span>코디 정보 입력</span>
+          <img src="./img/help-circle.svg" alt="도움말" />
+          <div className="information">
+            본 프로젝트는 롱카의 옷장? 서브 프로젝트로, 간단하게 파판14의 코디
+            이미지를 생성하고 공유할 수 있습니다. 사용방법 코디 예시 이미지
+            추가하기 원하는 아이템 추가하기 이미지 다운로드 버튼 클릭!(jpg, png
+            지원) 주의사항 본 이미지 생성기를 통해 생성된 이미지와 관련된 모든
+            활동으로 인해 발생하는 불미스러운 사건에 대해 롱카의 옷장?측은 이에
+            대해 책임을 지지 않습니다. 이미지 생성기를 사용하는 것으로, 해당
+            주의사항을 확인한 것으로 간주하므로 이 점에 유의하여 멋진 코디
+            생활을 즐기시길 바랍니다. 감사합니다.
+          </div>
+        </div>
         <button onClick={reset_equiped_item}>초기화</button>
       </div>
       <hr />
@@ -173,6 +186,13 @@ export default function ItemInformation({
           ))}
         </div>
       </div>
+      {is_null_equiped_item(equiped_item) && (
+        <img
+          className="download-info"
+          src="./img/download_info.svg"
+          alt="예시 이미지와 아이템 등록시 다운로드 가능"
+        />
+      )}
       <button
         className={
           "image-download " +

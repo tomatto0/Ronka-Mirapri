@@ -42,7 +42,7 @@ div.search-result-container {
 
 div.loader {
   text-align: center;
-  padding: 1rem;
+  padding: 1px;
   span {
     width: 2.4rem;
     height: 2.4rem;
@@ -52,7 +52,7 @@ div.loader {
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
-    margin: auto 0;
+    margin: auto 1rem;
   }
 }
 

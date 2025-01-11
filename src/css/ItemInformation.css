@@ -228,9 +228,14 @@ div.item-information {
 }
 
 @media (min-width: 1024px) {
-  div.item-information {
+  div.item-information-container {
     width: 444px;
-    padding: 0 5rem calc(5rem + 39px);
+    display: flex;
+    justify-content: center;
+  }
+  div.item-information {
+    width: 348px;
+    padding: 0 0 calc(5rem + 39px);
 
     .item-information-header {
       span {
@@ -269,9 +274,7 @@ div.item-information {
       }
     }
   }
-}
 
-@media (min-width: 1024px) {
   div.item-information {
     & .item-information-header {
       & div {

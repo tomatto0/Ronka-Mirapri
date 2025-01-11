@@ -204,10 +204,10 @@ export default function UserCanvas({
           ctx.fillStyle = "#BEBEBE";
 
           //ronkacloset.com
-          ctx.fillText("ronkacloset.com", 1064, 1048);
+          ctx.fillText("ronkacloset.com", box_width + 614, 1048);
           ctx.fillText(
             "© SQUARE ENIX Published in Korea by Actoz Soft CO., LTD.",
-            1064,
+            box_width + 614,
             1064
           );
         }
@@ -457,7 +457,7 @@ export default function UserCanvas({
       <CanvasClickLayer is_selected={is_selected} />
       <canvas
         className="user-canvas"
-        width="1080"
+        width={box_width + 630}
         height="1080"
         ref={imageRef}
       />

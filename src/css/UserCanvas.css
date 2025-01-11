@@ -55,6 +55,7 @@ div.canvas-container {
 @media (min-width: 1024px) {
   div.canvas-container {
     height: 70vh;
+    width: auto;
 
     canvas.user-canvas {
       width: auto;

@@ -156,104 +156,106 @@ export default function ItemInformation({
   };
 
   return (
-    <div className="item-information">
-      <div className="item-information-header">
-        <div>
-          <span>코디 정보 입력</span>
-          <div className="infomation-icon">
+    <div className="item-information-container">
+      <div className="item-information">
+        <div className="item-information-header">
+          <div>
+            <span>코디 정보 입력</span>
+            <div className="infomation-icon">
+              <img
+                src={process.env.PUBLIC_URL + "/img/help-circle.svg"}
+                alt="도움말"
+              />
+            </div>
+            <div className="information">
+              <p>
+                본 프로젝트는 롱카의 옷장? 서브 프로젝트로, 간단하게
+                <br /> <strong>파판14의 코디 이미지를 생성</strong>하고 공유할
+                수 있습니다.
+              </p>
+              <h3>사용방법 </h3>
+              <ol>
+                <li>코디 예시 이미지 추가하기(이미지 드래그 가능)</li>
+                <li>원하는 아이템 추가하기</li>
+                <li>이미지 다운로드 버튼 클릭!</li>
+              </ol>
+              <h3>주의사항</h3>
+              <ul>
+                <li>
+                  본 이미지 생성기를 통해 생성된 이미지와 관련된 모든 활동으로
+                  인해 발생하는 불미스러운 사건에 대해 롱카의 옷장?측은 이에
+                  대해 책임을 지지 않습니다.
+                </li>
+                <li>
+                  이미지 생성기를 사용하는 것으로, 해당 주의사항을 확인한 것으로
+                  간주하므로 이 점에 유의하여 멋진 코디 생활을 즐기시길
+                  바랍니다. 감사합니다.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button onClick={reset_equiped_item}>초기화</button>
+        </div>
+        <hr />
+        <div className="item-slot-container">
+          <div className="item-slot-row">
+            {[0, 1, 2, 3].map((i) => (
+              <ItemSlot
+                slot_name={slots[i]}
+                open_modal={open_modal}
+                slot={i}
+                is_active={slot_active[i]}
+                item={equiped_item[i]}
+                key={i}
+              />
+            ))}
+          </div>
+          <div className="item-slot-row">
+            {[4, 5, 6, 7].map((i) => (
+              <ItemSlot
+                slot_name={slots[i]}
+                open_modal={open_modal}
+                slot={i}
+                is_active={slot_active[i]}
+                item={equiped_item[i]}
+                key={i}
+              />
+            ))}
+          </div>
+        </div>
+        <p className="description">
+          * 무기, 악세서리, 얼굴장식은 추가옵션으로 등록할 수 있습니다
+        </p>
+        <div className="download-container">
+          {is_null_equiped_item(equiped_item) && (
             <img
-              src={process.env.PUBLIC_URL + "/img/help-circle.svg"}
-              alt="도움말"
+              className="download-info"
+              src={process.env.PUBLIC_URL + "/img/download_info.svg"}
+              alt="예시 이미지와 아이템 등록시 다운로드 가능"
             />
-          </div>
-          <div className="information">
-            <p>
-              본 프로젝트는 롱카의 옷장? 서브 프로젝트로, 간단하게
-              <br /> <strong>파판14의 코디 이미지를 생성</strong>하고 공유할 수
-              있습니다.
-            </p>
-            <h3>사용방법 </h3>
-            <ol>
-              <li>코디 예시 이미지 추가하기(이미지 드래그 가능)</li>
-              <li>원하는 아이템 추가하기</li>
-              <li>이미지 다운로드 버튼 클릭!</li>
-            </ol>
-            <h3>주의사항</h3>
-            <ul>
-              <li>
-                본 이미지 생성기를 통해 생성된 이미지와 관련된 모든 활동으로
-                인해 발생하는 불미스러운 사건에 대해 롱카의 옷장?측은 이에 대해
-                책임을 지지 않습니다.
-              </li>
-              <li>
-                이미지 생성기를 사용하는 것으로, 해당 주의사항을 확인한 것으로
-                간주하므로 이 점에 유의하여 멋진 코디 생활을 즐기시길 바랍니다.
-                감사합니다.
-              </li>
-            </ul>
-          </div>
+          )}
+          <button
+            className={
+              "image-download " +
+              (is_null_equiped_item(equiped_item) ? "inactive" : "")
+            }
+            onClick={image_download}
+          >
+            이미지 다운로드
+          </button>
+          <button
+            className={"ext-selector" + (is_jpg ? "" : " inactive")}
+            onClick={set_jpg}
+          >
+            JPG
+          </button>
+          <button
+            className={"ext-selector" + (!is_jpg ? "" : " inactive")}
+            onClick={set_png}
+          >
+            PNG
+          </button>
         </div>
-        <button onClick={reset_equiped_item}>초기화</button>
-      </div>
-      <hr />
-      <div className="item-slot-container">
-        <div className="item-slot-row">
-          {[0, 1, 2, 3].map((i) => (
-            <ItemSlot
-              slot_name={slots[i]}
-              open_modal={open_modal}
-              slot={i}
-              is_active={slot_active[i]}
-              item={equiped_item[i]}
-              key={i}
-            />
-          ))}
-        </div>
-        <div className="item-slot-row">
-          {[4, 5, 6, 7].map((i) => (
-            <ItemSlot
-              slot_name={slots[i]}
-              open_modal={open_modal}
-              slot={i}
-              is_active={slot_active[i]}
-              item={equiped_item[i]}
-              key={i}
-            />
-          ))}
-        </div>
-      </div>
-      <p className="description">
-        * 무기, 악세서리, 얼굴장식은 추가옵션으로 등록할 수 있습니다
-      </p>
-      <div className="download-container">
-        {is_null_equiped_item(equiped_item) && (
-          <img
-            className="download-info"
-            src={process.env.PUBLIC_URL + "/img/download_info.svg"}
-            alt="예시 이미지와 아이템 등록시 다운로드 가능"
-          />
-        )}
-        <button
-          className={
-            "image-download " +
-            (is_null_equiped_item(equiped_item) ? "inactive" : "")
-          }
-          onClick={image_download}
-        >
-          이미지 다운로드
-        </button>
-        <button
-          className={"ext-selector" + (is_jpg ? "" : " inactive")}
-          onClick={set_jpg}
-        >
-          JPG
-        </button>
-        <button
-          className={"ext-selector" + (!is_jpg ? "" : " inactive")}
-          onClick={set_png}
-        >
-          PNG
-        </button>
       </div>
     </div>
   );

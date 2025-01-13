@@ -99,7 +99,7 @@ export default function UserCanvas({
           );
           let i = 0;
 
-          if (item_list.every((item) => item.Id === 0)) {
+          if (item_list.every(item => item.Id === 0)) {
             ctx.drawImage(
               item_placeholder_image.current,
               box_width + 31,
@@ -110,7 +110,7 @@ export default function UserCanvas({
           }
 
           for (let item of item_list) {
-            const image = item_images.current.find((i) => i.Id === item.Id);
+            const image = item_images.current.find(i => i.Id === item.Id);
             if (item.Id === 0) continue;
 
             // 아이템 아이콘 그리기
@@ -126,7 +126,7 @@ export default function UserCanvas({
             // 1염색 컬러 표시
             // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
             const colorInfo1 = Color_background_list.find(
-              (color) => color.color_id === item.DyeFirst
+              color => color.color_id === item.DyeFirst
             );
 
             if (colorInfo1 && item.DyeFirst !== 0) {
@@ -139,14 +139,14 @@ export default function UserCanvas({
               const textWidth = ctx.measureText("1 - " + colorInfo1.name).width;
               dyeFirstWidthRef.current = textWidth;
               ctx.fillStyle = `#${backgroundColor}`; // 배경 색상
-              ctx.fillRect(box_width + 135, i * 114 + 96, textWidth + 8, 26); // 배경 사각형 (텍스트 크기 기반)
+              ctx.fillRect(box_width + 135, i * 114 + 93, textWidth + 8, 26); // 배경 사각형 (텍스트 크기 기반)
 
               // 텍스트 그리기
               ctx.fillStyle = textColor; // 텍스트 색상
               ctx.fillText(
                 "1 - " + colorInfo1.name,
                 box_width + 139,
-                i * 114 + 100
+                i * 114 + 97
               );
             } else {
               dyeFirstWidthRef.current = 0;
@@ -155,7 +155,7 @@ export default function UserCanvas({
             // 2염색 컬러 표시
             // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
             const colorInfo2 = Color_background_list.find(
-              (color) => color.color_id === item.DyeSecond
+              color => color.color_id === item.DyeSecond
             );
 
             if (colorInfo2 && item.DyeSecond !== 0) {
@@ -171,7 +171,7 @@ export default function UserCanvas({
               if (colorInfo1 && item.DyeFirst !== 0) {
                 ctx.fillRect(
                   box_width + dyeFirstWidthRef.current + 151,
-                  i * 114 + 96,
+                  i * 114 + 93,
                   textWidth + 8,
                   26
                 ); // 배경 사각형 (텍스트 크기 기반)
@@ -181,17 +181,17 @@ export default function UserCanvas({
                 ctx.fillText(
                   "2 - " + colorInfo2.name,
                   box_width + dyeFirstWidthRef.current + 155,
-                  i * 114 + 100
+                  i * 114 + 97
                 );
               } else {
-                ctx.fillRect(box_width + 135, i * 114 + 96, textWidth + 8, 26); // 배경 사각형 (텍스트 크기 기반)
+                ctx.fillRect(box_width + 135, i * 114 + 93, textWidth + 8, 26); // 배경 사각형 (텍스트 크기 기반)
 
                 // 텍스트 그리기
                 ctx.fillStyle = textColor; // 텍스트 색상
                 ctx.fillText(
                   "2 - " + colorInfo2.name,
                   box_width + 139,
-                  i * 114 + 100
+                  i * 114 + 97
                 );
               }
             }
@@ -379,12 +379,12 @@ export default function UserCanvas({
         item_image.src = src;
 
         item_image.onload = () => resolve({ Id: id, Image: item_image });
-        item_image.onerror = (error) => reject(error);
+        item_image.onerror = error => reject(error);
       });
     };
 
     try {
-      const promises = equiped_item_ref.current.map((item) =>
+      const promises = equiped_item_ref.current.map(item =>
         image_load(item.Id, process.env.PUBLIC_URL + "/" + item.Icon)
       );
       item_images.current = await Promise.all(promises);

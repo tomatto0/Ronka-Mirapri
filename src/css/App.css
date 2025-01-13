@@ -44,7 +44,7 @@ div.footer {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1075px) {
   div.header {
     height: 100px;
     /* --height: min(15vh, 112px);
@@ -87,7 +87,7 @@ div.footer {
   }
 }
 
-@media (min-width: 1036px) {
+@media (min-width: 1087px) {
   div.header::after {
     content: "";
     position: absolute;

@@ -40,7 +40,7 @@ export default function UserCanvas({
   // const y = useRef<number>(0);
   const image_width = useRef<number>(0); // 이미지의 너비
   const image_height = useRef<number>(0); // 이미지의 높이
-  const ratio = 450 / 1080;
+  const ratio = 540 / 1080;
   const box_height = 1080;
   const box_width = box_height * ratio;
   const item_images = useRef<ItemImage[]>([]); // 장착 아이템 이미지 배열

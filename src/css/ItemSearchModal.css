@@ -82,7 +82,7 @@ div.item-search-modal {
   color: #7883a6;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1075px) {
   div.item-search-modal-back {
     display: flex;
     justify-content: flex-start;

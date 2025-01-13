@@ -73,6 +73,15 @@ div.item-search-modal {
   }
 }
 
+.data-version {
+  position: absolute;
+  bottom: 10px;
+  left: 17px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #7883a6;
+}
+
 @media (min-width: 1024px) {
   div.item-search-modal-back {
     display: flex;

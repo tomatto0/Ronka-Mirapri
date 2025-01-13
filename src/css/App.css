@@ -46,11 +46,12 @@ div.footer {
 
 @media (min-width: 1024px) {
   div.header {
-    --height: min(15vh, 112px);
-    height: var(--height);
-    padding-top: calc(var(--height) * 0.2);
-    padding-bottom: calc(var(--height) * 0.3);
-    position: relative;
+    height: 100px;
+    /* --height: min(15vh, 112px);
+    height: var(--height); */
+    padding-top: 2.2rem;
+    padding-bottom: 3.3rem;
+    /* position: relative; */
     margin-top: 40px;
 
     img#title {
@@ -70,16 +71,14 @@ div.footer {
     width: fit-content;
     position: relative;
     max-height: 608px;
+    min-height: 608px;
   }
   div.footer {
     color: #50b1a8;
     font-size: 1rem;
     text-align: center;
     padding-top: 5rem;
-    position: fixed;
     width: 100%;
-    bottom: 40px;
-    left: 0;
 
     a {
       color: inherit;

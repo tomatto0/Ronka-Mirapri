@@ -60,6 +60,7 @@ div.canvas-container {
     canvas.user-canvas {
       width: auto;
       height: min(70vh, 608px);
+      min-height: 608px;
     }
 
     div.input-container {

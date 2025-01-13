@@ -6,8 +6,8 @@ div.canvas-container {
   }
 
   div.input-container {
-    width: calc(4500% / 108);
-    aspect-ratio: 450/1080;
+    width: calc(5400% / 117);
+    aspect-ratio: 540/1080;
     position: absolute;
     pointer-events: none;
 
@@ -52,7 +52,7 @@ div.canvas-container {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1075px) {
   div.canvas-container {
     height: 70vh;
     width: auto;
@@ -65,7 +65,6 @@ div.canvas-container {
     div.input-container {
       height: 100%;
       width: auto;
-      aspect-ratio: 450/1080;
     }
   }
 }

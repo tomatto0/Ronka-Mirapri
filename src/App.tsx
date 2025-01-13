@@ -12,7 +12,7 @@ function App() {
     if (document.documentElement.clientWidth >= 1024) {
       return process.env.PUBLIC_URL + "/img/thumbnail.svg";
     } else {
-      return process.env.PUBLIC_URL + "/img/thumbnail_mobile.svg";
+      return process.env.PUBLIC_URL + "/img/thumbnail.svg";
     }
   };
   const [image_src, set_image_src] = useState<string>(image_thumbnail());

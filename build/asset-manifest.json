@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ronka-Mirapri/static/css/main.2d8154a3.css",
-    "main.js": "/Ronka-Mirapri/static/js/main.2e6bf679.js",
+    "main.css": "/Ronka-Mirapri/static/css/main.71cb716d.css",
+    "main.js": "/Ronka-Mirapri/static/js/main.7bf788c3.js",
     "static/js/488.c0a94d25.chunk.js": "/Ronka-Mirapri/static/js/488.c0a94d25.chunk.js",
     "static/media/Pretendard-ExtraBold.woff": "/Ronka-Mirapri/static/media/Pretendard-ExtraBold.f6491e200d1fb5c5917b.woff",
     "static/media/Pretendard-Bold.woff": "/Ronka-Mirapri/static/media/Pretendard-Bold.1f1dbbbf311ffffcc770.woff",
@@ -17,12 +17,12 @@
     "static/media/refresh.svg": "/Ronka-Mirapri/static/media/refresh.89d970d83e837e272d20.svg",
     "static/media/image_delete.svg": "/Ronka-Mirapri/static/media/image_delete.14b3819368568d4c9dab.svg",
     "static/media/plus.svg": "/Ronka-Mirapri/static/media/plus.cfb83c690aed24e58fac.svg",
-    "main.2d8154a3.css.map": "/Ronka-Mirapri/static/css/main.2d8154a3.css.map",
-    "main.2e6bf679.js.map": "/Ronka-Mirapri/static/js/main.2e6bf679.js.map",
+    "main.71cb716d.css.map": "/Ronka-Mirapri/static/css/main.71cb716d.css.map",
+    "main.7bf788c3.js.map": "/Ronka-Mirapri/static/js/main.7bf788c3.js.map",
     "488.c0a94d25.chunk.js.map": "/Ronka-Mirapri/static/js/488.c0a94d25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d8154a3.css",
-    "static/js/main.2e6bf679.js"
+    "static/css/main.71cb716d.css",
+    "static/js/main.7bf788c3.js"
   ]
 }

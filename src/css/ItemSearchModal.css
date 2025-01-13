@@ -87,8 +87,8 @@ div.item-search-modal {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 151px;
-    padding-left: calc(50% + 120px);
+    padding-top: 141px;
+    padding-left: calc(50% + 140px);
   }
 
   div.item-search-modal {

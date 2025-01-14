@@ -111,7 +111,7 @@ export default function ItemSearchModal({
             modal_close={modal_close}
           />
         )}
-        <p className="data-version">현재 적용된 패치 데이터 버전(KOR): V7.01</p>
+        <p className="data-version">현재 적용된 패치 데이터 버전(KOR): V7.05</p>
       </div>
     </div>
   );

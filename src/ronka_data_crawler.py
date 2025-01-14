@@ -61,11 +61,11 @@ for i, url in enumerate(filtered_items['Icon']):
 
     if not os.path.exists(os.path.join(path, filename)):
         try:
-            res = resquests.get('https://xivapi.com' +url)
+            res = requests.get('https://xivapi.com' +url)
             if res.status_code == 200:
                 os.system('curl https://xivapi.com' +url +' > ' +os.path.join(path, filename))
             else:
-                print('download fail:', url)
+                print('download fail: status:', res.status_code, url)
         except:
             print('download fail:', url)
 

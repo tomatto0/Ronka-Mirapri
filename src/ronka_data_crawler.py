@@ -2,6 +2,8 @@ import pandas as pd
 import os
 import requests
 
+# python ./src/ronka_data_crawler.py
+
 #CSV raw data 읽어오기
 raw_data = pd.read_csv('./src/csv/item.csv', header=1, index_col=0, low_memory=False)
 raw_data.drop(['int32', '0'], axis=0, inplace=True)

@@ -6,6 +6,7 @@ import equip_slot_categories from "./json/equip_slot_categories.json";
 import UserCanvas from "./components/UserCanvas.tsx";
 import ItemInformation from "./components/ItemInformation.tsx";
 import ItemSearchModal from "./components/ItemSearchModal.tsx";
+import RedirectRonkaLookbook from "./components/RedirectRonkaLookbook.tsx";
 
 function App() {
   const image_thumbnail = () => {
@@ -18,9 +19,7 @@ function App() {
   const [image_src, set_image_src] = useState<string>(image_thumbnail());
   const [is_open, set_is_open] = useState<boolean>(false);
   const [modal_slot, set_modal_slot] = useState<number>(0);
-  const [slot_active, set_slot_active] = useState<boolean[]>(
-    new Array(8).fill(true)
-  );
+  const [slot_active, set_slot_active] = useState<boolean[]>(new Array(8).fill(true));
 
   const item_null = useMemo(() => {
     return {
@@ -35,18 +34,15 @@ function App() {
     };
   }, []);
 
-  const [equiped_item, set_equiped_item] = useState<Item[]>(
-    new Array(8).fill(item_null)
-  );
+  const [equiped_item, set_equiped_item] = useState<Item[]>(new Array(8).fill(item_null));
 
   const edit_equiped_item = useCallback(
     (slot: number, item: Item) => {
-      set_equiped_item((items) => {
+      set_equiped_item(items => {
         const new_equiped_item = [...items];
         new_equiped_item[slot] = item;
 
-        const slot_category: { [key: number]: EquipSlot } =
-          equip_slot_categories;
+        const slot_category: { [key: number]: EquipSlot } = equip_slot_categories;
         const new_slot_active = new Array(8).fill(true);
 
         for (let item of new_equiped_item) {
@@ -90,10 +86,7 @@ function App() {
 
   useEffect(() => {
     const resize_handler = () => {
-      if (
-        image_src === "./img/thumbnail.svg" ||
-        image_src === "./img/thumbnail_mobile.svg"
-      ) {
+      if (image_src === "./img/thumbnail.svg" || image_src === "./img/thumbnail_mobile.svg") {
         set_image_src(image_thumbnail());
       }
     };
@@ -105,9 +98,11 @@ function App() {
 
   return (
     <div className="App">
+      <RedirectRonkaLookbook onRedirect={() => (window.location.href = "https://lookbook.ronkacloset.com/editor")} />
       <div className="header">
         <img alt="FFXIV-KOR MIRAPRI GENERATOR" id="title" />
       </div>
+
       <div className="main-container">
         <UserCanvas
           image_src={image_src}

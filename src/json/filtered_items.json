@@ -7275,7 +7275,7 @@
     "Id":2643,
     "Name":"순록뿔",
     "Icon":"\/i\/041000\/041133_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -9291,7 +9291,7 @@
     "Id":2965,
     "Name":"꿈빛 튜닉",
     "Icon":"\/i\/042000\/042192_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -9299,7 +9299,7 @@
     "Id":2966,
     "Name":"순록 의상",
     "Icon":"\/i\/043000\/043576_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":16
   },
@@ -14587,7 +14587,7 @@
     "Id":3747,
     "Name":"꿈빛 장화",
     "Icon":"\/i\/046000\/046193_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -25531,7 +25531,7 @@
     "Id":8116,
     "Name":"달콤한 꿈 튜닉",
     "Icon":"\/i\/042000\/042192_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -25539,7 +25539,7 @@
     "Id":8119,
     "Name":"달콤한 꿈 장화",
     "Icon":"\/i\/046000\/046193_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -33803,7 +33803,7 @@
     "Id":10014,
     "Name":"해변의 겹옷",
     "Icon":"\/i\/042000\/042417_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -33811,7 +33811,7 @@
     "Id":10015,
     "Name":"해변의 일자바지",
     "Icon":"\/i\/045000\/045535_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -33819,7 +33819,7 @@
     "Id":10016,
     "Name":"해변의 드레스",
     "Icon":"\/i\/042000\/042418_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -33827,7 +33827,7 @@
     "Id":10017,
     "Name":"오아시스 겹옷",
     "Icon":"\/i\/042000\/042419_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -33835,7 +33835,7 @@
     "Id":10018,
     "Name":"오아시스 칠부바지",
     "Icon":"\/i\/045000\/045536_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -33843,7 +33843,7 @@
     "Id":10019,
     "Name":"오아시스 튜닉",
     "Icon":"\/i\/042000\/042420_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -33851,7 +33851,7 @@
     "Id":10020,
     "Name":"오아시스 헐렁바지",
     "Icon":"\/i\/045000\/045537_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -51843,7 +51843,7 @@
     "Id":13294,
     "Name":"별빛 성자 모자",
     "Icon":"\/i\/040000\/040706_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -51875,7 +51875,7 @@
     "Id":13298,
     "Name":"검은깃 빵모자",
     "Icon":"\/i\/041000\/041300_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -52171,7 +52171,7 @@
     "Id":13567,
     "Name":"붉은깃 빵모자",
     "Icon":"\/i\/041000\/041301_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -63219,7 +63219,7 @@
     "Id":15854,
     "Name":"이슈가르드 외투",
     "Icon":"\/i\/042000\/042529_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -63619,7 +63619,7 @@
     "Id":15938,
     "Name":"신 산크레드 재킷",
     "Icon":"\/i\/042000\/042527_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -63627,7 +63627,7 @@
     "Id":15939,
     "Name":"신 산크레드 팔보호구",
     "Icon":"\/i\/044000\/044463_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":5
   },
@@ -63635,7 +63635,7 @@
     "Id":15940,
     "Name":"신 산크레드 무릎바지",
     "Icon":"\/i\/045000\/045807_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -63643,7 +63643,7 @@
     "Id":15941,
     "Name":"신 산크레드 장화",
     "Icon":"\/i\/046000\/046629_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -63651,7 +63651,7 @@
     "Id":15942,
     "Name":"신 야슈톨라 로브",
     "Icon":"\/i\/042000\/042528_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -63667,7 +63667,7 @@
     "Id":15944,
     "Name":"신 야슈톨라 무릎장화",
     "Icon":"\/i\/046000\/046630_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -67539,7 +67539,7 @@
     "Id":16612,
     "Name":"별빛 로브",
     "Icon":"\/i\/042000\/042531_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -67555,7 +67555,7 @@
     "Id":16614,
     "Name":"주칠 닭 투구",
     "Icon":"\/i\/040000\/040241_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -67563,7 +67563,7 @@
     "Id":16615,
     "Name":"흑칠 닭 투구",
     "Icon":"\/i\/040000\/040242_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -76369,7 +76369,7 @@
   },
   {
     "Id":18585,
-    "Name":"신 쿠로키리마루",
+    "Name":"신 쿠모키리마루",
     "Icon":"\/i\/034000\/034289_hr1.png",
     "DyeCount":0,
     "ClassJobCategory":98,
@@ -83675,7 +83675,7 @@
     "Id":19653,
     "Name":"쌍고치 멜빵셔츠",
     "Icon":"\/i\/043000\/043805_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":33,
     "EquipSlotCategory":4
   },
@@ -86259,7 +86259,7 @@
     "Id":20568,
     "Name":"산크레드 안대",
     "Icon":"\/i\/041000\/041658_hr1.png",
-    "DyeCount":0,
+    "DyeCount":1,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -86395,7 +86395,7 @@
     "Id":20678,
     "Name":"검둥이의 흰 투구",
     "Icon":"\/i\/040000\/040284_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -86403,7 +86403,7 @@
     "Id":20679,
     "Name":"누렁이의 검은 투구",
     "Icon":"\/i\/040000\/040283_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -95427,7 +95427,7 @@
     "Id":22457,
     "Name":"돼지 투구",
     "Icon":"\/i\/040000\/040298_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -95435,7 +95435,7 @@
     "Id":22458,
     "Name":"주칠 돼지 투구",
     "Icon":"\/i\/040000\/040299_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -95531,7 +95531,7 @@
     "Id":22519,
     "Name":"아네모스 멜빵셔츠",
     "Icon":"\/i\/043000\/043805_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -103587,7 +103587,7 @@
     "Id":24145,
     "Name":"성가대 모자",
     "Icon":"\/i\/041000\/041419_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -103595,7 +103595,7 @@
     "Id":24146,
     "Name":"성가대 로브",
     "Icon":"\/i\/042000\/042621_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -103603,7 +103603,7 @@
     "Id":24147,
     "Name":"성가대 신발",
     "Icon":"\/i\/049000\/049191_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -103859,7 +103859,7 @@
     "Id":24236,
     "Name":"주칠 쥐 투구",
     "Icon":"\/i\/040000\/040312_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -103867,7 +103867,7 @@
     "Id":24237,
     "Name":"청칠 쥐 투구",
     "Icon":"\/i\/040000\/040313_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -103875,7 +103875,7 @@
     "Id":24288,
     "Name":"얀샤 주민 겉옷",
     "Icon":"\/i\/043000\/043847_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -104979,7 +104979,7 @@
     "Id":24590,
     "Name":"화관",
     "Icon":"\/i\/041000\/041750_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -107299,7 +107299,7 @@
     "Id":24999,
     "Name":"빛의 블라우스",
     "Icon":"\/i\/042000\/042628_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -107307,7 +107307,7 @@
     "Id":25000,
     "Name":"빛의 치마",
     "Icon":"\/i\/047000\/047292_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -107315,7 +107315,7 @@
     "Id":25010,
     "Name":"이슈가르드풍 드레스",
     "Icon":"\/i\/043000\/043865_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -107323,7 +107323,7 @@
     "Id":25011,
     "Name":"동방 여행복",
     "Icon":"\/i\/043000\/043864_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -117283,7 +117283,7 @@
     "Id":26740,
     "Name":"크리스타리움 투구",
     "Icon":"\/i\/040000\/040339_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -117291,7 +117291,7 @@
     "Id":26741,
     "Name":"크리스타리움 휘장복",
     "Icon":"\/i\/043000\/043454_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -117299,7 +117299,7 @@
     "Id":26742,
     "Name":"크리스타리움 건틀릿",
     "Icon":"\/i\/048000\/048782_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":5
   },
@@ -117307,7 +117307,7 @@
     "Id":26743,
     "Name":"크리스타리움 갑주장화",
     "Icon":"\/i\/047000\/047144_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -121043,7 +121043,7 @@
     "Id":27933,
     "Name":"쿠루루 두건",
     "Icon":"\/i\/041000\/041765_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -121051,7 +121051,7 @@
     "Id":27934,
     "Name":"쿠루루 외투",
     "Icon":"\/i\/043000\/043888_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -121059,7 +121059,7 @@
     "Id":27935,
     "Name":"쿠루루 신발",
     "Icon":"\/i\/049000\/049049_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -121219,7 +121219,7 @@
     "Id":27992,
     "Name":"이슈가르드 허벅지장화",
     "Icon":"\/i\/049000\/049083_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -124107,7 +124107,7 @@
     "Id":28556,
     "Name":"주칠 소 투구",
     "Icon":"\/i\/040000\/040356_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -124115,7 +124115,7 @@
     "Id":28557,
     "Name":"흑칠 소 투구",
     "Icon":"\/i\/040000\/040343_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -129187,7 +129187,7 @@
     "Id":30042,
     "Name":"집사왕 단안경",
     "Icon":"\/i\/040000\/040984_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -129195,7 +129195,7 @@
     "Id":30043,
     "Name":"왕실 복숭아꽃 머리장식",
     "Icon":"\/i\/041000\/041792_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -129227,7 +129227,7 @@
     "Id":30047,
     "Name":"쿠뽀쿠뽀 왕관",
     "Icon":"\/i\/040000\/040848_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -129235,7 +129235,7 @@
     "Id":30048,
     "Name":"쿠뽀쿠뽀 재킷",
     "Icon":"\/i\/042000\/042692_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -129243,7 +129243,7 @@
     "Id":30049,
     "Name":"쿠뽀쿠뽀 긴바지",
     "Icon":"\/i\/047000\/047674_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -129251,7 +129251,7 @@
     "Id":30050,
     "Name":"쿠뽀쿠뽀 구두",
     "Icon":"\/i\/049000\/049214_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -129259,7 +129259,7 @@
     "Id":30051,
     "Name":"쿠뽀쿠뽀 털모자",
     "Icon":"\/i\/040000\/040847_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -132843,7 +132843,7 @@
     "Id":30762,
     "Name":"흐레스벨그 모자",
     "Icon":"\/i\/041000\/041507_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -132851,7 +132851,7 @@
     "Id":30763,
     "Name":"흐레스벨그 재킷",
     "Icon":"\/i\/042000\/042700_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -132859,7 +132859,7 @@
     "Id":30764,
     "Name":"흐레스벨그 장갑",
     "Icon":"\/i\/044000\/044802_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":5
   },
@@ -132867,7 +132867,7 @@
     "Id":30765,
     "Name":"흐레스벨그 긴바지",
     "Icon":"\/i\/047000\/047715_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -132875,7 +132875,7 @@
     "Id":30766,
     "Name":"흐레스벨그 장화",
     "Icon":"\/i\/049000\/049260_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -140451,7 +140451,7 @@
     "Id":32804,
     "Name":"금칠 호랑이 투구",
     "Icon":"\/i\/041000\/041807_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -140459,7 +140459,7 @@
     "Id":32805,
     "Name":"은칠 호랑이 투구",
     "Icon":"\/i\/041000\/041808_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":3
   },
@@ -140643,7 +140643,7 @@
     "Id":33042,
     "Name":"알피노 새옷 세트",
     "Icon":"\/i\/042000\/042717_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":16
   },
@@ -143755,7 +143755,7 @@
     "Id":33751,
     "Name":"린 상의",
     "Icon":"\/i\/042000\/042743_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -143763,7 +143763,7 @@
     "Id":33752,
     "Name":"린 속바지",
     "Icon":"\/i\/047000\/047805_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -143771,7 +143771,7 @@
     "Id":33753,
     "Name":"린 다리보호대",
     "Icon":"\/i\/049000\/049329_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -156595,7 +156595,7 @@
     "Id":35853,
     "Name":"강신 무사 갑옷",
     "Icon":"\/i\/042000\/042818_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -156603,7 +156603,7 @@
     "Id":35854,
     "Name":"강신 무사 완갑",
     "Icon":"\/i\/048000\/048874_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":5
   },
@@ -156611,7 +156611,7 @@
     "Id":35855,
     "Name":"강신 무사 바지",
     "Icon":"\/i\/047000\/047827_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -156619,7 +156619,7 @@
     "Id":35856,
     "Name":"강신 무사 정강이받이",
     "Icon":"\/i\/049000\/049445_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -158627,7 +158627,7 @@
     "Id":36963,
     "Name":"승전의 한손검",
     "Icon":"\/i\/030000\/030652_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":1
   },
@@ -158635,7 +158635,7 @@
     "Id":36964,
     "Name":"승전의 서슬발톱",
     "Icon":"\/i\/030000\/030817_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":21,
     "EquipSlotCategory":13
   },
@@ -158643,7 +158643,7 @@
     "Id":36965,
     "Name":"승전의 전쟁도끼",
     "Icon":"\/i\/031000\/031226_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":22,
     "EquipSlotCategory":13
   },
@@ -158651,7 +158651,7 @@
     "Id":36966,
     "Name":"승전의 창",
     "Icon":"\/i\/031000\/031628_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":23,
     "EquipSlotCategory":13
   },
@@ -158659,7 +158659,7 @@
     "Id":36967,
     "Name":"승전의 활",
     "Icon":"\/i\/032000\/032017_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":24,
     "EquipSlotCategory":13
   },
@@ -158667,7 +158667,7 @@
     "Id":36968,
     "Name":"승전의 살육도",
     "Icon":"\/i\/033000\/033603_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":92,
     "EquipSlotCategory":13
   },
@@ -158675,7 +158675,7 @@
     "Id":36969,
     "Name":"승전의 단두검",
     "Icon":"\/i\/034000\/034380_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -158683,7 +158683,7 @@
     "Id":36970,
     "Name":"승전의 권총",
     "Icon":"\/i\/034000\/034476_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -158691,7 +158691,7 @@
     "Id":36971,
     "Name":"승전의 환술봉",
     "Icon":"\/i\/032000\/032446_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":25,
     "EquipSlotCategory":13
   },
@@ -158699,7 +158699,7 @@
     "Id":36972,
     "Name":"승전의 주술봉",
     "Icon":"\/i\/033000\/033170_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":26,
     "EquipSlotCategory":13
   },
@@ -158707,7 +158707,7 @@
     "Id":36973,
     "Name":"승전의 금서",
     "Icon":"\/i\/033000\/033358_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":28,
     "EquipSlotCategory":13
   },
@@ -158715,7 +158715,7 @@
     "Id":36974,
     "Name":"승전의 치유서",
     "Icon":"\/i\/033000\/033357_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -158723,7 +158723,7 @@
     "Id":36975,
     "Name":"승전의 천궁도",
     "Icon":"\/i\/034000\/034974_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -158731,7 +158731,7 @@
     "Id":36976,
     "Name":"승전의 외날검",
     "Icon":"\/i\/036000\/036531_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -158739,7 +158739,7 @@
     "Id":36977,
     "Name":"승전의 레이피어",
     "Icon":"\/i\/036000\/036830_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -158747,7 +158747,7 @@
     "Id":36978,
     "Name":"승전의 총검",
     "Icon":"\/i\/036000\/036072_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -158755,7 +158755,7 @@
     "Id":36979,
     "Name":"승전의 전투고리",
     "Icon":"\/i\/036000\/036271_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -158763,7 +158763,7 @@
     "Id":36980,
     "Name":"승전의 날개",
     "Icon":"\/i\/037000\/037037_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -158771,7 +158771,7 @@
     "Id":36981,
     "Name":"승전의 큰낫",
     "Icon":"\/i\/037000\/037239_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -158779,7 +158779,7 @@
     "Id":36982,
     "Name":"승전의 방패",
     "Icon":"\/i\/030000\/030241_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":2
   },
@@ -165411,7 +165411,7 @@
     "Id":38400,
     "Name":"맨더빌 한손검",
     "Icon":"\/i\/030000\/030654_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":1
   },
@@ -165419,7 +165419,7 @@
     "Id":38401,
     "Name":"맨더빌 너클",
     "Icon":"\/i\/030000\/030819_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":21,
     "EquipSlotCategory":13
   },
@@ -165427,7 +165427,7 @@
     "Id":38402,
     "Name":"맨더빌 도끼",
     "Icon":"\/i\/031000\/031228_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":22,
     "EquipSlotCategory":13
   },
@@ -165435,7 +165435,7 @@
     "Id":38403,
     "Name":"맨더빌 창",
     "Icon":"\/i\/031000\/031630_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":23,
     "EquipSlotCategory":13
   },
@@ -165443,7 +165443,7 @@
     "Id":38404,
     "Name":"맨더빌 현악궁",
     "Icon":"\/i\/032000\/032019_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":24,
     "EquipSlotCategory":13
   },
@@ -165451,7 +165451,7 @@
     "Id":38405,
     "Name":"맨더빌 단검",
     "Icon":"\/i\/033000\/033605_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":92,
     "EquipSlotCategory":13
   },
@@ -165459,7 +165459,7 @@
     "Id":38406,
     "Name":"맨더빌 츠바이헨더",
     "Icon":"\/i\/034000\/034382_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -165467,7 +165467,7 @@
     "Id":38407,
     "Name":"맨더빌 연발권총",
     "Icon":"\/i\/034000\/034478_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -165475,7 +165475,7 @@
     "Id":38408,
     "Name":"맨더빌 환술봉",
     "Icon":"\/i\/032000\/032448_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":25,
     "EquipSlotCategory":13
   },
@@ -165483,7 +165483,7 @@
     "Id":38409,
     "Name":"맨더빌 주술봉",
     "Icon":"\/i\/032000\/032863_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":26,
     "EquipSlotCategory":13
   },
@@ -165491,7 +165491,7 @@
     "Id":38410,
     "Name":"맨더빌 금서",
     "Icon":"\/i\/033000\/033362_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":28,
     "EquipSlotCategory":13
   },
@@ -165499,7 +165499,7 @@
     "Id":38411,
     "Name":"맨더빌 치유서",
     "Icon":"\/i\/033000\/033361_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -165507,7 +165507,7 @@
     "Id":38412,
     "Name":"맨더빌 좌표기",
     "Icon":"\/i\/034000\/034976_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -165515,7 +165515,7 @@
     "Id":38413,
     "Name":"맨더빌 외날검",
     "Icon":"\/i\/036000\/036533_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -165523,7 +165523,7 @@
     "Id":38414,
     "Name":"맨더빌 레이피어",
     "Icon":"\/i\/036000\/036832_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -165531,7 +165531,7 @@
     "Id":38415,
     "Name":"맨더빌 건블레이드",
     "Icon":"\/i\/036000\/036075_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -165539,7 +165539,7 @@
     "Id":38416,
     "Name":"맨더빌 차크람",
     "Icon":"\/i\/036000\/036274_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -165547,7 +165547,7 @@
     "Id":38417,
     "Name":"맨더빌 밀프레베",
     "Icon":"\/i\/037000\/037040_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -165555,7 +165555,7 @@
     "Id":38418,
     "Name":"맨더빌 큰낫",
     "Icon":"\/i\/037000\/037242_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -165563,7 +165563,7 @@
     "Id":38419,
     "Name":"맨더빌 연모양 방패",
     "Icon":"\/i\/030000\/030244_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":2
   },
@@ -165851,7 +165851,7 @@
     "Id":38688,
     "Name":"알리제 새옷 세트",
     "Icon":"\/i\/042000\/042905_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":16
   },
@@ -167931,7 +167931,7 @@
     "Id":39144,
     "Name":"훌륭한 맨더빌 한손검",
     "Icon":"\/i\/030000\/030660_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":1
   },
@@ -167939,7 +167939,7 @@
     "Id":39145,
     "Name":"훌륭한 맨더빌 너클",
     "Icon":"\/i\/030000\/030825_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":21,
     "EquipSlotCategory":13
   },
@@ -167947,7 +167947,7 @@
     "Id":39146,
     "Name":"훌륭한 맨더빌 도끼",
     "Icon":"\/i\/031000\/031234_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":22,
     "EquipSlotCategory":13
   },
@@ -167955,7 +167955,7 @@
     "Id":39147,
     "Name":"훌륭한 맨더빌 창",
     "Icon":"\/i\/031000\/031636_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":23,
     "EquipSlotCategory":13
   },
@@ -167963,7 +167963,7 @@
     "Id":39148,
     "Name":"훌륭한 맨더빌 현악궁",
     "Icon":"\/i\/032000\/032025_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":24,
     "EquipSlotCategory":13
   },
@@ -167971,7 +167971,7 @@
     "Id":39149,
     "Name":"훌륭한 맨더빌 단검",
     "Icon":"\/i\/033000\/033611_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":92,
     "EquipSlotCategory":13
   },
@@ -167979,7 +167979,7 @@
     "Id":39150,
     "Name":"훌륭한 맨더빌 츠바이헨더",
     "Icon":"\/i\/034000\/034388_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -167987,7 +167987,7 @@
     "Id":39151,
     "Name":"훌륭한 맨더빌 연발권총",
     "Icon":"\/i\/034000\/034484_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -167995,7 +167995,7 @@
     "Id":39152,
     "Name":"훌륭한 맨더빌 환술봉",
     "Icon":"\/i\/032000\/032454_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":25,
     "EquipSlotCategory":13
   },
@@ -168003,7 +168003,7 @@
     "Id":39153,
     "Name":"훌륭한 맨더빌 주술봉",
     "Icon":"\/i\/032000\/032869_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":26,
     "EquipSlotCategory":13
   },
@@ -168011,7 +168011,7 @@
     "Id":39154,
     "Name":"훌륭한 맨더빌 금서",
     "Icon":"\/i\/033000\/033373_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":28,
     "EquipSlotCategory":13
   },
@@ -168019,7 +168019,7 @@
     "Id":39155,
     "Name":"훌륭한 맨더빌 치유서",
     "Icon":"\/i\/033000\/033378_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -168027,7 +168027,7 @@
     "Id":39156,
     "Name":"훌륭한 맨더빌 좌표기",
     "Icon":"\/i\/034000\/034984_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -168035,7 +168035,7 @@
     "Id":39157,
     "Name":"훌륭한 맨더빌 외날검",
     "Icon":"\/i\/036000\/036539_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -168043,7 +168043,7 @@
     "Id":39158,
     "Name":"훌륭한 맨더빌 레이피어",
     "Icon":"\/i\/036000\/036838_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -168051,7 +168051,7 @@
     "Id":39159,
     "Name":"훌륭한 맨더빌 건블레이드",
     "Icon":"\/i\/036000\/036081_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -168059,7 +168059,7 @@
     "Id":39160,
     "Name":"훌륭한 맨더빌 차크람",
     "Icon":"\/i\/036000\/036280_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -168067,7 +168067,7 @@
     "Id":39161,
     "Name":"훌륭한 맨더빌 밀프레베",
     "Icon":"\/i\/037000\/037048_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -168075,7 +168075,7 @@
     "Id":39162,
     "Name":"훌륭한 맨더빌 큰낫",
     "Icon":"\/i\/037000\/037250_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -168083,7 +168083,7 @@
     "Id":39163,
     "Name":"훌륭한 맨더빌 연모양 방패",
     "Icon":"\/i\/030000\/030250_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":2
   },
@@ -168251,7 +168251,7 @@
     "Id":39184,
     "Name":"오르토스 카츠발게르",
     "Icon":"\/i\/030000\/030661_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":38,
     "EquipSlotCategory":1
   },
@@ -168259,7 +168259,7 @@
     "Id":39185,
     "Name":"오르토스 손잡이칼",
     "Icon":"\/i\/030000\/030826_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":41,
     "EquipSlotCategory":13
   },
@@ -168267,7 +168267,7 @@
     "Id":39186,
     "Name":"오르토스 도끼",
     "Icon":"\/i\/031000\/031235_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":44,
     "EquipSlotCategory":13
   },
@@ -168275,7 +168275,7 @@
     "Id":39187,
     "Name":"오르토스 유격창",
     "Icon":"\/i\/031000\/031637_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":47,
     "EquipSlotCategory":13
   },
@@ -168283,7 +168283,7 @@
     "Id":39188,
     "Name":"오르토스 활",
     "Icon":"\/i\/032000\/032026_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":50,
     "EquipSlotCategory":13
   },
@@ -168291,7 +168291,7 @@
     "Id":39189,
     "Name":"오르토스 살육도",
     "Icon":"\/i\/033000\/033612_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":93,
     "EquipSlotCategory":13
   },
@@ -168299,7 +168299,7 @@
     "Id":39190,
     "Name":"오르토스 그레이트소드",
     "Icon":"\/i\/034000\/034389_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -168307,7 +168307,7 @@
     "Id":39191,
     "Name":"오르토스 화승총",
     "Icon":"\/i\/034000\/034485_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -168315,7 +168315,7 @@
     "Id":39192,
     "Name":"오르토스 마법봉",
     "Icon":"\/i\/032000\/032455_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":53,
     "EquipSlotCategory":13
   },
@@ -168323,7 +168323,7 @@
     "Id":39193,
     "Name":"오르토스 주술봉",
     "Icon":"\/i\/032000\/032870_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":55,
     "EquipSlotCategory":13
   },
@@ -168331,7 +168331,7 @@
     "Id":39194,
     "Name":"오르토스 마법서",
     "Icon":"\/i\/033000\/033374_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":69,
     "EquipSlotCategory":13
   },
@@ -168339,7 +168339,7 @@
     "Id":39195,
     "Name":"오르토스 치유서",
     "Icon":"\/i\/033000\/033375_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -168347,7 +168347,7 @@
     "Id":39196,
     "Name":"오르토스 천궁도",
     "Icon":"\/i\/034000\/034982_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -168355,7 +168355,7 @@
     "Id":39197,
     "Name":"오르토스 외날검",
     "Icon":"\/i\/036000\/036540_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -168363,7 +168363,7 @@
     "Id":39198,
     "Name":"오르토스 스몰소드",
     "Icon":"\/i\/036000\/036839_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -168371,7 +168371,7 @@
     "Id":39199,
     "Name":"오르토스 마나트리거",
     "Icon":"\/i\/036000\/036082_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -168379,7 +168379,7 @@
     "Id":39200,
     "Name":"오르토스 차크람",
     "Icon":"\/i\/036000\/036281_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -168387,7 +168387,7 @@
     "Id":39201,
     "Name":"오르토스 날개",
     "Icon":"\/i\/037000\/037046_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -168395,7 +168395,7 @@
     "Id":39202,
     "Name":"오르토스 대낫",
     "Icon":"\/i\/037000\/037248_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -168403,7 +168403,7 @@
     "Id":39203,
     "Name":"오르토스 방패",
     "Icon":"\/i\/030000\/030251_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":38,
     "EquipSlotCategory":2
   },
@@ -168411,7 +168411,7 @@
     "Id":39204,
     "Name":"에나레토스 카츠발게르",
     "Icon":"\/i\/030000\/030662_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":38,
     "EquipSlotCategory":1
   },
@@ -168419,7 +168419,7 @@
     "Id":39205,
     "Name":"에나레토스 손잡이칼",
     "Icon":"\/i\/030000\/030827_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":41,
     "EquipSlotCategory":13
   },
@@ -168427,7 +168427,7 @@
     "Id":39206,
     "Name":"에나레토스 도끼",
     "Icon":"\/i\/031000\/031236_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":44,
     "EquipSlotCategory":13
   },
@@ -168435,7 +168435,7 @@
     "Id":39207,
     "Name":"에나레토스 유격창",
     "Icon":"\/i\/031000\/031638_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":47,
     "EquipSlotCategory":13
   },
@@ -168443,7 +168443,7 @@
     "Id":39208,
     "Name":"에나레토스 활",
     "Icon":"\/i\/032000\/032027_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":50,
     "EquipSlotCategory":13
   },
@@ -168451,7 +168451,7 @@
     "Id":39209,
     "Name":"에나레토스 살육도",
     "Icon":"\/i\/033000\/033613_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":93,
     "EquipSlotCategory":13
   },
@@ -168459,7 +168459,7 @@
     "Id":39210,
     "Name":"에나레토스 그레이트소드",
     "Icon":"\/i\/034000\/034390_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -168467,7 +168467,7 @@
     "Id":39211,
     "Name":"에나레토스 화승총",
     "Icon":"\/i\/034000\/034486_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -168475,7 +168475,7 @@
     "Id":39212,
     "Name":"에나레토스 마법봉",
     "Icon":"\/i\/032000\/032456_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":53,
     "EquipSlotCategory":13
   },
@@ -168483,7 +168483,7 @@
     "Id":39213,
     "Name":"에나레토스 주술봉",
     "Icon":"\/i\/032000\/032871_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":55,
     "EquipSlotCategory":13
   },
@@ -168491,7 +168491,7 @@
     "Id":39214,
     "Name":"에나레토스 마법서",
     "Icon":"\/i\/033000\/033376_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":69,
     "EquipSlotCategory":13
   },
@@ -168499,7 +168499,7 @@
     "Id":39215,
     "Name":"에나레토스 치유서",
     "Icon":"\/i\/033000\/033377_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -168507,7 +168507,7 @@
     "Id":39216,
     "Name":"에나레토스 천궁도",
     "Icon":"\/i\/034000\/034983_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -168515,7 +168515,7 @@
     "Id":39217,
     "Name":"에나레토스 외날검",
     "Icon":"\/i\/036000\/036541_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -168523,7 +168523,7 @@
     "Id":39218,
     "Name":"에나레토스 스몰소드",
     "Icon":"\/i\/036000\/036840_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -168531,7 +168531,7 @@
     "Id":39219,
     "Name":"에나레토스 마나트리거",
     "Icon":"\/i\/036000\/036083_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -168539,7 +168539,7 @@
     "Id":39220,
     "Name":"에나레토스 차크람",
     "Icon":"\/i\/036000\/036282_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -168547,7 +168547,7 @@
     "Id":39221,
     "Name":"에나레토스 날개",
     "Icon":"\/i\/037000\/037047_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -168555,7 +168555,7 @@
     "Id":39222,
     "Name":"에나레토스 대낫",
     "Icon":"\/i\/037000\/037249_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -168563,7 +168563,7 @@
     "Id":39223,
     "Name":"에나레토스 방패",
     "Icon":"\/i\/030000\/030252_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":38,
     "EquipSlotCategory":2
   },
@@ -169027,7 +169027,7 @@
     "Id":39302,
     "Name":"가이아 의상 세트",
     "Icon":"\/i\/042000\/042940_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":16
   },
@@ -169243,7 +169243,7 @@
     "Id":39329,
     "Name":"모조 맨더빌 한손검",
     "Icon":"\/i\/030000\/030654_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":1
   },
@@ -169251,7 +169251,7 @@
     "Id":39330,
     "Name":"모조 맨더빌 너클",
     "Icon":"\/i\/030000\/030819_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":21,
     "EquipSlotCategory":13
   },
@@ -169259,7 +169259,7 @@
     "Id":39331,
     "Name":"모조 맨더빌 도끼",
     "Icon":"\/i\/031000\/031228_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":22,
     "EquipSlotCategory":13
   },
@@ -169267,7 +169267,7 @@
     "Id":39332,
     "Name":"모조 맨더빌 창",
     "Icon":"\/i\/031000\/031630_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":23,
     "EquipSlotCategory":13
   },
@@ -169275,7 +169275,7 @@
     "Id":39333,
     "Name":"모조 맨더빌 현악궁",
     "Icon":"\/i\/032000\/032019_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":24,
     "EquipSlotCategory":13
   },
@@ -169283,7 +169283,7 @@
     "Id":39334,
     "Name":"모조 맨더빌 단검",
     "Icon":"\/i\/033000\/033605_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":92,
     "EquipSlotCategory":13
   },
@@ -169291,7 +169291,7 @@
     "Id":39335,
     "Name":"모조 맨더빌 츠바이헨더",
     "Icon":"\/i\/034000\/034382_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -169299,7 +169299,7 @@
     "Id":39336,
     "Name":"모조 맨더빌 연발권총",
     "Icon":"\/i\/034000\/034478_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -169307,7 +169307,7 @@
     "Id":39337,
     "Name":"모조 맨더빌 환술봉",
     "Icon":"\/i\/032000\/032448_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":25,
     "EquipSlotCategory":13
   },
@@ -169315,7 +169315,7 @@
     "Id":39338,
     "Name":"모조 맨더빌 주술봉",
     "Icon":"\/i\/032000\/032863_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":26,
     "EquipSlotCategory":13
   },
@@ -169323,7 +169323,7 @@
     "Id":39339,
     "Name":"모조 맨더빌 금서",
     "Icon":"\/i\/033000\/033362_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":28,
     "EquipSlotCategory":13
   },
@@ -169331,7 +169331,7 @@
     "Id":39340,
     "Name":"모조 맨더빌 치유서",
     "Icon":"\/i\/033000\/033361_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -169339,7 +169339,7 @@
     "Id":39341,
     "Name":"모조 맨더빌 좌표기",
     "Icon":"\/i\/034000\/034976_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -169347,7 +169347,7 @@
     "Id":39342,
     "Name":"모조 맨더빌 외날검",
     "Icon":"\/i\/036000\/036533_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -169355,7 +169355,7 @@
     "Id":39343,
     "Name":"모조 맨더빌 레이피어",
     "Icon":"\/i\/036000\/036832_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -169363,7 +169363,7 @@
     "Id":39344,
     "Name":"모조 맨더빌 건블레이드",
     "Icon":"\/i\/036000\/036075_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -169371,7 +169371,7 @@
     "Id":39345,
     "Name":"모조 맨더빌 차크람",
     "Icon":"\/i\/036000\/036274_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -169379,7 +169379,7 @@
     "Id":39346,
     "Name":"모조 맨더빌 밀프레베",
     "Icon":"\/i\/037000\/037040_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -169387,7 +169387,7 @@
     "Id":39347,
     "Name":"모조 맨더빌 큰낫",
     "Icon":"\/i\/037000\/037242_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -169395,7 +169395,7 @@
     "Id":39348,
     "Name":"모조 맨더빌 연모양 방패",
     "Icon":"\/i\/030000\/030244_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":2
   },
@@ -171195,7 +171195,7 @@
     "Id":39920,
     "Name":"당당한 맨더빌 한손검",
     "Icon":"\/i\/030000\/030665_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":1
   },
@@ -171203,7 +171203,7 @@
     "Id":39921,
     "Name":"당당한 맨더빌 주먹",
     "Icon":"\/i\/030000\/030829_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":21,
     "EquipSlotCategory":13
   },
@@ -171211,7 +171211,7 @@
     "Id":39922,
     "Name":"당당한 맨더빌 긴날도끼",
     "Icon":"\/i\/031000\/031239_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":22,
     "EquipSlotCategory":13
   },
@@ -171219,7 +171219,7 @@
     "Id":39923,
     "Name":"당당한 맨더빌 창",
     "Icon":"\/i\/031000\/031641_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":23,
     "EquipSlotCategory":13
   },
@@ -171227,7 +171227,7 @@
     "Id":39924,
     "Name":"당당한 맨더빌 현악궁",
     "Icon":"\/i\/032000\/032029_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":24,
     "EquipSlotCategory":13
   },
@@ -171235,7 +171235,7 @@
     "Id":39925,
     "Name":"당당한 맨더빌 단검",
     "Icon":"\/i\/033000\/033615_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":92,
     "EquipSlotCategory":13
   },
@@ -171243,7 +171243,7 @@
     "Id":39926,
     "Name":"당당한 맨더빌 그레이트소드",
     "Icon":"\/i\/034000\/034393_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -171251,7 +171251,7 @@
     "Id":39927,
     "Name":"당당한 맨더빌 권총",
     "Icon":"\/i\/034000\/034488_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -171259,7 +171259,7 @@
     "Id":39928,
     "Name":"당당한 맨더빌 환술봉",
     "Icon":"\/i\/032000\/032459_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":25,
     "EquipSlotCategory":13
   },
@@ -171267,7 +171267,7 @@
     "Id":39929,
     "Name":"당당한 맨더빌 주술봉",
     "Icon":"\/i\/032000\/032874_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":26,
     "EquipSlotCategory":13
   },
@@ -171275,7 +171275,7 @@
     "Id":39930,
     "Name":"당당한 맨더빌 금서",
     "Icon":"\/i\/033000\/033382_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":28,
     "EquipSlotCategory":13
   },
@@ -171283,7 +171283,7 @@
     "Id":39931,
     "Name":"당당한 맨더빌 치유서",
     "Icon":"\/i\/033000\/033381_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -171291,7 +171291,7 @@
     "Id":39932,
     "Name":"당당한 맨더빌 태양계의",
     "Icon":"\/i\/034000\/034986_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -171299,7 +171299,7 @@
     "Id":39933,
     "Name":"당당한 맨더빌 외날검",
     "Icon":"\/i\/036000\/036543_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -171307,7 +171307,7 @@
     "Id":39934,
     "Name":"당당한 맨더빌 데겐",
     "Icon":"\/i\/036000\/036842_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -171315,7 +171315,7 @@
     "Id":39935,
     "Name":"당당한 맨더빌 총검",
     "Icon":"\/i\/036000\/036085_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -171323,7 +171323,7 @@
     "Id":39936,
     "Name":"당당한 맨더빌 차크람",
     "Icon":"\/i\/036000\/036284_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -171331,7 +171331,7 @@
     "Id":39937,
     "Name":"당당한 맨더빌 날개",
     "Icon":"\/i\/037000\/037051_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -171339,7 +171339,7 @@
     "Id":39938,
     "Name":"당당한 맨더빌 전투낫",
     "Icon":"\/i\/037000\/037254_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -171347,7 +171347,7 @@
     "Id":39939,
     "Name":"당당한 맨더빌 방패",
     "Icon":"\/i\/030000\/030254_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":2
   },
@@ -174195,7 +174195,7 @@
     "Id":40323,
     "Name":"모조 훌륭한 맨더빌 한손검",
     "Icon":"\/i\/030000\/030660_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":1
   },
@@ -174203,7 +174203,7 @@
     "Id":40324,
     "Name":"모조 훌륭한 맨더빌 너클",
     "Icon":"\/i\/030000\/030825_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":21,
     "EquipSlotCategory":13
   },
@@ -174211,7 +174211,7 @@
     "Id":40325,
     "Name":"모조 훌륭한 맨더빌 도끼",
     "Icon":"\/i\/031000\/031234_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":22,
     "EquipSlotCategory":13
   },
@@ -174219,7 +174219,7 @@
     "Id":40326,
     "Name":"모조 훌륭한 맨더빌 창",
     "Icon":"\/i\/031000\/031636_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":23,
     "EquipSlotCategory":13
   },
@@ -174227,7 +174227,7 @@
     "Id":40327,
     "Name":"모조 훌륭한 맨더빌 현악궁",
     "Icon":"\/i\/032000\/032025_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":24,
     "EquipSlotCategory":13
   },
@@ -174235,7 +174235,7 @@
     "Id":40328,
     "Name":"모조 훌륭한 맨더빌 단검",
     "Icon":"\/i\/033000\/033611_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":92,
     "EquipSlotCategory":13
   },
@@ -174243,7 +174243,7 @@
     "Id":40329,
     "Name":"모조 훌륭한 맨더빌 츠바이헨더",
     "Icon":"\/i\/034000\/034388_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -174251,7 +174251,7 @@
     "Id":40330,
     "Name":"모조 훌륭한 맨더빌 연발권총",
     "Icon":"\/i\/034000\/034484_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -174259,7 +174259,7 @@
     "Id":40331,
     "Name":"모조 훌륭한 맨더빌 환술봉",
     "Icon":"\/i\/032000\/032454_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":25,
     "EquipSlotCategory":13
   },
@@ -174267,7 +174267,7 @@
     "Id":40332,
     "Name":"모조 훌륭한 맨더빌 주술봉",
     "Icon":"\/i\/032000\/032869_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":26,
     "EquipSlotCategory":13
   },
@@ -174275,7 +174275,7 @@
     "Id":40333,
     "Name":"모조 훌륭한 맨더빌 금서",
     "Icon":"\/i\/033000\/033373_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":28,
     "EquipSlotCategory":13
   },
@@ -174283,7 +174283,7 @@
     "Id":40334,
     "Name":"모조 훌륭한 맨더빌 치유서",
     "Icon":"\/i\/033000\/033378_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -174291,7 +174291,7 @@
     "Id":40335,
     "Name":"모조 훌륭한 맨더빌 좌표기",
     "Icon":"\/i\/034000\/034984_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -174299,7 +174299,7 @@
     "Id":40336,
     "Name":"모조 훌륭한 맨더빌 외날검",
     "Icon":"\/i\/036000\/036539_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -174307,7 +174307,7 @@
     "Id":40337,
     "Name":"모조 훌륭한 맨더빌 레이피어",
     "Icon":"\/i\/036000\/036838_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -174315,7 +174315,7 @@
     "Id":40338,
     "Name":"모조 훌륭한 맨더빌 건블레이드",
     "Icon":"\/i\/036000\/036081_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -174323,7 +174323,7 @@
     "Id":40339,
     "Name":"모조 훌륭한 맨더빌 차크람",
     "Icon":"\/i\/036000\/036280_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -174331,7 +174331,7 @@
     "Id":40340,
     "Name":"모조 훌륭한 맨더빌 밀프레베",
     "Icon":"\/i\/037000\/037048_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -174339,7 +174339,7 @@
     "Id":40341,
     "Name":"모조 훌륭한 맨더빌 큰낫",
     "Icon":"\/i\/037000\/037250_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -174347,7 +174347,7 @@
     "Id":40342,
     "Name":"모조 훌륭한 맨더빌 연모양 방패",
     "Icon":"\/i\/030000\/030250_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":2
   },
@@ -176427,7 +176427,7 @@
     "Id":40932,
     "Name":"맨더빌한 언월도",
     "Icon":"\/i\/030000\/030670_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":1
   },
@@ -176435,7 +176435,7 @@
     "Id":40933,
     "Name":"맨더빌한 주먹",
     "Icon":"\/i\/030000\/030834_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":21,
     "EquipSlotCategory":13
   },
@@ -176443,7 +176443,7 @@
     "Id":40934,
     "Name":"맨더빌한 전투도끼",
     "Icon":"\/i\/031000\/031244_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":22,
     "EquipSlotCategory":13
   },
@@ -176451,7 +176451,7 @@
     "Id":40935,
     "Name":"맨더빌한 삼지창",
     "Icon":"\/i\/031000\/031646_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":23,
     "EquipSlotCategory":13
   },
@@ -176459,7 +176459,7 @@
     "Id":40936,
     "Name":"맨더빌한 합성궁",
     "Icon":"\/i\/032000\/032034_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":24,
     "EquipSlotCategory":13
   },
@@ -176467,7 +176467,7 @@
     "Id":40937,
     "Name":"맨더빌한 단검",
     "Icon":"\/i\/033000\/033620_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":92,
     "EquipSlotCategory":13
   },
@@ -176475,7 +176475,7 @@
     "Id":40938,
     "Name":"맨더빌한 그레이트소드",
     "Icon":"\/i\/034000\/034398_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -176483,7 +176483,7 @@
     "Id":40939,
     "Name":"맨더빌한 연발권총",
     "Icon":"\/i\/034000\/034493_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -176491,7 +176491,7 @@
     "Id":40940,
     "Name":"맨더빌한 환술봉",
     "Icon":"\/i\/032000\/032464_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":25,
     "EquipSlotCategory":13
   },
@@ -176499,7 +176499,7 @@
     "Id":40941,
     "Name":"맨더빌한 주술봉",
     "Icon":"\/i\/032000\/032879_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":26,
     "EquipSlotCategory":13
   },
@@ -176507,7 +176507,7 @@
     "Id":40942,
     "Name":"맨더빌한 금서",
     "Icon":"\/i\/033000\/033392_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":28,
     "EquipSlotCategory":13
   },
@@ -176515,7 +176515,7 @@
     "Id":40943,
     "Name":"맨더빌한 치유서",
     "Icon":"\/i\/033000\/033391_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -176523,7 +176523,7 @@
     "Id":40944,
     "Name":"맨더빌한 좌표기",
     "Icon":"\/i\/034000\/034991_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -176531,7 +176531,7 @@
     "Id":40945,
     "Name":"맨더빌한 외날검",
     "Icon":"\/i\/036000\/036548_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -176539,7 +176539,7 @@
     "Id":40946,
     "Name":"맨더빌한 레이피어",
     "Icon":"\/i\/036000\/036847_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -176547,7 +176547,7 @@
     "Id":40947,
     "Name":"맨더빌한 건블레이드",
     "Icon":"\/i\/036000\/036090_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -176555,7 +176555,7 @@
     "Id":40948,
     "Name":"맨더빌한 차크람",
     "Icon":"\/i\/036000\/036289_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -176563,7 +176563,7 @@
     "Id":40949,
     "Name":"맨더빌한 날개",
     "Icon":"\/i\/037000\/037056_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -176571,7 +176571,7 @@
     "Id":40950,
     "Name":"맨더빌한 자그날",
     "Icon":"\/i\/037000\/037259_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -176579,7 +176579,7 @@
     "Id":40951,
     "Name":"맨더빌한 연모양 방패",
     "Icon":"\/i\/030000\/030259_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":2
   },
@@ -176587,7 +176587,7 @@
     "Id":40952,
     "Name":"모조 당당한 맨더빌 한손검",
     "Icon":"\/i\/030000\/030665_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":1
   },
@@ -176595,7 +176595,7 @@
     "Id":40953,
     "Name":"모조 당당한 맨더빌 주먹",
     "Icon":"\/i\/030000\/030829_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":21,
     "EquipSlotCategory":13
   },
@@ -176603,7 +176603,7 @@
     "Id":40954,
     "Name":"모조 당당한 맨더빌 긴날도끼",
     "Icon":"\/i\/031000\/031239_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":22,
     "EquipSlotCategory":13
   },
@@ -176611,7 +176611,7 @@
     "Id":40955,
     "Name":"모조 당당한 맨더빌 창",
     "Icon":"\/i\/031000\/031641_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":23,
     "EquipSlotCategory":13
   },
@@ -176619,7 +176619,7 @@
     "Id":40956,
     "Name":"모조 당당한 맨더빌 현악궁",
     "Icon":"\/i\/032000\/032029_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":24,
     "EquipSlotCategory":13
   },
@@ -176627,7 +176627,7 @@
     "Id":40957,
     "Name":"모조 당당한 맨더빌 단검",
     "Icon":"\/i\/033000\/033615_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":92,
     "EquipSlotCategory":13
   },
@@ -176635,7 +176635,7 @@
     "Id":40958,
     "Name":"모조 당당한 맨더빌 그레이트소드",
     "Icon":"\/i\/034000\/034393_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -176643,7 +176643,7 @@
     "Id":40959,
     "Name":"모조 당당한 맨더빌 권총",
     "Icon":"\/i\/034000\/034488_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -176651,7 +176651,7 @@
     "Id":40960,
     "Name":"모조 당당한 맨더빌 환술봉",
     "Icon":"\/i\/032000\/032459_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":25,
     "EquipSlotCategory":13
   },
@@ -176659,7 +176659,7 @@
     "Id":40961,
     "Name":"모조 당당한 맨더빌 주술봉",
     "Icon":"\/i\/032000\/032874_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":26,
     "EquipSlotCategory":13
   },
@@ -176667,7 +176667,7 @@
     "Id":40962,
     "Name":"모조 당당한 맨더빌 금서",
     "Icon":"\/i\/033000\/033382_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":28,
     "EquipSlotCategory":13
   },
@@ -176675,7 +176675,7 @@
     "Id":40963,
     "Name":"모조 당당한 맨더빌 치유서",
     "Icon":"\/i\/033000\/033381_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -176683,7 +176683,7 @@
     "Id":40964,
     "Name":"모조 당당한 맨더빌 태양계의",
     "Icon":"\/i\/034000\/034986_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -176691,7 +176691,7 @@
     "Id":40965,
     "Name":"모조 당당한 맨더빌 외날검",
     "Icon":"\/i\/036000\/036543_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -176699,7 +176699,7 @@
     "Id":40966,
     "Name":"모조 당당한 맨더빌 데겐",
     "Icon":"\/i\/036000\/036842_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -176707,7 +176707,7 @@
     "Id":40967,
     "Name":"모조 당당한 맨더빌 총검",
     "Icon":"\/i\/036000\/036085_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -176715,7 +176715,7 @@
     "Id":40968,
     "Name":"모조 당당한 맨더빌 차크람",
     "Icon":"\/i\/036000\/036284_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -176723,7 +176723,7 @@
     "Id":40969,
     "Name":"모조 당당한 맨더빌 날개",
     "Icon":"\/i\/037000\/037051_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -176731,7 +176731,7 @@
     "Id":40970,
     "Name":"모조 당당한 맨더빌 전투낫",
     "Icon":"\/i\/037000\/037254_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -176739,7 +176739,7 @@
     "Id":40971,
     "Name":"모조 당당한 맨더빌 방패",
     "Icon":"\/i\/030000\/030254_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":2
   },
@@ -176747,7 +176747,7 @@
     "Id":40972,
     "Name":"무광 모조 당당한 맨더빌 한손검",
     "Icon":"\/i\/030000\/030665_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":1
   },
@@ -176755,7 +176755,7 @@
     "Id":40973,
     "Name":"무광 모조 당당한 맨더빌 주먹",
     "Icon":"\/i\/030000\/030829_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":21,
     "EquipSlotCategory":13
   },
@@ -176763,7 +176763,7 @@
     "Id":40974,
     "Name":"무광 모조 당당한 맨더빌 긴날도끼",
     "Icon":"\/i\/031000\/031239_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":22,
     "EquipSlotCategory":13
   },
@@ -176771,7 +176771,7 @@
     "Id":40975,
     "Name":"무광 모조 당당한 맨더빌 창",
     "Icon":"\/i\/031000\/031641_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":23,
     "EquipSlotCategory":13
   },
@@ -176779,7 +176779,7 @@
     "Id":40976,
     "Name":"무광 모조 당당한 맨더빌 현악궁",
     "Icon":"\/i\/032000\/032029_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":24,
     "EquipSlotCategory":13
   },
@@ -176787,7 +176787,7 @@
     "Id":40977,
     "Name":"무광 모조 당당한 맨더빌 단검",
     "Icon":"\/i\/033000\/033615_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":92,
     "EquipSlotCategory":13
   },
@@ -176795,7 +176795,7 @@
     "Id":40978,
     "Name":"무광 모조 당당한 맨더빌 그레이트소드",
     "Icon":"\/i\/034000\/034393_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -176803,7 +176803,7 @@
     "Id":40979,
     "Name":"무광 모조 당당한 맨더빌 권총",
     "Icon":"\/i\/034000\/034488_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -176811,7 +176811,7 @@
     "Id":40980,
     "Name":"무광 모조 당당한 맨더빌 환술봉",
     "Icon":"\/i\/032000\/032459_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":25,
     "EquipSlotCategory":13
   },
@@ -176819,7 +176819,7 @@
     "Id":40981,
     "Name":"무광 모조 당당한 맨더빌 주술봉",
     "Icon":"\/i\/032000\/032874_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":26,
     "EquipSlotCategory":13
   },
@@ -176827,7 +176827,7 @@
     "Id":40982,
     "Name":"무광 모조 당당한 맨더빌 금서",
     "Icon":"\/i\/033000\/033382_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":28,
     "EquipSlotCategory":13
   },
@@ -176835,7 +176835,7 @@
     "Id":40983,
     "Name":"무광 모조 당당한 맨더빌 치유서",
     "Icon":"\/i\/033000\/033381_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -176843,7 +176843,7 @@
     "Id":40984,
     "Name":"무광 모조 당당한 맨더빌 태양계의",
     "Icon":"\/i\/034000\/034986_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -176851,7 +176851,7 @@
     "Id":40985,
     "Name":"무광 모조 당당한 맨더빌 외날검",
     "Icon":"\/i\/036000\/036543_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -176859,7 +176859,7 @@
     "Id":40986,
     "Name":"무광 모조 당당한 맨더빌 데겐",
     "Icon":"\/i\/036000\/036842_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -176867,7 +176867,7 @@
     "Id":40987,
     "Name":"무광 모조 당당한 맨더빌 총검",
     "Icon":"\/i\/036000\/036085_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -176875,7 +176875,7 @@
     "Id":40988,
     "Name":"무광 모조 당당한 맨더빌 차크람",
     "Icon":"\/i\/036000\/036284_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -176883,7 +176883,7 @@
     "Id":40989,
     "Name":"무광 모조 당당한 맨더빌 날개",
     "Icon":"\/i\/037000\/037051_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -176891,7 +176891,7 @@
     "Id":40990,
     "Name":"무광 모조 당당한 맨더빌 전투낫",
     "Icon":"\/i\/037000\/037254_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -176899,7 +176899,7 @@
     "Id":40991,
     "Name":"무광 모조 당당한 맨더빌 방패",
     "Icon":"\/i\/030000\/030254_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":2
   },
@@ -176907,7 +176907,7 @@
     "Id":40992,
     "Name":"모조 맨더빌한 언월도",
     "Icon":"\/i\/030000\/030670_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":1
   },
@@ -176915,7 +176915,7 @@
     "Id":40993,
     "Name":"모조 맨더빌한 주먹",
     "Icon":"\/i\/030000\/030834_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":21,
     "EquipSlotCategory":13
   },
@@ -176923,7 +176923,7 @@
     "Id":40994,
     "Name":"모조 맨더빌한 전투도끼",
     "Icon":"\/i\/031000\/031244_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":22,
     "EquipSlotCategory":13
   },
@@ -176931,7 +176931,7 @@
     "Id":40995,
     "Name":"모조 맨더빌한 삼지창",
     "Icon":"\/i\/031000\/031646_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":23,
     "EquipSlotCategory":13
   },
@@ -176939,7 +176939,7 @@
     "Id":40996,
     "Name":"모조 맨더빌한 합성궁",
     "Icon":"\/i\/032000\/032034_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":24,
     "EquipSlotCategory":13
   },
@@ -176947,7 +176947,7 @@
     "Id":40997,
     "Name":"모조 맨더빌한 단검",
     "Icon":"\/i\/033000\/033620_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":92,
     "EquipSlotCategory":13
   },
@@ -176955,7 +176955,7 @@
     "Id":40998,
     "Name":"모조 맨더빌한 그레이트소드",
     "Icon":"\/i\/034000\/034398_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":98,
     "EquipSlotCategory":13
   },
@@ -176963,7 +176963,7 @@
     "Id":40999,
     "Name":"모조 맨더빌한 연발권총",
     "Icon":"\/i\/034000\/034493_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":96,
     "EquipSlotCategory":13
   },
@@ -176971,7 +176971,7 @@
     "Id":41000,
     "Name":"모조 맨더빌한 환술봉",
     "Icon":"\/i\/032000\/032464_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":25,
     "EquipSlotCategory":13
   },
@@ -176979,7 +176979,7 @@
     "Id":41001,
     "Name":"모조 맨더빌한 주술봉",
     "Icon":"\/i\/032000\/032879_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":26,
     "EquipSlotCategory":13
   },
@@ -176987,7 +176987,7 @@
     "Id":41002,
     "Name":"모조 맨더빌한 금서",
     "Icon":"\/i\/033000\/033392_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":28,
     "EquipSlotCategory":13
   },
@@ -176995,7 +176995,7 @@
     "Id":41003,
     "Name":"모조 맨더빌한 치유서",
     "Icon":"\/i\/033000\/033391_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":29,
     "EquipSlotCategory":13
   },
@@ -177003,7 +177003,7 @@
     "Id":41004,
     "Name":"모조 맨더빌한 좌표기",
     "Icon":"\/i\/034000\/034991_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":99,
     "EquipSlotCategory":13
   },
@@ -177011,7 +177011,7 @@
     "Id":41005,
     "Name":"모조 맨더빌한 외날검",
     "Icon":"\/i\/036000\/036548_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":111,
     "EquipSlotCategory":13
   },
@@ -177019,7 +177019,7 @@
     "Id":41006,
     "Name":"모조 맨더빌한 레이피어",
     "Icon":"\/i\/036000\/036847_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":112,
     "EquipSlotCategory":13
   },
@@ -177027,7 +177027,7 @@
     "Id":41007,
     "Name":"모조 맨더빌한 건블레이드",
     "Icon":"\/i\/036000\/036090_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":149,
     "EquipSlotCategory":13
   },
@@ -177035,7 +177035,7 @@
     "Id":41008,
     "Name":"모조 맨더빌한 차크람",
     "Icon":"\/i\/036000\/036289_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":150,
     "EquipSlotCategory":13
   },
@@ -177043,7 +177043,7 @@
     "Id":41009,
     "Name":"모조 맨더빌한 날개",
     "Icon":"\/i\/037000\/037056_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":181,
     "EquipSlotCategory":13
   },
@@ -177051,7 +177051,7 @@
     "Id":41010,
     "Name":"모조 맨더빌한 자그날",
     "Icon":"\/i\/037000\/037259_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":180,
     "EquipSlotCategory":13
   },
@@ -177059,7 +177059,7 @@
     "Id":41011,
     "Name":"모조 맨더빌한 연모양 방패",
     "Icon":"\/i\/030000\/030259_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":20,
     "EquipSlotCategory":2
   },
@@ -177235,7 +177235,7 @@
     "Id":41180,
     "Name":"노르브란트 선각자 톱",
     "Icon":"\/i\/039000\/039005_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":9,
     "EquipSlotCategory":1
   },
@@ -177243,7 +177243,7 @@
     "Id":41181,
     "Name":"노르브란트 선각자 단조망치",
     "Icon":"\/i\/039000\/039104_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":10,
     "EquipSlotCategory":1
   },
@@ -177251,7 +177251,7 @@
     "Id":41182,
     "Name":"노르브란트 선각자 돋을무늬 망치",
     "Icon":"\/i\/039000\/039204_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":11,
     "EquipSlotCategory":1
   },
@@ -177259,7 +177259,7 @@
     "Id":41183,
     "Name":"노르브란트 선각자 세공망치",
     "Icon":"\/i\/039000\/039303_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":12,
     "EquipSlotCategory":1
   },
@@ -177267,7 +177267,7 @@
     "Id":41184,
     "Name":"노르브란트 선각자 둥근칼",
     "Icon":"\/i\/039000\/039404_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":13,
     "EquipSlotCategory":1
   },
@@ -177275,7 +177275,7 @@
     "Id":41185,
     "Name":"노르브란트 선각자 바늘",
     "Icon":"\/i\/039000\/039504_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":14,
     "EquipSlotCategory":1
   },
@@ -177283,7 +177283,7 @@
     "Id":41186,
     "Name":"노르브란트 선각자 증류기",
     "Icon":"\/i\/039000\/039603_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":15,
     "EquipSlotCategory":1
   },
@@ -177291,7 +177291,7 @@
     "Id":41187,
     "Name":"노르브란트 선각자 프라이팬",
     "Icon":"\/i\/039000\/039706_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":16,
     "EquipSlotCategory":1
   },
@@ -177299,7 +177299,7 @@
     "Id":41188,
     "Name":"노르브란트 선각자 곡괭이",
     "Icon":"\/i\/038000\/038306_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":17,
     "EquipSlotCategory":1
   },
@@ -177307,7 +177307,7 @@
     "Id":41189,
     "Name":"노르브란트 선각자 손도끼",
     "Icon":"\/i\/038000\/038404_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":18,
     "EquipSlotCategory":1
   },
@@ -177315,7 +177315,7 @@
     "Id":41190,
     "Name":"노르브란트 선각자 낚싯대",
     "Icon":"\/i\/038000\/038507_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":19,
     "EquipSlotCategory":1
   },
@@ -177323,7 +177323,7 @@
     "Id":41191,
     "Name":"노르브란트 길잡이 톱",
     "Icon":"\/i\/039000\/039005_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":9,
     "EquipSlotCategory":1
   },
@@ -177331,7 +177331,7 @@
     "Id":41192,
     "Name":"노르브란트 길잡이 단조망치",
     "Icon":"\/i\/039000\/039104_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":10,
     "EquipSlotCategory":1
   },
@@ -177339,7 +177339,7 @@
     "Id":41193,
     "Name":"노르브란트 길잡이 돋을무늬 망치",
     "Icon":"\/i\/039000\/039204_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":11,
     "EquipSlotCategory":1
   },
@@ -177347,7 +177347,7 @@
     "Id":41194,
     "Name":"노르브란트 길잡이 세공망치",
     "Icon":"\/i\/039000\/039303_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":12,
     "EquipSlotCategory":1
   },
@@ -177355,7 +177355,7 @@
     "Id":41195,
     "Name":"노르브란트 길잡이 둥근칼",
     "Icon":"\/i\/039000\/039404_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":13,
     "EquipSlotCategory":1
   },
@@ -177363,7 +177363,7 @@
     "Id":41196,
     "Name":"노르브란트 길잡이 바늘",
     "Icon":"\/i\/039000\/039504_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":14,
     "EquipSlotCategory":1
   },
@@ -177371,7 +177371,7 @@
     "Id":41197,
     "Name":"노르브란트 길잡이 증류기",
     "Icon":"\/i\/039000\/039603_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":15,
     "EquipSlotCategory":1
   },
@@ -177379,7 +177379,7 @@
     "Id":41198,
     "Name":"노르브란트 길잡이 프라이팬",
     "Icon":"\/i\/039000\/039706_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":16,
     "EquipSlotCategory":1
   },
@@ -177387,7 +177387,7 @@
     "Id":41199,
     "Name":"노르브란트 길잡이 곡괭이",
     "Icon":"\/i\/038000\/038306_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":17,
     "EquipSlotCategory":1
   },
@@ -177395,7 +177395,7 @@
     "Id":41200,
     "Name":"노르브란트 길잡이 손도끼",
     "Icon":"\/i\/038000\/038404_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":18,
     "EquipSlotCategory":1
   },
@@ -177403,7 +177403,7 @@
     "Id":41201,
     "Name":"노르브란트 길잡이 낚싯대",
     "Icon":"\/i\/038000\/038507_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":19,
     "EquipSlotCategory":1
   },
@@ -177587,7 +177587,7 @@
     "Id":41224,
     "Name":"모조 노르브란트 선각자 톱",
     "Icon":"\/i\/039000\/039005_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":9,
     "EquipSlotCategory":1
   },
@@ -177595,7 +177595,7 @@
     "Id":41225,
     "Name":"모조 노르브란트 선각자 단조망치",
     "Icon":"\/i\/039000\/039104_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":10,
     "EquipSlotCategory":1
   },
@@ -177603,7 +177603,7 @@
     "Id":41226,
     "Name":"모조 노르브란트 선각자 돋을무늬 망치",
     "Icon":"\/i\/039000\/039204_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":11,
     "EquipSlotCategory":1
   },
@@ -177611,7 +177611,7 @@
     "Id":41227,
     "Name":"모조 노르브란트 선각자 세공망치",
     "Icon":"\/i\/039000\/039303_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":12,
     "EquipSlotCategory":1
   },
@@ -177619,7 +177619,7 @@
     "Id":41228,
     "Name":"모조 노르브란트 선각자 둥근칼",
     "Icon":"\/i\/039000\/039404_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":13,
     "EquipSlotCategory":1
   },
@@ -177627,7 +177627,7 @@
     "Id":41229,
     "Name":"모조 노르브란트 선각자 바늘",
     "Icon":"\/i\/039000\/039504_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":14,
     "EquipSlotCategory":1
   },
@@ -177635,7 +177635,7 @@
     "Id":41230,
     "Name":"모조 노르브란트 선각자 증류기",
     "Icon":"\/i\/039000\/039603_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":15,
     "EquipSlotCategory":1
   },
@@ -177643,7 +177643,7 @@
     "Id":41231,
     "Name":"모조 노르브란트 선각자 프라이팬",
     "Icon":"\/i\/039000\/039706_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":16,
     "EquipSlotCategory":1
   },
@@ -177651,7 +177651,7 @@
     "Id":41232,
     "Name":"모조 노르브란트 선각자 곡괭이",
     "Icon":"\/i\/038000\/038306_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":17,
     "EquipSlotCategory":1
   },
@@ -177659,7 +177659,7 @@
     "Id":41233,
     "Name":"모조 노르브란트 선각자 손도끼",
     "Icon":"\/i\/038000\/038404_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":18,
     "EquipSlotCategory":1
   },
@@ -177667,7 +177667,7 @@
     "Id":41234,
     "Name":"모조 노르브란트 선각자 낚싯대",
     "Icon":"\/i\/038000\/038507_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":19,
     "EquipSlotCategory":1
   },
@@ -177675,7 +177675,7 @@
     "Id":41235,
     "Name":"모조 노르브란트 길잡이 톱",
     "Icon":"\/i\/039000\/039005_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":9,
     "EquipSlotCategory":1
   },
@@ -177683,7 +177683,7 @@
     "Id":41236,
     "Name":"모조 노르브란트 길잡이 단조망치",
     "Icon":"\/i\/039000\/039104_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":10,
     "EquipSlotCategory":1
   },
@@ -177691,7 +177691,7 @@
     "Id":41237,
     "Name":"모조 노르브란트 길잡이 돋을무늬 망치",
     "Icon":"\/i\/039000\/039204_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":11,
     "EquipSlotCategory":1
   },
@@ -177699,7 +177699,7 @@
     "Id":41238,
     "Name":"모조 노르브란트 길잡이 세공망치",
     "Icon":"\/i\/039000\/039303_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":12,
     "EquipSlotCategory":1
   },
@@ -177707,7 +177707,7 @@
     "Id":41239,
     "Name":"모조 노르브란트 길잡이 둥근칼",
     "Icon":"\/i\/039000\/039404_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":13,
     "EquipSlotCategory":1
   },
@@ -177715,7 +177715,7 @@
     "Id":41240,
     "Name":"모조 노르브란트 길잡이 바늘",
     "Icon":"\/i\/039000\/039504_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":14,
     "EquipSlotCategory":1
   },
@@ -177723,7 +177723,7 @@
     "Id":41241,
     "Name":"모조 노르브란트 길잡이 증류기",
     "Icon":"\/i\/039000\/039603_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":15,
     "EquipSlotCategory":1
   },
@@ -177731,7 +177731,7 @@
     "Id":41242,
     "Name":"모조 노르브란트 길잡이 프라이팬",
     "Icon":"\/i\/039000\/039706_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":16,
     "EquipSlotCategory":1
   },
@@ -177739,7 +177739,7 @@
     "Id":41243,
     "Name":"모조 노르브란트 길잡이 곡괭이",
     "Icon":"\/i\/038000\/038306_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":17,
     "EquipSlotCategory":1
   },
@@ -177747,7 +177747,7 @@
     "Id":41244,
     "Name":"모조 노르브란트 길잡이 손도끼",
     "Icon":"\/i\/038000\/038404_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":18,
     "EquipSlotCategory":1
   },
@@ -177755,7 +177755,7 @@
     "Id":41245,
     "Name":"모조 노르브란트 길잡이 낚싯대",
     "Icon":"\/i\/038000\/038507_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":19,
     "EquipSlotCategory":1
   },
@@ -178307,7 +178307,7 @@
     "Id":41572,
     "Name":"크리스타리움 신동 상의",
     "Icon":"\/i\/042000\/042999_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -178315,7 +178315,7 @@
     "Id":41573,
     "Name":"크리스타리움 신동 반장갑",
     "Icon":"\/i\/056000\/056146_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":5
   },
@@ -178323,7 +178323,7 @@
     "Id":41574,
     "Name":"크리스타리움 신동 기마바지",
     "Icon":"\/i\/057000\/057549_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -178331,7 +178331,7 @@
     "Id":41575,
     "Name":"크리스타리움 신동 허벅지장화",
     "Icon":"\/i\/049000\/049642_hr1.png",
-    "DyeCount":0,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -178499,7 +178499,7 @@
     "Id":41596,
     "Name":"조달꾼 외투",
     "Icon":"\/i\/042000\/042997_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":4
   },
@@ -178507,7 +178507,7 @@
     "Id":41597,
     "Name":"조달꾼 작업장갑",
     "Icon":"\/i\/056000\/056137_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":5
   },
@@ -178515,7 +178515,7 @@
     "Id":41598,
     "Name":"조달꾼 바지",
     "Icon":"\/i\/057000\/057538_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":7
   },
@@ -178523,7 +178523,7 @@
     "Id":41599,
     "Name":"조달꾼 긴장화",
     "Icon":"\/i\/049000\/049632_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":1,
     "EquipSlotCategory":8
   },
@@ -192171,7 +192171,7 @@
     "Id":43636,
     "Name":"오르토스 독사도",
     "Icon":"\/i\/037000\/037404_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":196,
     "EquipSlotCategory":13
   },
@@ -192179,7 +192179,7 @@
     "Id":43637,
     "Name":"에나레토스 독사도",
     "Icon":"\/i\/037000\/037405_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":196,
     "EquipSlotCategory":13
   },
@@ -192203,7 +192203,7 @@
     "Id":43640,
     "Name":"승전의 쌍검치",
     "Icon":"\/i\/037000\/037406_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":196,
     "EquipSlotCategory":13
   },
@@ -192339,7 +192339,7 @@
     "Id":43657,
     "Name":"오르토스 사선붓",
     "Icon":"\/i\/037000\/037606_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":197,
     "EquipSlotCategory":13
   },
@@ -192347,7 +192347,7 @@
     "Id":43658,
     "Name":"에나레토스 사선붓",
     "Icon":"\/i\/037000\/037607_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":197,
     "EquipSlotCategory":13
   },
@@ -192371,7 +192371,7 @@
     "Id":43661,
     "Name":"승전의 사선붓",
     "Icon":"\/i\/037000\/037608_hr1.png",
-    "DyeCount":1,
+    "DyeCount":2,
     "ClassJobCategory":197,
     "EquipSlotCategory":13
   },
@@ -192560,9 +192560,2569 @@
     "EquipSlotCategory":8
   },
   {
+    "Id":44410,
+    "Name":"새내기 반지",
+    "Icon":"\/i\/054000\/054749_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":34,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44411,
+    "Name":"영원한 탐구자 톱",
+    "Icon":"\/i\/039000\/039011_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":9,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44412,
+    "Name":"영원한 탐구자 단조망치",
+    "Icon":"\/i\/039000\/039110_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":10,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44413,
+    "Name":"영원한 탐구자 돋을무늬 망치",
+    "Icon":"\/i\/039000\/039210_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":11,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44414,
+    "Name":"영원한 탐구자 세공망치",
+    "Icon":"\/i\/039000\/039309_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":12,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44415,
+    "Name":"영원한 탐구자 가죽공예 칼",
+    "Icon":"\/i\/039000\/039410_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":13,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44416,
+    "Name":"영원한 탐구자 바늘",
+    "Icon":"\/i\/039000\/039510_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":14,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44417,
+    "Name":"영원한 탐구자 증류기",
+    "Icon":"\/i\/039000\/039609_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":15,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44418,
+    "Name":"영원한 탐구자 봄 프라이팬",
+    "Icon":"\/i\/039000\/039712_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":16,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44419,
+    "Name":"영원한 탐구자 곡괭이",
+    "Icon":"\/i\/038000\/038312_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":17,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44420,
+    "Name":"영원한 탐구자 손도끼",
+    "Icon":"\/i\/038000\/038410_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":18,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44421,
+    "Name":"영원한 탐구자 낚싯대",
+    "Icon":"\/i\/038000\/038513_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":19,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44422,
+    "Name":"영원한 탐구자 장도리",
+    "Icon":"\/i\/035000\/035066_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":9,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44423,
+    "Name":"영원한 탐구자 줄판",
+    "Icon":"\/i\/035000\/035163_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":10,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44424,
+    "Name":"영원한 탐구자 플라이어",
+    "Icon":"\/i\/035000\/035263_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":11,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44425,
+    "Name":"영원한 탐구자 연삭기",
+    "Icon":"\/i\/035000\/035363_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":12,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44426,
+    "Name":"영원한 탐구자 목타",
+    "Icon":"\/i\/035000\/035455_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":13,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44427,
+    "Name":"영원한 탐구자 물레",
+    "Icon":"\/i\/035000\/035564_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":14,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44428,
+    "Name":"영원한 탐구자 약연",
+    "Icon":"\/i\/035000\/035663_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":15,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44429,
+    "Name":"영원한 탐구자 요리칼",
+    "Icon":"\/i\/035000\/035763_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":16,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44430,
+    "Name":"영원한 탐구자 채굴망치",
+    "Icon":"\/i\/038000\/038063_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":17,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44431,
+    "Name":"영원한 탐구자 정원낫",
+    "Icon":"\/i\/038000\/038163_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":18,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44432,
+    "Name":"영원한 탐구자 제작용 머리장비",
+    "Icon":"\/i\/056000\/056806_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":33,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44433,
+    "Name":"영원한 탐구자 제작용 상의",
+    "Icon":"\/i\/057000\/057199_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":33,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44434,
+    "Name":"영원한 탐구자 제작용 팔보호구",
+    "Icon":"\/i\/056000\/056314_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":33,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44435,
+    "Name":"영원한 탐구자 제작용 일자바지",
+    "Icon":"\/i\/057000\/057724_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":33,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44436,
+    "Name":"영원한 탐구자 제작용 작업장화",
+    "Icon":"\/i\/057000\/057816_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":33,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44437,
+    "Name":"영원한 탐구자 채집용 고글",
+    "Icon":"\/i\/056000\/056805_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":32,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44438,
+    "Name":"영원한 탐구자 채집용 외투",
+    "Icon":"\/i\/057000\/057198_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":32,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44439,
+    "Name":"영원한 탐구자 채집용 작업장갑",
+    "Icon":"\/i\/056000\/056313_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":32,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44440,
+    "Name":"영원한 탐구자 채집용 덧바지",
+    "Icon":"\/i\/057000\/057723_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":32,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44441,
+    "Name":"영원한 탐구자 채집용 신발",
+    "Icon":"\/i\/057000\/057815_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":32,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44514,
+    "Name":"아크 엔젤 수호자 머리장식",
+    "Icon":"\/i\/056000\/056785_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44515,
+    "Name":"아크 엔젤 수호자 튜닉",
+    "Icon":"\/i\/057000\/057173_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44516,
+    "Name":"아크 엔젤 수호자 팔보호구",
+    "Icon":"\/i\/056000\/056294_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44517,
+    "Name":"아크 엔젤 수호자 바지",
+    "Icon":"\/i\/057000\/057698_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44518,
+    "Name":"아크 엔젤 수호자 허벅지장화",
+    "Icon":"\/i\/049000\/049792_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44519,
+    "Name":"아크 엔젤 학살자 머리보호대",
+    "Icon":"\/i\/056000\/056786_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44520,
+    "Name":"아크 엔젤 학살자 전투흉갑",
+    "Icon":"\/i\/057000\/057175_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44521,
+    "Name":"아크 엔젤 학살자 건틀릿",
+    "Icon":"\/i\/056000\/056296_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44522,
+    "Name":"아크 엔젤 학살자 바지",
+    "Icon":"\/i\/057000\/057699_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44523,
+    "Name":"아크 엔젤 학살자 허벅지장화",
+    "Icon":"\/i\/049000\/049793_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44524,
+    "Name":"아크 엔젤 타격대 얼굴가리개",
+    "Icon":"\/i\/056000\/056787_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44525,
+    "Name":"아크 엔젤 타격대 전투흉갑",
+    "Icon":"\/i\/057000\/057176_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44526,
+    "Name":"아크 엔젤 타격대 건틀릿",
+    "Icon":"\/i\/056000\/056297_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44527,
+    "Name":"아크 엔젤 타격대 바지",
+    "Icon":"\/i\/057000\/057702_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44528,
+    "Name":"아크 엔젤 타격대 허벅지장화",
+    "Icon":"\/i\/049000\/049796_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44529,
+    "Name":"아크 엔젤 유격대 머리장식",
+    "Icon":"\/i\/056000\/056790_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44530,
+    "Name":"아크 엔젤 유격대 흉갑",
+    "Icon":"\/i\/057000\/057178_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44531,
+    "Name":"아크 엔젤 유격대 완갑",
+    "Icon":"\/i\/056000\/056299_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44532,
+    "Name":"아크 엔젤 유격대 무릎받이",
+    "Icon":"\/i\/057000\/057703_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44533,
+    "Name":"아크 엔젤 유격대 판금장화",
+    "Icon":"\/i\/049000\/049797_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44534,
+    "Name":"아크 엔젤 정찰대 머리보호대",
+    "Icon":"\/i\/056000\/056789_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44535,
+    "Name":"아크 엔젤 정찰대 흉갑",
+    "Icon":"\/i\/057000\/057177_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44536,
+    "Name":"아크 엔젤 정찰대 완갑",
+    "Icon":"\/i\/056000\/056298_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44537,
+    "Name":"아크 엔젤 정찰대 바지",
+    "Icon":"\/i\/057000\/057700_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44538,
+    "Name":"아크 엔젤 정찰대 갑주장화",
+    "Icon":"\/i\/049000\/049794_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44539,
+    "Name":"아크 엔젤 치유사 머리장식",
+    "Icon":"\/i\/056000\/056788_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44540,
+    "Name":"아크 엔젤 치유사 튜닉",
+    "Icon":"\/i\/057000\/057174_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44541,
+    "Name":"아크 엔젤 치유사 팔보호구",
+    "Icon":"\/i\/056000\/056295_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44542,
+    "Name":"아크 엔젤 치유사 바지",
+    "Icon":"\/i\/057000\/057701_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44543,
+    "Name":"아크 엔젤 치유사 허벅지장화",
+    "Icon":"\/i\/049000\/049795_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44544,
+    "Name":"아크 엔젤 마술사 뾰족모자",
+    "Icon":"\/i\/056000\/056784_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44545,
+    "Name":"아크 엔젤 마술사 외투",
+    "Icon":"\/i\/057000\/057172_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44546,
+    "Name":"아크 엔젤 마술사 장갑",
+    "Icon":"\/i\/056000\/056293_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44547,
+    "Name":"아크 엔젤 마술사 일자바지",
+    "Icon":"\/i\/057000\/057697_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44548,
+    "Name":"아크 엔젤 마술사 장화",
+    "Icon":"\/i\/049000\/049791_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44550,
+    "Name":"유웨야와타 수호자 머리꽂이",
+    "Icon":"\/i\/056000\/056797_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44551,
+    "Name":"유웨야와타 수호자 외투",
+    "Icon":"\/i\/057000\/057187_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44552,
+    "Name":"유웨야와타 수호자 예식장갑",
+    "Icon":"\/i\/056000\/056306_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44553,
+    "Name":"유웨야와타 수호자 하의",
+    "Icon":"\/i\/057000\/057713_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44554,
+    "Name":"유웨야와타 수호자 장화",
+    "Icon":"\/i\/057000\/057806_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44555,
+    "Name":"유웨야와타 학살자 모자",
+    "Icon":"\/i\/056000\/056800_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44556,
+    "Name":"유웨야와타 학살자 외투",
+    "Icon":"\/i\/057000\/057190_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44557,
+    "Name":"유웨야와타 학살자 장갑",
+    "Icon":"\/i\/056000\/056309_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44558,
+    "Name":"유웨야와타 학살자 무릎바지",
+    "Icon":"\/i\/057000\/057716_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44559,
+    "Name":"유웨야와타 학살자 장화",
+    "Icon":"\/i\/057000\/057809_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44560,
+    "Name":"유웨야와타 타격대 머리꽂이",
+    "Icon":"\/i\/056000\/056798_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44561,
+    "Name":"유웨야와타 타격대 재킷",
+    "Icon":"\/i\/057000\/057188_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44562,
+    "Name":"유웨야와타 타격대 예식장갑",
+    "Icon":"\/i\/056000\/056307_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44563,
+    "Name":"유웨야와타 타격대 하의",
+    "Icon":"\/i\/057000\/057714_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44564,
+    "Name":"유웨야와타 타격대 허벅지장화",
+    "Icon":"\/i\/057000\/057807_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44565,
+    "Name":"유웨야와타 유격대 모자",
+    "Icon":"\/i\/056000\/056799_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44566,
+    "Name":"유웨야와타 유격대 외투",
+    "Icon":"\/i\/057000\/057189_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44567,
+    "Name":"유웨야와타 유격대 장갑",
+    "Icon":"\/i\/056000\/056308_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44568,
+    "Name":"유웨야와타 유격대 무릎바지",
+    "Icon":"\/i\/057000\/057715_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44569,
+    "Name":"유웨야와타 유격대 장화",
+    "Icon":"\/i\/057000\/057808_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44570,
+    "Name":"유웨야와타 정찰대 모자",
+    "Icon":"\/i\/056000\/056801_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44571,
+    "Name":"유웨야와타 정찰대 외투",
+    "Icon":"\/i\/057000\/057191_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44572,
+    "Name":"유웨야와타 정찰대 장갑",
+    "Icon":"\/i\/056000\/056310_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44573,
+    "Name":"유웨야와타 정찰대 무릎바지",
+    "Icon":"\/i\/057000\/057717_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44574,
+    "Name":"유웨야와타 정찰대 장화",
+    "Icon":"\/i\/057000\/057810_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44575,
+    "Name":"유웨야와타 치유사 모자",
+    "Icon":"\/i\/056000\/056796_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44576,
+    "Name":"유웨야와타 치유사 로브",
+    "Icon":"\/i\/057000\/057186_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44577,
+    "Name":"유웨야와타 치유사 손등장갑",
+    "Icon":"\/i\/056000\/056305_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44578,
+    "Name":"유웨야와타 치유사 반바지",
+    "Icon":"\/i\/057000\/057712_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44579,
+    "Name":"유웨야와타 치유사 장화",
+    "Icon":"\/i\/057000\/057805_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44580,
+    "Name":"유웨야와타 마술사 모자",
+    "Icon":"\/i\/056000\/056795_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44581,
+    "Name":"유웨야와타 마술사 로브",
+    "Icon":"\/i\/057000\/057185_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44582,
+    "Name":"유웨야와타 마술사 손등장갑",
+    "Icon":"\/i\/056000\/056304_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44583,
+    "Name":"유웨야와타 마술사 반바지",
+    "Icon":"\/i\/057000\/057711_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44584,
+    "Name":"유웨야와타 마술사 장화",
+    "Icon":"\/i\/057000\/057804_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44585,
+    "Name":"유웨야와타 수호자 귀걸이",
+    "Icon":"\/i\/055000\/055547_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44586,
+    "Name":"유웨야와타 공격대 귀걸이",
+    "Icon":"\/i\/055000\/055547_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":84,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44587,
+    "Name":"유웨야와타 유격대 귀걸이",
+    "Icon":"\/i\/055000\/055547_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":105,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44588,
+    "Name":"유웨야와타 치유사 귀걸이",
+    "Icon":"\/i\/055000\/055547_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44589,
+    "Name":"유웨야와타 마술사 귀걸이",
+    "Icon":"\/i\/055000\/055547_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44590,
+    "Name":"유웨야와타 수호자 목걸이",
+    "Icon":"\/i\/055000\/055099_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44591,
+    "Name":"유웨야와타 공격대 목걸이",
+    "Icon":"\/i\/055000\/055099_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":84,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44592,
+    "Name":"유웨야와타 유격대 목걸이",
+    "Icon":"\/i\/055000\/055099_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":105,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44593,
+    "Name":"유웨야와타 치유사 목걸이",
+    "Icon":"\/i\/055000\/055099_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44594,
+    "Name":"유웨야와타 마술사 목걸이",
+    "Icon":"\/i\/055000\/055099_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44595,
+    "Name":"유웨야와타 수호자 팔찌",
+    "Icon":"\/i\/055000\/055897_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":11
+  },
+  {
+    "Id":44596,
+    "Name":"유웨야와타 공격대 팔찌",
+    "Icon":"\/i\/055000\/055897_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":84,
+    "EquipSlotCategory":11
+  },
+  {
+    "Id":44597,
+    "Name":"유웨야와타 유격대 팔찌",
+    "Icon":"\/i\/055000\/055897_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":105,
+    "EquipSlotCategory":11
+  },
+  {
+    "Id":44598,
+    "Name":"유웨야와타 치유사 팔찌",
+    "Icon":"\/i\/055000\/055897_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":11
+  },
+  {
+    "Id":44599,
+    "Name":"유웨야와타 마술사 팔찌",
+    "Icon":"\/i\/055000\/055897_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":11
+  },
+  {
+    "Id":44600,
+    "Name":"유웨야와타 수호자 반지",
+    "Icon":"\/i\/054000\/054748_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44601,
+    "Name":"유웨야와타 공격대 반지",
+    "Icon":"\/i\/054000\/054748_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":84,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44602,
+    "Name":"유웨야와타 유격대 반지",
+    "Icon":"\/i\/054000\/054748_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":105,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44603,
+    "Name":"유웨야와타 치유사 반지",
+    "Icon":"\/i\/054000\/054748_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44604,
+    "Name":"유웨야와타 마술사 반지",
+    "Icon":"\/i\/054000\/054748_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44640,
+    "Name":"루즈핏 스트리트 모자",
+    "Icon":"\/i\/056000\/056791_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44641,
+    "Name":"루즈핏 스트리트 오버셔츠",
+    "Icon":"\/i\/057000\/057179_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44642,
+    "Name":"루즈핏 스트리트 손목보호구 ",
+    "Icon":"\/i\/056000\/056300_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44643,
+    "Name":"루즈핏 스트리트 카고팬츠",
+    "Icon":"\/i\/057000\/057704_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44644,
+    "Name":"루즈핏 스트리트 운동화",
+    "Icon":"\/i\/049000\/049798_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44645,
+    "Name":"집사왕자 헤드셋",
+    "Icon":"\/i\/056000\/056794_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44646,
+    "Name":"집사왕자 재킷",
+    "Icon":"\/i\/057000\/057182_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44647,
+    "Name":"집사왕자 장갑",
+    "Icon":"\/i\/056000\/056302_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44648,
+    "Name":"집사왕자 긴바지",
+    "Icon":"\/i\/057000\/057708_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44649,
+    "Name":"집사왕자 긴장화",
+    "Icon":"\/i\/057000\/057801_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44650,
+    "Name":"한겨울 털모자",
+    "Icon":"\/i\/056000\/056793_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44651,
+    "Name":"한겨울 블루종",
+    "Icon":"\/i\/057000\/057181_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44652,
+    "Name":"한겨울 통바지",
+    "Icon":"\/i\/057000\/057706_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44653,
+    "Name":"한겨울 신발",
+    "Icon":"\/i\/057000\/057800_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44654,
+    "Name":"한겨울 모직치마",
+    "Icon":"\/i\/057000\/057707_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44661,
+    "Name":"애슬레저 털모자",
+    "Icon":"\/i\/056000\/056802_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44662,
+    "Name":"애슬레저 크롭티셔츠",
+    "Icon":"\/i\/057000\/057193_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44664,
+    "Name":"애슬레저 스웨트팬츠",
+    "Icon":"\/i\/057000\/057719_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44665,
+    "Name":"애슬레저 운동화",
+    "Icon":"\/i\/057000\/057812_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44666,
+    "Name":"애슬레저 크롭스웨터",
+    "Icon":"\/i\/057000\/057194_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44668,
+    "Name":"가죽 끈장식 베레모",
+    "Icon":"\/i\/056000\/056804_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44669,
+    "Name":"가죽 끈장식 멜빵상의",
+    "Icon":"\/i\/057000\/057196_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44670,
+    "Name":"가죽 끈장식 손가락장갑",
+    "Icon":"\/i\/056000\/056312_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44671,
+    "Name":"가죽 끈장식 긴바지",
+    "Icon":"\/i\/057000\/057721_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44672,
+    "Name":"가죽 끈장식 장화",
+    "Icon":"\/i\/057000\/057813_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44673,
+    "Name":"가죽 끈장식 뒤트임 멜빵상의",
+    "Icon":"\/i\/057000\/057197_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44674,
+    "Name":"가죽 끈장식 칠부바지",
+    "Icon":"\/i\/057000\/057722_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44675,
+    "Name":"가죽 끈장식 단화",
+    "Icon":"\/i\/057000\/057814_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44676,
+    "Name":"그라하 재킷",
+    "Icon":"\/i\/057000\/057192_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44677,
+    "Name":"그라하 손보호구",
+    "Icon":"\/i\/056000\/056311_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44678,
+    "Name":"그라하 반바지",
+    "Icon":"\/i\/057000\/057718_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44679,
+    "Name":"그라하 장화",
+    "Icon":"\/i\/057000\/057811_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44680,
+    "Name":"제로 깃모자",
+    "Icon":"\/i\/056000\/056803_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44681,
+    "Name":"제로 전투흉갑",
+    "Icon":"\/i\/057000\/057195_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":22
+  },
+  {
+    "Id":44682,
+    "Name":"제로 허벅지갑옷",
+    "Icon":"\/i\/057000\/057720_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":18
+  },
+  {
+    "Id":44683,
+    "Name":"제로 귀걸이",
+    "Icon":"\/i\/055000\/055548_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44684,
+    "Name":"레오니스 왕 갑옷",
+    "Icon":"\/i\/057000\/057184_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44685,
+    "Name":"레오니스 왕 팔보호구",
+    "Icon":"\/i\/056000\/056303_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44686,
+    "Name":"레오니스 왕 바지",
+    "Icon":"\/i\/057000\/057710_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44687,
+    "Name":"레오니스 왕 장화",
+    "Icon":"\/i\/057000\/057803_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44688,
+    "Name":"호른 여왕 블리오",
+    "Icon":"\/i\/057000\/057183_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44690,
+    "Name":"호른 여왕 타이츠",
+    "Icon":"\/i\/057000\/057709_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44691,
+    "Name":"호른 여왕 장화",
+    "Icon":"\/i\/057000\/057802_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44694,
+    "Name":"알파카 귀걸이",
+    "Icon":"\/i\/055000\/055546_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44695,
+    "Name":"알파카 목도리",
+    "Icon":"\/i\/055000\/055098_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44696,
+    "Name":"이터널 퀸 한손검",
+    "Icon":"\/i\/030000\/030688_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":38,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44697,
+    "Name":"이터널 퀸 너클",
+    "Icon":"\/i\/030000\/030852_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":41,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44698,
+    "Name":"이터널 퀸 전쟁도끼",
+    "Icon":"\/i\/031000\/031262_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":44,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44699,
+    "Name":"이터널 퀸 창",
+    "Icon":"\/i\/031000\/031664_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":47,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44700,
+    "Name":"이터널 퀸 활",
+    "Icon":"\/i\/032000\/032052_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":50,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44701,
+    "Name":"이터널 퀸 환술봉",
+    "Icon":"\/i\/032000\/032482_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":53,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44702,
+    "Name":"이터널 퀸 주술봉",
+    "Icon":"\/i\/032000\/032897_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":55,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44703,
+    "Name":"이터널 퀸 금서",
+    "Icon":"\/i\/037000\/037826_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":69,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44704,
+    "Name":"이터널 퀸 치유서",
+    "Icon":"\/i\/037000\/037827_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":29,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44705,
+    "Name":"이터널 퀸 단검",
+    "Icon":"\/i\/033000\/033638_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":93,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44706,
+    "Name":"이터널 퀸 그레이트소드",
+    "Icon":"\/i\/034000\/034017_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":98,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44707,
+    "Name":"이터널 퀸 권총",
+    "Icon":"\/i\/034000\/034511_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":96,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44708,
+    "Name":"이터널 퀸 좌표기",
+    "Icon":"\/i\/034000\/034710_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":99,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44709,
+    "Name":"이터널 퀸 외날검",
+    "Icon":"\/i\/036000\/036566_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":111,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44710,
+    "Name":"이터널 퀸 레이피어",
+    "Icon":"\/i\/036000\/036865_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":112,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44711,
+    "Name":"이터널 퀸 총검",
+    "Icon":"\/i\/036000\/036108_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":149,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44712,
+    "Name":"이터널 퀸 전투고리",
+    "Icon":"\/i\/036000\/036307_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":150,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44713,
+    "Name":"이터널 퀸 전투낫",
+    "Icon":"\/i\/037000\/037277_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":180,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44714,
+    "Name":"이터널 퀸 날개",
+    "Icon":"\/i\/037000\/037074_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":181,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44715,
+    "Name":"이터널 퀸 쌍송곳니",
+    "Icon":"\/i\/037000\/037441_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":196,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44716,
+    "Name":"이터널 퀸 그림붓",
+    "Icon":"\/i\/037000\/037651_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":197,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44717,
+    "Name":"이터널 퀸 방패",
+    "Icon":"\/i\/030000\/030276_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":38,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44744,
+    "Name":"보강된 구왕국 브로드소드",
+    "Icon":"\/i\/030000\/030683_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":38,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44745,
+    "Name":"보강된 구왕국 파타",
+    "Icon":"\/i\/030000\/030847_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":41,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44746,
+    "Name":"보강된 구왕국 양날도끼",
+    "Icon":"\/i\/031000\/031256_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":44,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44747,
+    "Name":"보강된 구왕국 유격창",
+    "Icon":"\/i\/031000\/031658_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":47,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44748,
+    "Name":"보강된 구왕국 활",
+    "Icon":"\/i\/032000\/032046_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":50,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44749,
+    "Name":"보강된 구왕국 촛대지팡이",
+    "Icon":"\/i\/032000\/032476_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":53,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44750,
+    "Name":"보강된 구왕국 홀",
+    "Icon":"\/i\/032000\/032892_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":55,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44751,
+    "Name":"보강된 구왕국 금서",
+    "Icon":"\/i\/037000\/037816_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":69,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44752,
+    "Name":"보강된 구왕국 치유서",
+    "Icon":"\/i\/037000\/037817_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":29,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44753,
+    "Name":"보강된 구왕국 단검",
+    "Icon":"\/i\/033000\/033633_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":93,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44754,
+    "Name":"보강된 구왕국 클레이모어",
+    "Icon":"\/i\/034000\/034012_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":98,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44755,
+    "Name":"보강된 구왕국 포총",
+    "Icon":"\/i\/034000\/034505_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":96,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44756,
+    "Name":"보강된 구왕국 천궁도",
+    "Icon":"\/i\/034000\/034705_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":99,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44757,
+    "Name":"보강된 구왕국 외날검",
+    "Icon":"\/i\/036000\/036559_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":111,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44758,
+    "Name":"보강된 구왕국 터크",
+    "Icon":"\/i\/036000\/036860_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":112,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44759,
+    "Name":"보강된 구왕국 건블레이드",
+    "Icon":"\/i\/036000\/036103_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":149,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44760,
+    "Name":"보강된 구왕국 차크람",
+    "Icon":"\/i\/036000\/036300_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":150,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44761,
+    "Name":"보강된 구왕국 대낫",
+    "Icon":"\/i\/037000\/037270_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":180,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44762,
+    "Name":"보강된 구왕국 밀프레베",
+    "Icon":"\/i\/037000\/037066_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":181,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44763,
+    "Name":"보강된 구왕국 쌍송곳니",
+    "Icon":"\/i\/037000\/037425_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":196,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44764,
+    "Name":"보강된 구왕국 둥근붓",
+    "Icon":"\/i\/037000\/037631_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":197,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44765,
+    "Name":"보강된 구왕국 사각방패",
+    "Icon":"\/i\/030000\/030272_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":38,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":44766,
+    "Name":"보강된 구왕국 수호자 투구",
+    "Icon":"\/i\/056000\/056760_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44767,
+    "Name":"보강된 구왕국 수호자 전투흉갑",
+    "Icon":"\/i\/057000\/057148_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44768,
+    "Name":"보강된 구왕국 수호자 완갑",
+    "Icon":"\/i\/056000\/056271_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44769,
+    "Name":"보강된 구왕국 수호자 무릎받이",
+    "Icon":"\/i\/057000\/057674_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44770,
+    "Name":"보강된 구왕국 수호자 판금장화",
+    "Icon":"\/i\/049000\/049766_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44771,
+    "Name":"보강된 구왕국 학살자 투구",
+    "Icon":"\/i\/056000\/056761_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44772,
+    "Name":"보강된 구왕국 학살자 전투흉갑",
+    "Icon":"\/i\/057000\/057149_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44773,
+    "Name":"보강된 구왕국 학살자 완갑",
+    "Icon":"\/i\/056000\/056272_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44774,
+    "Name":"보강된 구왕국 학살자 무릎받이",
+    "Icon":"\/i\/057000\/057676_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44775,
+    "Name":"보강된 구왕국 학살자 판금장화",
+    "Icon":"\/i\/049000\/049767_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":76,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44776,
+    "Name":"보강된 구왕국 타격대 두건",
+    "Icon":"\/i\/056000\/056758_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44777,
+    "Name":"보강된 구왕국 타격대 재킷",
+    "Icon":"\/i\/057000\/057151_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44778,
+    "Name":"보강된 구왕국 타격대 팔보호구",
+    "Icon":"\/i\/056000\/056269_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44779,
+    "Name":"보강된 구왕국 타격대 무릎받이",
+    "Icon":"\/i\/057000\/057677_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44780,
+    "Name":"보강된 구왕국 타격대 신발",
+    "Icon":"\/i\/049000\/049772_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":65,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44781,
+    "Name":"보강된 구왕국 유격대 베레모",
+    "Icon":"\/i\/056000\/056763_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44782,
+    "Name":"보강된 구왕국 유격대 재킷",
+    "Icon":"\/i\/057000\/057152_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44783,
+    "Name":"보강된 구왕국 유격대 장갑",
+    "Icon":"\/i\/056000\/056274_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44784,
+    "Name":"보강된 구왕국 유격대 무릎받이",
+    "Icon":"\/i\/057000\/057678_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44785,
+    "Name":"보강된 구왕국 유격대 판금장화",
+    "Icon":"\/i\/049000\/049768_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":66,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44786,
+    "Name":"보강된 구왕국 정찰대 두건",
+    "Icon":"\/i\/056000\/056759_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44787,
+    "Name":"보강된 구왕국 정찰대 재킷",
+    "Icon":"\/i\/057000\/057153_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44788,
+    "Name":"보강된 구왕국 정찰대 팔보호구",
+    "Icon":"\/i\/056000\/056270_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44789,
+    "Name":"보강된 구왕국 정찰대 무릎받이",
+    "Icon":"\/i\/057000\/057679_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44790,
+    "Name":"보강된 구왕국 정찰대 판금장화",
+    "Icon":"\/i\/049000\/049769_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":103,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44791,
+    "Name":"보강된 구왕국 치유사 베레모",
+    "Icon":"\/i\/056000\/056762_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44792,
+    "Name":"보강된 구왕국 치유사 외투",
+    "Icon":"\/i\/057000\/057150_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44793,
+    "Name":"보강된 구왕국 치유사 장갑",
+    "Icon":"\/i\/056000\/056273_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44794,
+    "Name":"보강된 구왕국 치유사 무릎받이",
+    "Icon":"\/i\/057000\/057675_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44795,
+    "Name":"보강된 구왕국 치유사 신발",
+    "Icon":"\/i\/049000\/049771_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44796,
+    "Name":"보강된 구왕국 마술사 두건",
+    "Icon":"\/i\/056000\/056757_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44797,
+    "Name":"보강된 구왕국 마술사 외투",
+    "Icon":"\/i\/057000\/057147_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":4
+  },
+  {
+    "Id":44798,
+    "Name":"보강된 구왕국 마술사 팔보호구",
+    "Icon":"\/i\/056000\/056268_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":5
+  },
+  {
+    "Id":44799,
+    "Name":"보강된 구왕국 마술사 무릎받이",
+    "Icon":"\/i\/057000\/057673_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":7
+  },
+  {
+    "Id":44800,
+    "Name":"보강된 구왕국 마술사 신발",
+    "Icon":"\/i\/049000\/049770_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":8
+  },
+  {
+    "Id":44801,
+    "Name":"보강된 구왕국 수호자 귀걸이",
+    "Icon":"\/i\/055000\/055539_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44802,
+    "Name":"보강된 구왕국 공격대 귀걸이",
+    "Icon":"\/i\/055000\/055539_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":84,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44803,
+    "Name":"보강된 구왕국 유격대 귀걸이",
+    "Icon":"\/i\/055000\/055539_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":105,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44804,
+    "Name":"보강된 구왕국 치유사 귀걸이",
+    "Icon":"\/i\/055000\/055539_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44805,
+    "Name":"보강된 구왕국 마술사 귀걸이",
+    "Icon":"\/i\/055000\/055539_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":9
+  },
+  {
+    "Id":44806,
+    "Name":"보강된 구왕국 수호자 목장식",
+    "Icon":"\/i\/055000\/055091_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44807,
+    "Name":"보강된 구왕국 공격대 목장식",
+    "Icon":"\/i\/055000\/055091_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":84,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44808,
+    "Name":"보강된 구왕국 유격대 목장식",
+    "Icon":"\/i\/055000\/055091_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":105,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44809,
+    "Name":"보강된 구왕국 치유사 목장식",
+    "Icon":"\/i\/055000\/055091_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44810,
+    "Name":"보강된 구왕국 마술사 목장식",
+    "Icon":"\/i\/055000\/055091_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":10
+  },
+  {
+    "Id":44811,
+    "Name":"보강된 구왕국 수호자 손목띠",
+    "Icon":"\/i\/055000\/055890_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":11
+  },
+  {
+    "Id":44812,
+    "Name":"보강된 구왕국 공격대 손목띠",
+    "Icon":"\/i\/055000\/055890_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":84,
+    "EquipSlotCategory":11
+  },
+  {
+    "Id":44813,
+    "Name":"보강된 구왕국 유격대 손목띠",
+    "Icon":"\/i\/055000\/055890_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":105,
+    "EquipSlotCategory":11
+  },
+  {
+    "Id":44814,
+    "Name":"보강된 구왕국 치유사 손목띠",
+    "Icon":"\/i\/055000\/055890_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":11
+  },
+  {
+    "Id":44815,
+    "Name":"보강된 구왕국 마술사 손목띠",
+    "Icon":"\/i\/055000\/055890_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":11
+  },
+  {
+    "Id":44816,
+    "Name":"보강된 구왕국 수호자 반지",
+    "Icon":"\/i\/054000\/054741_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":59,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44817,
+    "Name":"보강된 구왕국 공격대 반지",
+    "Icon":"\/i\/054000\/054741_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":84,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44818,
+    "Name":"보강된 구왕국 유격대 반지",
+    "Icon":"\/i\/054000\/054741_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":105,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44819,
+    "Name":"보강된 구왕국 치유사 반지",
+    "Icon":"\/i\/054000\/054741_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":64,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44820,
+    "Name":"보강된 구왕국 마술사 반지",
+    "Icon":"\/i\/054000\/054741_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":63,
+    "EquipSlotCategory":12
+  },
+  {
+    "Id":44823,
+    "Name":"카틀레야 머리장식: 빨강",
+    "Icon":"\/i\/058000\/058327_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44824,
+    "Name":"카틀레야 머리장식: 파랑",
+    "Icon":"\/i\/058000\/058328_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44825,
+    "Name":"카틀레야 머리장식: 노랑",
+    "Icon":"\/i\/058000\/058329_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44826,
+    "Name":"카틀레야 머리장식: 초록",
+    "Icon":"\/i\/058000\/058330_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44827,
+    "Name":"카틀레야 머리장식: 주황",
+    "Icon":"\/i\/058000\/058331_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44828,
+    "Name":"카틀레야 머리장식: 보라",
+    "Icon":"\/i\/058000\/058332_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44829,
+    "Name":"카틀레야 머리장식: 하양",
+    "Icon":"\/i\/058000\/058333_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44830,
+    "Name":"카틀레야 머리장식: 검정",
+    "Icon":"\/i\/058000\/058334_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44831,
+    "Name":"카틀레야 머리장식: 혼합",
+    "Icon":"\/i\/058000\/058335_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44957,
+    "Name":"펠루펠루 부리모자",
+    "Icon":"\/i\/056000\/056814_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":3
+  },
+  {
+    "Id":44973,
+    "Name":"그라하 환술봉",
+    "Icon":"\/i\/032000\/032483_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":53,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44974,
+    "Name":"그라하 주술봉",
+    "Icon":"\/i\/032000\/032898_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":55,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44975,
+    "Name":"제로 죽음의 낫",
+    "Icon":"\/i\/037000\/037278_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":180,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44976,
+    "Name":"영롱한 다이아몬드 바스타드소드",
+    "Icon":"\/i\/030000\/030634_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":38,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":44977,
+    "Name":"영롱한 다이아몬드 너클",
+    "Icon":"\/i\/031000\/031199_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":41,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44978,
+    "Name":"영롱한 다이아몬드 전투도끼",
+    "Icon":"\/i\/031000\/031209_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":44,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44979,
+    "Name":"영롱한 다이아몬드 유격창",
+    "Icon":"\/i\/031000\/031611_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":47,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44980,
+    "Name":"영롱한 다이아몬드 장궁",
+    "Icon":"\/i\/032000\/032398_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":50,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44981,
+    "Name":"영롱한 다이아몬드 살육도",
+    "Icon":"\/i\/033000\/033985_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":93,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44982,
+    "Name":"영롱한 다이아몬드 단두검",
+    "Icon":"\/i\/034000\/034363_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":98,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44983,
+    "Name":"영롱한 다이아몬드 권총",
+    "Icon":"\/i\/034000\/034409_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":96,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44984,
+    "Name":"영롱한 다이아몬드 환술봉",
+    "Icon":"\/i\/032000\/032782_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":53,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44985,
+    "Name":"영롱한 다이아몬드 주술봉",
+    "Icon":"\/i\/033000\/033153_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":55,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44986,
+    "Name":"영롱한 다이아몬드 금서",
+    "Icon":"\/i\/033000\/033224_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":69,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44987,
+    "Name":"영롱한 다이아몬드 치유서",
+    "Icon":"\/i\/033000\/033223_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":29,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44988,
+    "Name":"영롱한 다이아몬드 천궁도",
+    "Icon":"\/i\/034000\/034957_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":99,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44989,
+    "Name":"영롱한 다이아몬드 외날검",
+    "Icon":"\/i\/036000\/036514_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":111,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44990,
+    "Name":"영롱한 다이아몬드 행어",
+    "Icon":"\/i\/036000\/036813_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":112,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44991,
+    "Name":"영롱한 다이아몬드 건블레이드",
+    "Icon":"\/i\/036000\/036055_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":149,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44992,
+    "Name":"영롱한 다이아몬드 차크람",
+    "Icon":"\/i\/036000\/036254_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":150,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":44993,
+    "Name":"영롱한 다이아몬드 사각방패",
+    "Icon":"\/i\/030000\/030224_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":38,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":45047,
+    "Name":"상상의 국자",
+    "Icon":"\/i\/030000\/030689_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":38,
+    "EquipSlotCategory":1
+  },
+  {
+    "Id":45048,
+    "Name":"상상의 얕은물상어",
+    "Icon":"\/i\/030000\/030853_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":41,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45049,
+    "Name":"상상의 가시복",
+    "Icon":"\/i\/031000\/031263_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":44,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45050,
+    "Name":"상상의 고양이막대",
+    "Icon":"\/i\/031000\/031665_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":47,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45051,
+    "Name":"상상의 숲",
+    "Icon":"\/i\/032000\/032053_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":50,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45052,
+    "Name":"상상의 케이크",
+    "Icon":"\/i\/032000\/032484_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":53,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45053,
+    "Name":"상상의 찻잔",
+    "Icon":"\/i\/032000\/032899_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":55,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45054,
+    "Name":"상상의 여행기",
+    "Icon":"\/i\/037000\/037828_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":69,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45055,
+    "Name":"상상의 요정",
+    "Icon":"\/i\/037000\/037829_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":29,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45056,
+    "Name":"상상의 만찬",
+    "Icon":"\/i\/033000\/033639_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":93,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45057,
+    "Name":"상상의 봄",
+    "Icon":"\/i\/034000\/034018_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":98,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45058,
+    "Name":"상상의 꽃다발",
+    "Icon":"\/i\/034000\/034512_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":96,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45059,
+    "Name":"상상의 겨울",
+    "Icon":"\/i\/034000\/034711_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":99,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45060,
+    "Name":"상상의 우산",
+    "Icon":"\/i\/036000\/036567_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":111,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45061,
+    "Name":"상상의 빗방울",
+    "Icon":"\/i\/036000\/036866_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":112,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45062,
+    "Name":"상상의 깊은물상어",
+    "Icon":"\/i\/036000\/036109_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":149,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45063,
+    "Name":"상상의 여름",
+    "Icon":"\/i\/036000\/036308_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":150,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45064,
+    "Name":"상상의 가을",
+    "Icon":"\/i\/037000\/037279_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":180,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45065,
+    "Name":"상상의 진수성찬",
+    "Icon":"\/i\/037000\/037075_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":181,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45066,
+    "Name":"상상의 정찬",
+    "Icon":"\/i\/037000\/037442_hr1.png",
+    "DyeCount":1,
+    "ClassJobCategory":196,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45067,
+    "Name":"상상의 예술성",
+    "Icon":"\/i\/037000\/037652_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":197,
+    "EquipSlotCategory":13
+  },
+  {
+    "Id":45068,
+    "Name":"상상의 냄비 뚜껑",
+    "Icon":"\/i\/030000\/030278_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":38,
+    "EquipSlotCategory":2
+  },
+  {
+    "Id":45069,
+    "Name":"상상의 공연",
+    "Icon":"\/i\/039000\/039909_hr1.png",
+    "DyeCount":2,
+    "ClassJobCategory":129,
+    "EquipSlotCategory":13
+  },
+  {
     "Id":44259,
     "Name":"스타일카탈로그: 타원형 안경",
-    "Icon":"\/i\/058000\/058022_hr1.png",
+    "Icon":"\/i\/026000\/026074_hr1.png",
     "DyeCount":1,
     "ClassJobCategory":1,
     "EquipSlotCategory":24
@@ -192570,7 +195130,7 @@
   {
     "Id":44261,
     "Name":"스타일카탈로그: 뿔테 안경",
-    "Icon":"\/i\/058000\/058026_hr1.png",
+    "Icon":"\/i\/026000\/026074_hr1.png",
     "DyeCount":1,
     "ClassJobCategory":1,
     "EquipSlotCategory":24
@@ -192578,7 +195138,7 @@
   {
     "Id":44262,
     "Name":"스타일카탈로그: 분홍알 안경",
-    "Icon":"\/i\/058000\/058033_hr1.png",
+    "Icon":"\/i\/026000\/026074_hr1.png",
     "DyeCount":1,
     "ClassJobCategory":1,
     "EquipSlotCategory":24
@@ -192586,7 +195146,7 @@
   {
     "Id":44263,
     "Name":"스타일카탈로그: 기본 안경",
-    "Icon":"\/i\/040000\/040876_hr1.png",
+    "Icon":"\/i\/026000\/026074_hr1.png",
     "DyeCount":1,
     "ClassJobCategory":1,
     "EquipSlotCategory":24
@@ -192594,7 +195154,7 @@
   {
     "Id":44264,
     "Name":"스타일카탈로그: 단안경",
-    "Icon":"\/i\/040000\/040906_hr1.png",
+    "Icon":"\/i\/026000\/026074_hr1.png",
     "DyeCount":1,
     "ClassJobCategory":1,
     "EquipSlotCategory":24
@@ -192602,7 +195162,7 @@
   {
     "Id":44265,
     "Name":"스타일카탈로그: 현대식 코안경",
-    "Icon":"\/i\/040000\/040931_hr1.png",
+    "Icon":"\/i\/026000\/026074_hr1.png",
     "DyeCount":1,
     "ClassJobCategory":1,
     "EquipSlotCategory":24
@@ -192610,7 +195170,7 @@
   {
     "Id":44266,
     "Name":"스타일카탈로그: 무테 안경",
-    "Icon":"\/i\/040000\/040932_hr1.png",
+    "Icon":"\/i\/026000\/026074_hr1.png",
     "DyeCount":1,
     "ClassJobCategory":1,
     "EquipSlotCategory":24
@@ -192618,7 +195178,7 @@
   {
     "Id":44267,
     "Name":"스타일카탈로그: 굵은테 안경",
-    "Icon":"\/i\/040000\/040933_hr1.png",
+    "Icon":"\/i\/026000\/026074_hr1.png",
     "DyeCount":1,
     "ClassJobCategory":1,
     "EquipSlotCategory":24
@@ -192626,8 +195186,376 @@
   {
     "Id":44268,
     "Name":"스타일카탈로그: 예인의 안경",
-    "Icon":"\/i\/040000\/040936_hr1.png",
+    "Icon":"\/i\/026000\/026074_hr1.png",
     "DyeCount":1,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":44999,
+    "Name":"스타일카탈로그: 코안경",
+    "Icon":"\/i\/026000\/026074_hr1.png",
+    "DyeCount":1,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":45000,
+    "Name":"스타일카탈로그: 확대경",
+    "Icon":"\/i\/026000\/026074_hr1.png",
+    "DyeCount":1,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":45001,
+    "Name":"스타일카탈로그: 황동 고글",
+    "Icon":"\/i\/026000\/026074_hr1.png",
+    "DyeCount":1,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":45002,
+    "Name":"스타일카탈로그: 역반무테 안경",
+    "Icon":"\/i\/026000\/026074_hr1.png",
+    "DyeCount":1,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":45003,
+    "Name":"스타일카탈로그: 타원형 뿔테 안경",
+    "Icon":"\/i\/026000\/026074_hr1.png",
+    "DyeCount":1,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":45004,
+    "Name":"스타일카탈로그: 고품격 무테 안경",
+    "Icon":"\/i\/026000\/026074_hr1.png",
+    "DyeCount":1,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":45005,
+    "Name":"스타일카탈로그: 고양이 눈 안경",
+    "Icon":"\/i\/026000\/026074_hr1.png",
+    "DyeCount":1,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":45006,
+    "Name":"스타일카탈로그: 얇은테 안경",
+    "Icon":"\/i\/026000\/026074_hr1.png",
+    "DyeCount":1,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":30269,
+    "Name":"우산",
+    "Icon":"\/i\/058000\/058001_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":30270,
+    "Name":"하늘색 우산",
+    "Icon":"\/i\/058000\/058002_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":31321,
+    "Name":"빨간색 종이우산",
+    "Icon":"\/i\/058000\/058003_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":31322,
+    "Name":"보라색 종이우산",
+    "Icon":"\/i\/058000\/058004_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":31323,
+    "Name":"노란색 종이우산",
+    "Icon":"\/i\/058000\/058005_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":31324,
+    "Name":"차분한 체크 우산",
+    "Icon":"\/i\/058000\/058006_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":31325,
+    "Name":"발랄한 체크 우산",
+    "Icon":"\/i\/058000\/058007_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":31326,
+    "Name":"세련된 체크 우산",
+    "Icon":"\/i\/058000\/058008_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":33037,
+    "Name":"산뜻한 물방울무늬 우산",
+    "Icon":"\/i\/058000\/058009_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":33038,
+    "Name":"새침한 물방울무늬 우산",
+    "Icon":"\/i\/058000\/058010_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":33039,
+    "Name":"전원풍 물방울무늬 우산",
+    "Icon":"\/i\/058000\/058011_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":33040,
+    "Name":"골드 소서 우산",
+    "Icon":"\/i\/058000\/058012_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":33041,
+    "Name":"천사 날개",
+    "Icon":"\/i\/058000\/058013_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":33711,
+    "Name":"붉은 달 우산",
+    "Icon":"\/i\/058000\/058016_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":33712,
+    "Name":"뚱냥이 우산",
+    "Icon":"\/i\/058000\/058014_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":33713,
+    "Name":"롱카의 물뱀 우산?",
+    "Icon":"\/i\/058000\/058015_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":36340,
+    "Name":"타락천사 날개",
+    "Icon":"\/i\/058000\/058017_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":36341,
+    "Name":"대천사 날개",
+    "Icon":"\/i\/058000\/058018_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":36342,
+    "Name":"디아볼로스 날개",
+    "Icon":"\/i\/058000\/058019_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":36343,
+    "Name":"픽시 날개",
+    "Icon":"\/i\/058000\/058020_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":37484,
+    "Name":"흰색 주름장식 우산",
+    "Icon":"\/i\/058000\/058023_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":37485,
+    "Name":"파란 꽃무늬 우산",
+    "Icon":"\/i\/058000\/058024_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":38537,
+    "Name":"사보텐더 우산",
+    "Icon":"\/i\/058000\/058027_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":38538,
+    "Name":"파란 픽시 날개",
+    "Icon":"\/i\/058000\/058028_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":39503,
+    "Name":"야옹 선생 우산",
+    "Icon":"\/i\/058000\/058029_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":39504,
+    "Name":"빗물 방어 시스템",
+    "Icon":"\/i\/058000\/058030_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":40365,
+    "Name":"츠쿠모 지우산",
+    "Icon":"\/i\/058000\/058031_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":40366,
+    "Name":"제작돌이 우산",
+    "Icon":"\/i\/058000\/058032_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":41466,
+    "Name":"스타티스 날개",
+    "Icon":"\/i\/058000\/058034_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":41467,
+    "Name":"잎사귀 우산",
+    "Icon":"\/i\/058000\/058035_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":41468,
+    "Name":"당근 우산",
+    "Icon":"\/i\/058000\/058036_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":41469,
+    "Name":"배낭",
+    "Icon":"\/i\/058000\/058037_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":44256,
+    "Name":"네온 우산",
+    "Icon":"\/i\/058000\/058038_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":44257,
+    "Name":"리본 우산",
+    "Icon":"\/i\/058000\/058039_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":44258,
+    "Name":"봄 우산",
+    "Icon":"\/i\/058000\/058040_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":44996,
+    "Name":"만드라 우산",
+    "Icon":"\/i\/058000\/058041_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":44997,
+    "Name":"현자의 알 우산",
+    "Icon":"\/i\/058000\/058042_hr1.png",
+    "DyeCount":0,
+    "ClassJobCategory":1,
+    "EquipSlotCategory":24
+  },
+  {
+    "Id":44998,
+    "Name":"펠루펠루 등짐",
+    "Icon":"\/i\/058000\/058043_hr1.png",
+    "DyeCount":0,
     "ClassJobCategory":1,
     "EquipSlotCategory":24
   }

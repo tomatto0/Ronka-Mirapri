@@ -99,7 +99,7 @@ export default function UserCanvas({
           );
           let i = 0;
 
-          if (item_list.every(item => item.Id === 0)) {
+          if (item_list.every((item) => item.Id === 0)) {
             ctx.drawImage(
               item_placeholder_image.current,
               box_width + 31,
@@ -110,7 +110,7 @@ export default function UserCanvas({
           }
 
           for (let item of item_list) {
-            const image = item_images.current.find(i => i.Id === item.Id);
+            const image = item_images.current.find((i) => i.Id === item.Id);
             if (item.Id === 0) continue;
 
             // 아이템 아이콘 그리기
@@ -126,7 +126,7 @@ export default function UserCanvas({
             // 1염색 컬러 표시
             // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
             const colorInfo1 = Color_background_list.find(
-              color => color.color_id === item.DyeFirst
+              (color) => color.color_id === item.DyeFirst
             );
 
             if (colorInfo1 && item.DyeFirst !== 0) {
@@ -155,7 +155,7 @@ export default function UserCanvas({
             // 2염색 컬러 표시
             // DyeFirst 값을 사용해 Color_background_list에서 색상 데이터 찾기
             const colorInfo2 = Color_background_list.find(
-              color => color.color_id === item.DyeSecond
+              (color) => color.color_id === item.DyeSecond
             );
 
             if (colorInfo2 && item.DyeSecond !== 0) {
@@ -360,7 +360,7 @@ export default function UserCanvas({
     x.current = 0;
     // y.current = 0;
     user_image.current.src = image_src;
-
+    console.log(image_src);
     const onload_handler = () => {
       is_user_image_loaded.current = true;
       image_width.current = user_image.current.width;
@@ -379,12 +379,12 @@ export default function UserCanvas({
         item_image.src = src;
 
         item_image.onload = () => resolve({ Id: id, Image: item_image });
-        item_image.onerror = error => reject(error);
+        item_image.onerror = (error) => reject(error);
       });
     };
 
     try {
-      const promises = equiped_item_ref.current.map(item =>
+      const promises = equiped_item_ref.current.map((item) =>
         image_load(item.Id, process.env.PUBLIC_URL + "/" + item.Icon)
       );
       item_images.current = await Promise.all(promises);

@@ -43,10 +43,10 @@ export default function RedirectRonkaLookbook({ onRedirect }: RedirectRonkaLookb
         </div>
         <div className="button-wrap">
           <button onClick={onRedirect} className="modal-button">
-            지금 바로 이동하기
+            텔레포 즉시시전
           </button>
         </div>
-        <p className="modal-count">{countdown}초 후 자동으로 이동합니다.</p>
+        <p className="modal-count">텔레포 시전 중...{countdown}초 </p>
       </div>
     </div>,
     document.getElementById("modal-root") as HTMLElement
